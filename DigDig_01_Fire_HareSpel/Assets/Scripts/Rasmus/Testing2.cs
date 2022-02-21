@@ -7,8 +7,8 @@ public class Testing2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //hur man når den globala variabeln
-        if (Testing.isPaused == false)
+        //Hur man når den globala variabeln
+        if (Testing.isPaused == false) //NamnPåScript.VariabelNamn == false
         {
             //Rör på skiten
         }
