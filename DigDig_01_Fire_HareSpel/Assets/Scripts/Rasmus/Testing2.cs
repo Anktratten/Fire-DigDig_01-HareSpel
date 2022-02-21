@@ -8,7 +8,7 @@ public class Testing2 : MonoBehaviour
     void Start()
     {
         //Hur man når den globala variabeln
-        if (Testing.isPaused == false) //NamnPåScript.VariabelNamn == false
+        if (Testing.bean == false) //NamnPåScript.VariabelNamn == false
         {
             //Rör på skiten
         }
