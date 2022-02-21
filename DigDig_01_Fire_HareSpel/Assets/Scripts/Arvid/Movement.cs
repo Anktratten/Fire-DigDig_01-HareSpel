@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   if (PauseController.isPaused==false){ 
         if (Input.GetKey("right"))
         { 
             transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
@@ -37,6 +37,7 @@ public class Movement : MonoBehaviour
         {
             Instantiate(bullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
             nextTimeToFire = Time.time + coolDown;
+        }
         }
     }
    
