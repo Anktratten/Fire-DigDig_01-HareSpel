@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Testing : MonoBehaviour
+public class CameraFollowScript : MonoBehaviour
 {
-    public static bool bean = false; //Global variabel som styr om spelet är pausat
-
     // Start is called before the first frame update
     void Start()
     {
