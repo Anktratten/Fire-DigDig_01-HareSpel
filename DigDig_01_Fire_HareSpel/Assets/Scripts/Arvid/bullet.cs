@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-
+    public int bs;
     void Update()
     {
         {
-            transform.position = new Vector3(transform.position.x + 10.0f * Time.deltaTime, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x + bs * Time.deltaTime, transform.position.y, transform.position.z);
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
