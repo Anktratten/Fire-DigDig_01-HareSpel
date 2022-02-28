@@ -16,7 +16,8 @@ public class Movement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   if (PauseController.isPaused==false){ 
+    {   if (PauseController.isPaused==false)
+        { 
         if (Input.GetKey("right"))
         { 
             transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
@@ -39,16 +40,7 @@ public class Movement : MonoBehaviour
             nextTimeToFire = Time.time + coolDown;
         }
         }
-
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            Destroy(gameObject);
-        }
-    }
-
-
-
-    }
+   
+    
+}
