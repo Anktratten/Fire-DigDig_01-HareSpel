@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     public Transform pistolBullet;
     public float coolDown; //Satt i editorn
     float nextTimeToFire = 0;
-    string weaponSelect;
+    string weaponSelect = "Pistol";
 
     public static float pistolCooldown = 0.5f;
     public static float shotgunCooldown = 1f;
