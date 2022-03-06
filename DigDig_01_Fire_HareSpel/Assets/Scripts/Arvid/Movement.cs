@@ -9,6 +9,10 @@ public class Movement : MonoBehaviour
     public float coolDown; //Satt i editorn
     float nextTimeToFire = 0;
     string weaponSelect;
+
+    public static float pistolCooldown = 0.5f;
+    public static float shotgunCooldown = 1f;
+    public static float assaultRifleCooldown = 0.1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,20 +44,42 @@ public class Movement : MonoBehaviour
             //Pistol fire
             if (Input.GetKey("space") && nextTimeToFire < Time.time && weaponSelect == "Pistol")
             {
-                Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
-                nextTimeToFire = Time.time + UpgradeController.pistolCooldown;
+                if (UpgradeController.pistolLevel == 1)
+                {
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
+                }
+                else if (UpgradeController.pistolLevel == 2)
+                {
+                    //Pistol fire level 2
+                }
+                else if (UpgradeController.pistolLevel == 3)
+                {
+                    //Pistol fire level 3
+                }
+                nextTimeToFire = Time.time + pistolCooldown;
             }
             //Shotgun fire
             if (Input.GetKey("space") && nextTimeToFire < Time.time && weaponSelect == "Shotgun")
             {
-                //Fire shotgun pattern
-                nextTimeToFire = Time.time + UpgradeController.shotgunCooldown;
+                if (UpgradeController.shotgunLevel == 1)
+                {
+                    //Shotgun fire level 1
+                }
+                else if (UpgradeController.shotgunLevel == 2)
+                {
+                    //Shotgun fire level 2
+                }
+                else if (UpgradeController.shotgunLevel == 3)
+                {
+                    //Shotgun fire level 3
+                }
+                nextTimeToFire = Time.time + shotgunCooldown;
             }
             //AssaultRifle fire
             if (Input.GetKey("space") && nextTimeToFire < Time.time && weaponSelect == "AssaultRifle")
             {
                 //Fire assault rifle
-                nextTimeToFire = Time.time + UpgradeController.assaultRifleCooldown;
+                nextTimeToFire = Time.time + assaultRifleCooldown;
             }
         }
     }

@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class UpgradeController : MonoBehaviour
 {
-    public static float pistolCooldown = 0.5f;
-    public static float shotgunCooldown = 1f;
-    public static float assaultRifleCooldown = 0.1f;
-
     public static int pistolLevel = 1;
     public static int shotgunLevel = 0;
     public static int assaultRifleLevel = 0;
@@ -35,7 +31,12 @@ public class UpgradeController : MonoBehaviour
         {
             coins = coins - pistolCost;
             pistolLevel++;
+            //Decrease cooldown
             //Increase cost
+        }
+        if (pistolLevel == 3)
+        {
+            //Lock upgrades
         }
     }
     void ShotgunUpgrade()
@@ -44,7 +45,12 @@ public class UpgradeController : MonoBehaviour
         {
             coins = coins - shotgunCost;
             shotgunLevel++;
+            //Decrease cooldown
             //Increase cost
+        }
+        if (shotgunLevel == 3)
+        {
+            //Lock upgrades
         }
     }
     void AssaultRifleUpgrade()
@@ -53,7 +59,12 @@ public class UpgradeController : MonoBehaviour
         {
             coins = coins - assaultRifleCost;
             assaultRifleLevel++;
+            //Decrease cooldown
             //Increase cost
+        }
+        if (assaultRifleLevel == 3)
+        {
+            //Lock upgrades
         }
     }
 }
