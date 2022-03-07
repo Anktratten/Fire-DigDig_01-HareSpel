@@ -550,7 +550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1345405182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.55, y: 0.34, z: 0}
+  m_LocalPosition: {x: -7.499, y: 0.504, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -568,6 +568,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a902e21a43520c04baba20712266c753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pistolBunny: {fileID: -479205242042980878, guid: 7928874b451142f468d553969811ad0f, type: 3}
+  shotgunBunny: {fileID: -6049013903200436398, guid: 0ee73a8526c84af4b9d0f2f045427073, type: 3}
+  assaultRifleBunny: {fileID: 2716574123330718981, guid: 519a8192058ecc240aa3e6d003907174, type: 3}
   speed: 10
   pistolBullet: {fileID: 3332073131544249707, guid: 79046111127da45479bacee697d4dc88, type: 3}
   coolDown: 0.5
