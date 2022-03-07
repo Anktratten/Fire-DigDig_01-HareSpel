@@ -5,8 +5,8 @@ using UnityEngine;
 public class UpgradeController : MonoBehaviour
 {
     public static int pistolLevel = 1;
-    public static int shotgunLevel = 0;
-    public static int assaultRifleLevel = 0;
+    public static int shotgunLevel = 1;
+    public static int assaultRifleLevel = 1;
 
     public static int coins = 0;
 
