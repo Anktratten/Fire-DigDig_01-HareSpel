@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 9065bf44c9fb6af4898f71fdd3ad41bb
+guid: 27a0f19ffa2435a49be107a60aa75093
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8931545594758169764
-    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_0"
+      213: 1197228844053896571
+    second: knappar-32x32 pixlar_0
   - first:
-      213: -4039756033688106913
-    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_1"
+      213: 2997420466602238859
+    second: knappar-32x32 pixlar_1
   - first:
-      213: 3543699745610094191
-    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_2"
-  - first:
-      213: -4288294814748220491
-    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_3"
+      213: 1778008344198951519
+    second: knappar-32x32 pixlar_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -58,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_0"
+      name: knappar-32x32 pixlar_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +126,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a404c6a56933fb70800000000000000
-      internalID: 8931545594758169764
+      spriteID: b7d1fac5a496d9010800000000000000
+      internalID: 1197228844053896571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_1"
+      name: knappar-32x32 pixlar_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 3
+        y: 34
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5887c87a47efe7c0800000000000000
-      internalID: -4039756033688106913
+      spriteID: b83ef4a880af89920800000000000000
+      internalID: 2997420466602238859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_2"
+      name: knappar-32x32 pixlar_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 3
+        y: 3
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,29 +168,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f665bbfa420cd2130800000000000000
-      internalID: 3543699745610094191
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_3"
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b368ca169aec74c0800000000000000
-      internalID: -4288294814748220491
+      spriteID: f52b8a33b21cca810800000000000000
+      internalID: 1778008344198951519
       vertices: []
       indices: 
       edges: []
