@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
+    public Sprite pistolBunny;
+    public Sprite shotgunBunny;
+    public Sprite assaultRifleBunny;
+
     public int speed;
     public Transform pistolBullet;
     public float coolDown; //Satt i editorn
@@ -13,6 +18,7 @@ public class Movement : MonoBehaviour
     public static float pistolCooldown = 0.5f;
     public static float shotgunCooldown = 1f;
     public static float assaultRifleCooldown = 0.1f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -63,7 +69,9 @@ public class Movement : MonoBehaviour
             {
                 if (UpgradeController.shotgunLevel == 1)
                 {
-                    //Shotgun fire level 1
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, + 1), Quaternion.identity);
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, - 1), Quaternion.identity);
                 }
                 else if (UpgradeController.shotgunLevel == 2)
                 {
@@ -78,20 +86,46 @@ public class Movement : MonoBehaviour
             //AssaultRifle fire
             if (Input.GetKey("space") && nextTimeToFire < Time.time && weaponSelect == "AssaultRifle")
             {
-                //Fire assault rifle
+                if (UpgradeController.assaultRifleLevel == 1)
+                {
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
+                }
+                if (UpgradeController.assaultRifleLevel == 2)
+                {
+                    //Fire assault rifle level 2
+                }
+                if (UpgradeController.assaultRifleLevel == 3)
+                {
+                    //Fire assault rifle level 3
+                }
                 nextTimeToFire = Time.time + assaultRifleCooldown;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                PistolSelect();
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                ShotgunSelect();
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                AssaultRifleSelect();
             }
         }
     }
     void PistolSelect()
     {
         weaponSelect = "Pistol";
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = pistolBunny;
     }
     void ShotgunSelect()
     {
         if (UpgradeController.shotgunLevel >= 1)
         {
             weaponSelect = "Shotgun";
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = shotgunBunny;
         }
     }
     void AssaultRifleSelect()
@@ -99,6 +133,7 @@ public class Movement : MonoBehaviour
         if (UpgradeController.assaultRifleLevel >= 1)
         {
             weaponSelect = "AssaultRifle";
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = assaultRifleBunny;
         }
     }
 }
