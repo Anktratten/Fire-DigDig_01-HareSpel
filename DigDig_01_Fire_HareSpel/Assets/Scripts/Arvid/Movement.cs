@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
+    public Sprite pistolBunny;
+    public Sprite shotgunBunny;
+    public Sprite assaultRifleBunny;
+
     public int speed;
     public Transform pistolBullet;
     public float coolDown; //Satt i editorn
@@ -113,12 +118,14 @@ public class Movement : MonoBehaviour
     void PistolSelect()
     {
         weaponSelect = "Pistol";
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = pistolBunny;
     }
     void ShotgunSelect()
     {
         if (UpgradeController.shotgunLevel >= 1)
         {
             weaponSelect = "Shotgun";
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = shotgunBunny;
         }
     }
     void AssaultRifleSelect()
@@ -126,6 +133,7 @@ public class Movement : MonoBehaviour
         if (UpgradeController.assaultRifleLevel >= 1)
         {
             weaponSelect = "AssaultRifle";
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = assaultRifleBunny;
         }
     }
 }
