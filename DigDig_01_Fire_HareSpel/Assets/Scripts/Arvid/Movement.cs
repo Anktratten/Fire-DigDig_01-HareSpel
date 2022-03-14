@@ -9,6 +9,9 @@ public class Movement : MonoBehaviour
     public Sprite shotgunBunny;
     public Sprite assaultRifleBunny;
 
+    public float borderX = 8.57f;
+    public float borderY = 4.7f;
+
     public int speed;
     public Transform pistolBullet;
     public float coolDown; //Satt i editorn
@@ -28,21 +31,25 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(UpgradeController.assaultRifleLevel);
+        Debug.Log(UpgradeController.pistolLevel);
+        Debug.Log(UpgradeController.shotgunLevel);
+
         if (PauseController.isPaused == false)
         {
-            if (Input.GetKey("right"))
+            if (Input.GetKey("right") && transform.position.x <= +borderX)
             {
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
             }
-            if (Input.GetKey("left"))
+            if (Input.GetKey("left") && transform.position.x >= -borderX)
             {
                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
             }
-            if (Input.GetKey("up"))
+            if (Input.GetKey("up") && transform.position.y <= +borderY)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
             }
-            if (Input.GetKey("down"))
+            if (Input.GetKey("down") && transform.position.y >= -borderY)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, transform.position.z);
             }

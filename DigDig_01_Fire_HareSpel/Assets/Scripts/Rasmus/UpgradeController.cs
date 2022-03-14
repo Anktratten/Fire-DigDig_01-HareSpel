@@ -25,7 +25,7 @@ public class UpgradeController : MonoBehaviour
         
     }
 
-    void PistolUpgrade()
+    public void PistolUpgrade()
     {
         if (coins >= pistolCost)
         {
@@ -39,7 +39,7 @@ public class UpgradeController : MonoBehaviour
             //Lock upgrades
         }
     }
-    void ShotgunUpgrade()
+    public void ShotgunUpgrade()
     {
         if (coins >= shotgunCost)
         {
@@ -53,7 +53,7 @@ public class UpgradeController : MonoBehaviour
             //Lock upgrades
         }
     }
-    void AssaultRifleUpgrade()
+    public void AssaultRifleUpgrade()
     {
         if (coins >= assaultRifleCost)
         {

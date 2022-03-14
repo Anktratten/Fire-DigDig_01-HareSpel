@@ -5,7 +5,7 @@ using UnityEngine;
 public class PauseController : MonoBehaviour
 {
     public static bool isPaused = false;
-    public GameObject pauseMenu;
+    public GameObject menu;
 
     // Start is called before the first frame update
     void Start()
@@ -19,15 +19,15 @@ public class PauseController : MonoBehaviour
         
     }
 
-    public void PauseGame()
+    public void OpenMenu()
     {
-        pauseMenu.SetActive(true);
+        menu.SetActive(true);
         isPaused = true;
     }
     
-    public void UnPauseGame()
+    public void CloseMenu()
     {
-        pauseMenu.SetActive(false);
+        menu.SetActive(false);
         isPaused = false;
     }
 }
