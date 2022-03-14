@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: c552c0db1bc18ab4e81269728f994d12
+guid: 9065bf44c9fb6af4898f71fdd3ad41bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4622084552695192593
-    second: "DigDig01_nsih_spelkarakt\xE4r_variant_0"
+      213: 8931545594758169764
+    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_0"
+  - first:
+      213: -4039756033688106913
+    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_1"
+  - first:
+      213: 3543699745610094191
+    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_2"
+  - first:
+      213: -4288294814748220491
+    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_3"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -53,9 +62,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -104,11 +113,95 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a404c6a56933fb70800000000000000
+      internalID: 8931545594758169764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_1"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5887c87a47efe7c0800000000000000
+      internalID: -4039756033688106913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_2"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f665bbfa420cd2130800000000000000
+      internalID: 3543699745610094191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_3"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b368ca169aec74c0800000000000000
+      internalID: -4288294814748220491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

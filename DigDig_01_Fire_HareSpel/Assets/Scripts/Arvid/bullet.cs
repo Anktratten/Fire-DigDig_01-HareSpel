@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-    public int bs;
+    public int bs; //bs = BulletSpeed
     void Update()
     {
         if (PauseController.isPaused == false)

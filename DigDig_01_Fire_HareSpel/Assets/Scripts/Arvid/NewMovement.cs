@@ -1,16 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class Movement : MonoBehaviour
+public class NewMovement : MonoBehaviour
 {
     public Sprite pistolBunny;
     public Sprite shotgunBunny;
     public Sprite assaultRifleBunny;
-
-    public float borderX = 8.57f;
-    public float borderY = 4.7f;
 
     public int speed;
     public Transform pistolBullet;
@@ -21,7 +17,7 @@ public class Movement : MonoBehaviour
     public static float pistolCooldown = 0.5f;
     public static float shotgunCooldown = 1f;
     public static float assaultRifleCooldown = 0.1f;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +29,7 @@ public class Movement : MonoBehaviour
     {
         if (PauseController.isPaused == false)
         {
-            if (Input.GetKey("right") && transform.position.x <= +borderX)
+            if (Input.GetKey("right"))
             {
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
             }
@@ -73,8 +69,8 @@ public class Movement : MonoBehaviour
                 if (UpgradeController.shotgunLevel == 1)
                 {
                     Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
-                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, + 1), Quaternion.identity);
-                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, - 1), Quaternion.identity);
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, +1), Quaternion.identity);
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, -1), Quaternion.identity);
                 }
                 else if (UpgradeController.shotgunLevel == 2)
                 {
@@ -140,3 +136,5 @@ public class Movement : MonoBehaviour
         }
     }
 }
+
+

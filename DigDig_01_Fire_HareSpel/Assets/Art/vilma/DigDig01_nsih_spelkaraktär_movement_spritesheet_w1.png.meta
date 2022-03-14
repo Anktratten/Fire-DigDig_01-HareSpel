@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 27a0f19ffa2435a49be107a60aa75093
+guid: 7928874b451142f468d553969811ad0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1197228844053896571
-    second: knappar-32x32 pixlar_0
+      213: -479205242042980878
+    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_w1_0"
   - first:
-      213: 2997420466602238859
-    second: knappar-32x32 pixlar_1
+      213: -3584867535059481421
+    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_w1_1"
   - first:
-      213: 1778008344198951519
-    second: knappar-32x32 pixlar_2
+      213: -771346124161740144
+    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_w1_2"
+  - first:
+      213: -519602001565407042
+    second: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_w1_3"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +58,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,29 +99,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knappar-32x32 pixlar_0
+      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_w1_0"
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7d1fac5a496d9010800000000000000
-      internalID: 1197228844053896571
+      spriteID: 2f5e58d0f558959f0800000000000000
+      internalID: -479205242042980878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knappar-32x32 pixlar_1
+      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_w1_1"
       rect:
         serializedVersion: 2
-        x: 3
-        y: 34
-        width: 28
-        height: 28
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b83ef4a880af89920800000000000000
-      internalID: 2997420466602238859
+      spriteID: 3bc03f568fdff3ec0800000000000000
+      internalID: -3584867535059481421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knappar-32x32 pixlar_2
+      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_w1_2"
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 28
-        height: 28
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,8 +159,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f52b8a33b21cca810800000000000000
-      internalID: 1778008344198951519
+      spriteID: 092177e69c0ab45f0800000000000000
+      internalID: -771346124161740144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "DigDig01_nsih_spelkarakt\xE4r_movement_spritesheet_w1_3"
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8ac188bb00ac8f0800000000000000
+      internalID: -519602001565407042
       vertices: []
       indices: 
       edges: []
