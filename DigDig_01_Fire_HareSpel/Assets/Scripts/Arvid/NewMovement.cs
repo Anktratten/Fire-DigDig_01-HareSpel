@@ -27,7 +27,6 @@ public class NewMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Animator.SetFloat("fastnes", Mathf.Abs)
         if (PauseController.isPaused == false)
         {
             if (Input.GetKey("right"))
