@@ -18,6 +18,8 @@ public class NewMovement : MonoBehaviour
     public static float shotgunCooldown = 1f;
     public static float assaultRifleCooldown = 0.1f;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,23 +29,28 @@ public class NewMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (PauseController.isPaused == false)
         {
-            if (Input.GetKey("right"))
+            while (Input.GetKey("right"))
             {
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
+                animator.SetFloat("fastnes", Mathf.Abs(1));
             }
-            if (Input.GetKey("left"))
+            while (Input.GetKey("left"))
             {
                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
+                animator.SetFloat("fastnes", Mathf.Abs(1));
             }
-            if (Input.GetKey("up"))
+            while (Input.GetKey("up"))
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
+                animator.SetFloat("fastnes", Mathf.Abs(1));
             }
-            if (Input.GetKey("down"))
+            while (Input.GetKey("down"))
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, transform.position.z);
+                animator.SetFloat("fastnes", Mathf.Abs(1));
             }
 
             //Pistol fire
