@@ -31,6 +31,10 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(UpgradeController.assaultRifleLevel);
+        Debug.Log(UpgradeController.pistolLevel);
+        Debug.Log(UpgradeController.shotgunLevel);
+
         if (PauseController.isPaused == false)
         {
             if (Input.GetKey("right") && transform.position.x <= +borderX)
