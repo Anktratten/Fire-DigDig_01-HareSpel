@@ -8,6 +8,9 @@ public class NewMovement : MonoBehaviour
     public Sprite shotgunBunny;
     public Sprite assaultRifleBunny;
 
+    public float borderX = 8.57f;
+    public float borderY = 4.7f;
+
     public int speed;
     public Transform pistolBullet;
     public float coolDown; //Satt i editorn
@@ -32,26 +35,34 @@ public class NewMovement : MonoBehaviour
         
         if (PauseController.isPaused == false)
         {
-            while (Input.GetKey("right"))
+            if (Input.GetKey("right"))
             {
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
                 animator.SetFloat("fastnes", Mathf.Abs(1));
             }
-            while (Input.GetKey("left"))
+            else
+            { animator.SetFloat("fastnes", Mathf.Abs(0)); }
+            if (Input.GetKey("left"))
             {
                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
                 animator.SetFloat("fastnes", Mathf.Abs(1));
             }
-            while (Input.GetKey("up"))
+            else
+            { animator.SetFloat("fastnes", Mathf.Abs(0)); }
+            if (Input.GetKey("up"))
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
                 animator.SetFloat("fastnes", Mathf.Abs(1));
             }
-            while (Input.GetKey("down"))
+            else
+            { animator.SetFloat("fastnes", Mathf.Abs(0)); }
+            if (Input.GetKey("down"))
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, transform.position.z);
                 animator.SetFloat("fastnes", Mathf.Abs(1));
             }
+            else 
+            { animator.SetFloat("fastnes", Mathf.Abs(0)); }
 
             //Pistol fire
             if (Input.GetKey("space") && nextTimeToFire < Time.time && weaponSelect == "Pistol")
