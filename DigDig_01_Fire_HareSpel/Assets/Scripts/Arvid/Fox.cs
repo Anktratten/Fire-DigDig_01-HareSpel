@@ -38,7 +38,7 @@ public class Fox : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-            if (hp < -1)
+            if (hp < 1)
             {
                 Destroy(gameObject);
                 ScoreText.GetComponent<Score>().addscore(100);
