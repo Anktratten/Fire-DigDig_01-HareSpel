@@ -243,9 +243,11 @@ MonoBehaviour:
   pistolBunny: {fileID: 0}
   shotgunBunny: {fileID: 0}
   assaultRifleBunny: {fileID: 0}
-  speed: 1
+  speed: 10
   pistolBullet: {fileID: 3332073131544249707, guid: 79046111127da45479bacee697d4dc88, type: 3}
   coolDown: -1
+  conroller: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!50 &3076766
 Rigidbody2D:
   serializedVersion: 4
