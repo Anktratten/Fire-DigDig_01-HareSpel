@@ -37,15 +37,15 @@ public class Movement : MonoBehaviour
             {
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
             }
-            if (Input.GetKey("left"))
+            if (Input.GetKey("left") && transform.position.x >= -borderX)
             {
                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
             }
-            if (Input.GetKey("up"))
+            if (Input.GetKey("up") && transform.position.y <= +borderY)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
             }
-            if (Input.GetKey("down"))
+            if (Input.GetKey("down") && transform.position.y >= -borderY)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, transform.position.z);
             }
