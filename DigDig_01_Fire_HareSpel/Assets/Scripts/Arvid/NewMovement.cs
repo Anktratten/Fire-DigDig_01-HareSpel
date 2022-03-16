@@ -36,6 +36,7 @@ public class NewMovement : MonoBehaviour
         if (PauseController.isPaused == false)
         {
             animator.SetFloat("fastnes", Mathf.Abs(0));
+
             if (Input.GetKey("right") && transform.position.x <= +borderX)
             {
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
@@ -123,14 +124,23 @@ public class NewMovement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 PistolSelect();
+                animator.SetFloat("ar", Mathf.Abs(0));
+                animator.SetFloat("shotgun", Mathf.Abs(0));
+                animator.SetFloat("pistol", Mathf.Abs(1));
             }
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                 ShotgunSelect();
+                animator.SetFloat("ar", Mathf.Abs(0));
+                animator.SetFloat("shotgun", Mathf.Abs(1));
+                animator.SetFloat("pistol", Mathf.Abs(0));
             }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
                 AssaultRifleSelect();
+                animator.SetFloat("ar", Mathf.Abs(1));
+                animator.SetFloat("shotgun", Mathf.Abs(0));
+                animator.SetFloat("pistol", Mathf.Abs(0));
             }
         }
     }
