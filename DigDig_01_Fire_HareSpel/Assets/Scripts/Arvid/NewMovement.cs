@@ -32,37 +32,39 @@ public class NewMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
         if (PauseController.isPaused == false)
         {
-            if (Input.GetKey("right"))
+            animator.SetFloat("fastnes", Mathf.Abs(0));
+            if (Input.GetKey("right") && transform.position.x <= +borderX)
             {
                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
                 animator.SetFloat("fastnes", Mathf.Abs(1));
             }
-            else
-            { animator.SetFloat("fastnes", Mathf.Abs(0)); }
-            if (Input.GetKey("left"))
+
+
+            if (Input.GetKey("left") && transform.position.x >= -borderX)
             {
                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
                 animator.SetFloat("fastnes", Mathf.Abs(1));
             }
-            else
-            { animator.SetFloat("fastnes", Mathf.Abs(0)); }
-            if (Input.GetKey("up"))
+           
+
+            if (Input.GetKey("up") && transform.position.y <= +borderY)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
                 animator.SetFloat("fastnes", Mathf.Abs(1));
             }
-            else
-            { animator.SetFloat("fastnes", Mathf.Abs(0)); }
-            if (Input.GetKey("down"))
+            
+
+            if (Input.GetKey("down") && transform.position.y >= -borderY)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, transform.position.z);
                 animator.SetFloat("fastnes", Mathf.Abs(1));
             }
-            else 
-            { animator.SetFloat("fastnes", Mathf.Abs(0)); }
+            
+
+
 
             //Pistol fire
             if (Input.GetKey("space") && nextTimeToFire < Time.time && weaponSelect == "Pistol")
@@ -154,5 +156,3 @@ public class NewMovement : MonoBehaviour
         }
     }
 }
-
-
