@@ -1595,9 +1595,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 1580561859}
-  pistolUpgradeButton: {fileID: 0}
-  shotgunUpgradeButton: {fileID: 0}
-  assaultRifleUpgradeButton: {fileID: 0}
+  pistolUpgradeButton: {fileID: 726599769}
+  shotgunUpgradeButton: {fileID: 1263844595}
+  assaultRifleUpgradeButton: {fileID: 417377826}
 --- !u!114 &1634071080
 MonoBehaviour:
   m_ObjectHideFlags: 0
