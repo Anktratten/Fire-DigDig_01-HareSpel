@@ -1,7 +1,124 @@
 fileFormatVersion: 2
 guid: 99a1ab15f8ff48440a3ccdc49b138100
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7461874013117883461
+    second: Faktiska_knappar_0
+  - first:
+      213: 7237132048234581810
+    second: Faktiska_knappar_1
+  - first:
+      213: 9190279875749600550
+    second: Faktiska_knappar_2
+  - first:
+      213: 4673764530415344024
+    second: Faktiska_knappar_3
+  - first:
+      213: 5458562402161891274
+    second: Faktiska_knappar_4
+  - first:
+      213: 5243442706151601949
+    second: Faktiska_knappar_5
+  - first:
+      213: 2125483270397282211
+    second: Faktiska_knappar_6
+  - first:
+      213: -2609499527332680516
+    second: Faktiska_knappar_7
+  - first:
+      213: -4028273880295007186
+    second: Faktiska_knappar_8
+  - first:
+      213: 982681336719553720
+    second: Faktiska_knappar_9
+  - first:
+      213: 7380062116016182280
+    second: Faktiska_knappar_10
+  - first:
+      213: 4104059269000721265
+    second: Faktiska_knappar_11
+  - first:
+      213: 1127440562410847535
+    second: Faktiska_knappar_12
+  - first:
+      213: 6709766985813862585
+    second: Faktiska_knappar_13
+  - first:
+      213: 970785310587753359
+    second: Faktiska_knappar_14
+  - first:
+      213: 6572915202153332238
+    second: Faktiska_knappar_15
+  - first:
+      213: -7153361783308988241
+    second: Faktiska_knappar_16
+  - first:
+      213: 6673706784479430903
+    second: Faktiska_knappar_17
+  - first:
+      213: 4608389479826971937
+    second: Faktiska_knappar_18
+  - first:
+      213: -3228098492886902586
+    second: Faktiska_knappar_19
+  - first:
+      213: -6809668725426645771
+    second: Faktiska_knappar_20
+  - first:
+      213: 7134192327787224017
+    second: Faktiska_knappar_21
+  - first:
+      213: 6276747325791548492
+    second: Faktiska_knappar_22
+  - first:
+      213: -6478157361334238904
+    second: Faktiska_knappar_23
+  - first:
+      213: -1152529392004424892
+    second: Faktiska_knappar_24
+  - first:
+      213: -6430033579403452984
+    second: Faktiska_knappar_25
+  - first:
+      213: -5042740183690777657
+    second: Faktiska_knappar_26
+  - first:
+      213: 872127976725456144
+    second: Faktiska_knappar_27
+  - first:
+      213: -7393620362216633388
+    second: Faktiska_knappar_28
+  - first:
+      213: 1307569397347823295
+    second: Faktiska_knappar_29
+  - first:
+      213: -8479758388589815108
+    second: Faktiska_knappar_30
+  - first:
+      213: 1492355067590593711
+    second: Faktiska_knappar_31
+  - first:
+      213: 7700196389466722025
+    second: Faktiska_knappar_32
+  - first:
+      213: 3508280804936339298
+    second: Faktiska_knappar_33
+  - first:
+      213: -2851016530210229702
+    second: Faktiska_knappar_34
+  - first:
+      213: -9121459021078447892
+    second: Faktiska_knappar_35
+  - first:
+      213: -7212584490445281793
+    second: Faktiska_knappar_36
+  - first:
+      213: -6564961808593629006
+    second: Faktiska_knappar_37
+  - first:
+      213: -6103182947849365047
+    second: Faktiska_knappar_38
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +158,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -87,9 +204,840 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Faktiska_knappar_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 470
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbd369ae19127890800000000000000
+      internalID: -7461874013117883461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 469
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f0e9ff0457f6460800000000000000
+      internalID: 7237132048234581810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_2
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 471
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62dd974dade6a8f70800000000000000
+      internalID: 9190279875749600550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_3
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 470
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8991a37e31c8cd040800000000000000
+      internalID: 4673764530415344024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 439
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac799258595b0cb40800000000000000
+      internalID: 5458562402161891274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_5
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 438
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17774c3c5374c840800000000000000
+      internalID: 5243442706151601949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_6
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 442
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7c01ce5cb3f7d10800000000000000
+      internalID: 2125483270397282211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 442
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc29cf610239cbd0800000000000000
+      internalID: -2609499527332680516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 410
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c1803af32b818c0800000000000000
+      internalID: -4028273880295007186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 409
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b43392287f23ad00800000000000000
+      internalID: 982681336719553720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_10
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 418
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804567da46f3b6660800000000000000
+      internalID: 7380062116016182280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_11
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 418
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173ffe1392c84f830800000000000000
+      internalID: 4104059269000721265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 379
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d7dd3d73975af00800000000000000
+      internalID: 1127440562410847535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_13
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 378
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b824131681ed1d50800000000000000
+      internalID: 6709766985813862585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_14
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 379
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8310c6b81ce87d00800000000000000
+      internalID: 970785310587753359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_15
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 378
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e3d133d8fa73b50800000000000000
+      internalID: 6572915202153332238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_16
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 350
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa05304bb572abc90800000000000000
+      internalID: -7153361783308988241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_17
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 351
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8c20036f4cd9c50800000000000000
+      internalID: 6673706784479430903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_18
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 351
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ddbbbc0d944ff30800000000000000
+      internalID: 4608389479826971937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_19
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 351
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8908f168d7333d0800000000000000
+      internalID: -3228098492886902586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_20
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 351
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f49bd69f523f71a0800000000000000
+      internalID: -6809668725426645771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_21
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 351
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db1311af1eb10360800000000000000
+      internalID: 7134192327787224017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_22
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 351
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4430baef6c7b1750800000000000000
+      internalID: 6276747325791548492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_23
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 351
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841479ed336f816a0800000000000000
+      internalID: -6478157361334238904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_24
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 351
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b1164df946100f0800000000000000
+      internalID: -1152529392004424892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_25
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 351
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cdd2ddf68ee3c6a0800000000000000
+      internalID: -6430033579403452984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbe5804586940ab0800000000000000
+      internalID: -5042740183690777657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_27
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 319
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 015a66b26cb6a1c00800000000000000
+      internalID: 872127976725456144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_28
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 328
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db8bf12475946990800000000000000
+      internalID: -7393620362216633388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_29
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 328
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbea618607b652210800000000000000
+      internalID: 1307569397347823295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_30
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 328
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba17fa5ca8d15a80800000000000000
+      internalID: -8479758388589815108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_31
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 328
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faccd72f609e5b410800000000000000
+      internalID: 1492355067590593711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_32
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 328
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eec8ee91d79cda60800000000000000
+      internalID: 7700196389466722025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_33
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 310
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f4d8eedcaefa030800000000000000
+      internalID: 3508280804936339298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_34
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 291
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a327d0432972f68d0800000000000000
+      internalID: -2851016530210229702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_35
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 291
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8365f09511a6180800000000000000
+      internalID: -9121459021078447892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_36
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 267
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5648eae90c7eb90800000000000000
+      internalID: -7212584490445281793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_37
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 265
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b055ca840294e4a0800000000000000
+      internalID: -6564961808593629006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Faktiska_knappar_38
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 240
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9973ae1732d4ba0800000000000000
+      internalID: -6103182947849365047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
