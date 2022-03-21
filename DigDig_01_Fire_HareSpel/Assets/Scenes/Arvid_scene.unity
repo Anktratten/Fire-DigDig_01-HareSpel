@@ -240,9 +240,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d099548e18bf9b94b82b9e6dfe2d065c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pistolBunny: {fileID: 0}
-  shotgunBunny: {fileID: 0}
-  assaultRifleBunny: {fileID: 0}
+  pistolBunny: {fileID: -479205242042980878, guid: 7928874b451142f468d553969811ad0f, type: 3}
+  shotgunBunny: {fileID: -6049013903200436398, guid: 0ee73a8526c84af4b9d0f2f045427073, type: 3}
+  assaultRifleBunny: {fileID: 2716574123330718981, guid: 519a8192058ecc240aa3e6d003907174, type: 3}
   borderX: 8.57
   borderY: 4.7
   speed: 10

@@ -10,6 +10,10 @@ public class bullet : MonoBehaviour
         if (PauseController.isPaused == false)
         {
             transform.position = new Vector3(transform.position.x + bs * Time.deltaTime, transform.position.y, transform.position.z);
+            if (transform.position.x >= 9)
+            { 
+                Destroy(gameObject); 
+            }
         }
     }   
     void OnCollisionEnter2D(Collision2D collision)
