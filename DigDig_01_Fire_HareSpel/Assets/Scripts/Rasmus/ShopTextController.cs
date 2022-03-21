@@ -1,9 +1,8 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShotgunButton : MonoBehaviour
+public class ShopTextController : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,5 +14,9 @@ public class ShotgunButton : MonoBehaviour
     void Update()
     {
         
+    }
+    private void OnMouseEnter()
+    {
+
     }
 }
