@@ -10,9 +10,9 @@ public class UpgradeController : MonoBehaviour
 
     public static int coins = 0;
 
-    int pistolCost;
-    int shotgunCost;
-    int assaultRifleCost;
+    public static int pistolCost = 200;
+    public static int shotgunCost = 300;
+    public static int assaultRifleCost = 400;
     // Start is called before the first frame update
     void Start()
     {
