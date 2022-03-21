@@ -72,7 +72,7 @@ public class NewMovement : MonoBehaviour
             {
                 if (UpgradeController.pistolLevel == 1)
                 {
-                    Instantiate(pistolBullet, new Vector3(transform.position.x + 0.27f, transform.position.y -0.1f, 0), Quaternion.identity);
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 0.33f, transform.position.y -0.1f, 0), Quaternion.identity);
                 }
                 else if (UpgradeController.pistolLevel == 2)
                 {
@@ -108,7 +108,7 @@ public class NewMovement : MonoBehaviour
             {
                 if (UpgradeController.assaultRifleLevel == 1)
                 {
-                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 0.35f, transform.position.y -0.127f, 0), Quaternion.identity);
                 }
                 if (UpgradeController.assaultRifleLevel == 2)
                 {
