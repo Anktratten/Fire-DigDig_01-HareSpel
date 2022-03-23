@@ -13,10 +13,14 @@ public class ShopTextController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnMouseEnter()
     {
-
+        transform.GetChild(0).gameObject.SetActive(false);
+    }
+    private void OnMouseExit()
+    {
+        transform.GetChild(0).gameObject.SetActive(true);
     }
 }
