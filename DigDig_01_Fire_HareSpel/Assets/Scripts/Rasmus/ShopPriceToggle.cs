@@ -21,11 +21,11 @@ public class ShopPriceToggle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pistolCostText.SetText(" " + UpgradeController.pistolCost);
-        shotgunCostText.SetText(" " + UpgradeController.shotgunCost);
-        assaultRifleCostText.SetText(" " + UpgradeController.assaultRifleCost);
+        pistolCostText.SetText("" + UpgradeController.pistolCost);
+        shotgunCostText.SetText("" + UpgradeController.shotgunCost);
+        assaultRifleCostText.SetText("" + UpgradeController.assaultRifleCost);
 
-        coinsText.SetText(" " + UpgradeController.coins);
+        coinsText.SetText("" + UpgradeController.coins);
     }
 
 
