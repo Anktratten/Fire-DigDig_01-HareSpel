@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UpgradeController : MonoBehaviour
 {
@@ -8,11 +9,18 @@ public class UpgradeController : MonoBehaviour
     public static int shotgunLevel = 1;
     public static int assaultRifleLevel = 1;
 
-    public static int coins = 0;
+    public static int coins = 999;
 
     public static int pistolCost = 200;
     public static int shotgunCost = 300;
     public static int assaultRifleCost = 400;
+
+    public GameObject pistolUpgradeButton;
+    public GameObject shotgunUpgradeButton;
+    public GameObject assaultRifleUpgradeButton;
+
+    public SpriteState maxUpgrade;
+
     // Start is called before the first frame update
     void Start()
     {

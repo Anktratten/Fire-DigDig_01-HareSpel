@@ -762,8 +762,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.25, y: 0}
-  m_SizeDelta: {x: 104.17139, y: 36.0036}
+  m_AnchoredPosition: {x: 1.3963089, y: 0}
+  m_SizeDelta: {x: 110, y: 36.0036}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &286044371
 MonoBehaviour:
@@ -1502,7 +1502,7 @@ GameObject:
   - component: {fileID: 747643872}
   - component: {fileID: 747643871}
   m_Layer: 5
-  m_Name: Shotgun cost text
+  m_Name: AssaultRifle cost text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1525,7 +1525,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1.25, y: 0}
-  m_SizeDelta: {x: 104.17139, y: 36.0036}
+  m_SizeDelta: {x: 110, y: 36.0036}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &747643871
 MonoBehaviour:
@@ -1851,6 +1851,7 @@ GameObject:
   - component: {fileID: 1580561860}
   - component: {fileID: 1580561862}
   - component: {fileID: 1580561861}
+  - component: {fileID: 1580561863}
   m_Layer: 4
   m_Name: Shop
   m_TagString: Untagged
@@ -1919,6 +1920,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580561859}
   m_CullTransparentMesh: 1
+--- !u!114 &1580561863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580561859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf2bad84cde28e42b7736f622fe82a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pistolCostText: {fileID: 286044371}
+  shotgunCostText: {fileID: 2106972576}
+  assaultRifleCostText: {fileID: 747643871}
+  coinsText: {fileID: 1799215442}
 --- !u!1 &1634071077
 GameObject:
   m_ObjectHideFlags: 0
@@ -4857,8 +4874,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42, y: 44}
-  m_SizeDelta: {x: 104.17139, y: 36.0036}
+  m_AnchoredPosition: {x: 43.974762, y: 44}
+  m_SizeDelta: {x: 135.7677, y: 36.0036}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1799215442
 MonoBehaviour:
@@ -5094,7 +5111,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1.25, y: 0}
-  m_SizeDelta: {x: 104.17139, y: 36.0036}
+  m_SizeDelta: {x: 110, y: 36.0036}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2106972576
 MonoBehaviour:
