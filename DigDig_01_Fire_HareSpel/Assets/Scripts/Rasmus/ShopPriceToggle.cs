@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class ShopPriceToggle : MonoBehaviour
@@ -18,11 +19,14 @@ public class ShopPriceToggle : MonoBehaviour
 
     }
 
-    private void DisableText()
+    public void DisableText()
     {
-        transform.GetChild(0).gameObject.SetActive(false);
+        if (gameObject.GetComponent<Button>().interactable == true)
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+        }
     }
-    private void EnableText()
+    public void EnableText()
     {
         transform.GetChild(0).gameObject.SetActive(true);
     }

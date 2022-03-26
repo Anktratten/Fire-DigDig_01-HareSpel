@@ -19,6 +19,8 @@ public class UpgradeController : MonoBehaviour
     public GameObject shotgunUpgradeButton;
     public GameObject assaultRifleUpgradeButton;
 
+
+
     public SpriteState maxUpgrade;
 
     // Start is called before the first frame update
