@@ -23,15 +23,18 @@ public class UpgradeController : MonoBehaviour
     int[] shotgunPrices = { 150, 200, 280, 400 };
     int[] assaultRiflePrices = { 180, 220, 320, 450 };
 
-
-    public SpriteState maxUpgrade;
+    public Sprite maxUpgradeSprite;
+    public SpriteState lockedUpgrade;
 
     // Start is called before the first frame update
     void Start()
     {
-        pistolCost = pistolPrices[pistolLevel + 1];
-        shotgunCost = shotgunPrices[shotgunLevel + 1];
-        assaultRifleCost = assaultRiflePrices[assaultRifleLevel + 1];
+        pistolCost = pistolPrices[pistolLevel];
+        shotgunCost = shotgunPrices[shotgunLevel];
+        assaultRifleCost = assaultRiflePrices[assaultRifleLevel];
+
+        SpriteState lockedUpgradesSpriteStates = new SpriteState();
+        lockedUpgradesSpriteStates.disabledSprite = maxUpgradeSprite;
     }
 
     // Update is called once per frame
@@ -50,7 +53,8 @@ public class UpgradeController : MonoBehaviour
         }
         if (pistolLevel == 3)
         {
-            //Lock upgrades
+            GetComponent<Button>().spriteState = lockedUpgrade;
+            pistolUpgradeButton.GetComponent<Button>().interactable = false;
         }
     }
     public void ShotgunUpgrade()
@@ -58,11 +62,13 @@ public class UpgradeController : MonoBehaviour
         if (coins >= shotgunCost)
         {
             coins = coins - shotgunCost;
+            shotgunLevel++;
             shotgunCost = shotgunPrices[shotgunLevel];
         }
         if (shotgunLevel == 3)
         {
-            //Lock upgrades
+            GetComponent<Button>().spriteState = lockedUpgrade;
+            shotgunUpgradeButton.GetComponent<Button>().interactable = false;
         }
     }
     public void AssaultRifleUpgrade()
@@ -75,7 +81,8 @@ public class UpgradeController : MonoBehaviour
         }
         if (assaultRifleLevel == 3)
         {
-            //Lock upgrades
+            GetComponent<Button>().spriteState = lockedUpgrade;
+            shotgunUpgradeButton.GetComponent<Button>().interactable = false;
         }
     }
 }
