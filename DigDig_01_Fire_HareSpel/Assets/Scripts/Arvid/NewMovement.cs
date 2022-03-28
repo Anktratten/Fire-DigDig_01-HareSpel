@@ -22,6 +22,7 @@ public class NewMovement : MonoBehaviour
     public static float assaultRifleCooldown = 0.1f;
 
     public Animator animator;
+    bool dead;
 
     // Start is called before the first frame update
     void Start()
@@ -37,34 +38,36 @@ public class NewMovement : MonoBehaviour
         {
             animator.SetFloat("fastnes", Mathf.Abs(0));
 
+            if (dead == false)
+            { 
             if (Input.GetKey("right") && transform.position.x <= +borderX)
-            {
-                transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
-                animator.SetFloat("fastnes", Mathf.Abs(1));
-            }
+             {
+                 transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y, transform.position.z);
+                 animator.SetFloat("fastnes", Mathf.Abs(1));
+             }
 
 
-            if (Input.GetKey("left") && transform.position.x >= -borderX)
-            {
-                transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
-                animator.SetFloat("fastnes", Mathf.Abs(1));
-            }
+             if (Input.GetKey("left") && transform.position.x >= -borderX)
+             {
+                 transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
+                 animator.SetFloat("fastnes", Mathf.Abs(1));
+             }
            
 
-            if (Input.GetKey("up") && transform.position.y <= +borderY)
-            {
-                transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
-                animator.SetFloat("fastnes", Mathf.Abs(1));
-            }
+             if (Input.GetKey("up") && transform.position.y <= +borderY)
+             {
+                 transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
+                 animator.SetFloat("fastnes", Mathf.Abs(1));
+             }
             
 
-            if (Input.GetKey("down") && transform.position.y >= -borderY)
-            {
-                transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, transform.position.z);
-                animator.SetFloat("fastnes", Mathf.Abs(1));
-            }
+             if (Input.GetKey("down") && transform.position.y >= -borderY)
+             {
+                 transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, transform.position.z);
+                 animator.SetFloat("fastnes", Mathf.Abs(1));
+             }
             
-
+            }
 
 
             //Pistol fire
@@ -144,6 +147,15 @@ public class NewMovement : MonoBehaviour
                 animator.SetFloat("shotgun", Mathf.Abs(0));
 
             }
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            animator.SetFloat("Death", Mathf.Abs(1));
+            dead = true;
         }
     }
     void PistolSelect()
