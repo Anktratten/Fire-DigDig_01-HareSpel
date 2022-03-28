@@ -6,19 +6,22 @@ using UnityEngine.UI;
 public class UpgradeController : MonoBehaviour
 {
     public static int pistolLevel = 1;
-    public static int shotgunLevel = 1;
-    public static int assaultRifleLevel = 1;
+    public static int shotgunLevel = 0;
+    public static int assaultRifleLevel = 0;
 
     public static int coins = 999;
 
-    public static int pistolCost = 200;
-    public static int shotgunCost = 300;
-    public static int assaultRifleCost = 400;
+    public static int pistolCost;
+    public static int shotgunCost;
+    public static int assaultRifleCost;
 
     public GameObject pistolUpgradeButton;
     public GameObject shotgunUpgradeButton;
     public GameObject assaultRifleUpgradeButton;
 
+    int[] pistolPrices = {0, 100, 150, 250};
+    int[] shotgunPrices = { 150, 200, 280, 400 };
+    int[] assaultRiflePrices = { 180, 220, 320, 450 };
 
 
     public SpriteState maxUpgrade;
@@ -26,7 +29,9 @@ public class UpgradeController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        pistolCost = pistolPrices[pistolLevel + 1];
+        shotgunCost = shotgunPrices[shotgunLevel + 1];
+        assaultRifleCost = assaultRiflePrices[assaultRifleLevel + 1];
     }
 
     // Update is called once per frame
@@ -41,8 +46,7 @@ public class UpgradeController : MonoBehaviour
         {
             coins = coins - pistolCost;
             pistolLevel++;
-            //Decrease cooldown
-            //Increase cost
+            pistolCost = pistolPrices[pistolLevel];
         }
         if (pistolLevel == 3)
         {
@@ -54,9 +58,7 @@ public class UpgradeController : MonoBehaviour
         if (coins >= shotgunCost)
         {
             coins = coins - shotgunCost;
-            shotgunLevel++;
-            //Decrease cooldown
-            //Increase cost
+            shotgunCost = shotgunPrices[shotgunLevel];
         }
         if (shotgunLevel == 3)
         {
@@ -69,8 +71,7 @@ public class UpgradeController : MonoBehaviour
         {
             coins = coins - assaultRifleCost;
             assaultRifleLevel++;
-            //Decrease cooldown
-            //Increase cost
+            assaultRifleCost = assaultRiflePrices[assaultRifleLevel];
         }
         if (assaultRifleLevel == 3)
         {
