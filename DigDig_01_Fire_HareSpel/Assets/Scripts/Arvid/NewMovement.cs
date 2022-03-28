@@ -132,14 +132,14 @@ public class NewMovement : MonoBehaviour
                 animator.SetFloat("shotgun", Mathf.Abs(0));
 
             }
-            if (Input.GetKeyDown(KeyCode.Alpha2))
+            if (Input.GetKeyDown(KeyCode.Alpha2) && UpgradeController.shotgunLevel>0)
             {
                 ShotgunSelect();
                 animator.SetFloat("ar", Mathf.Abs(0));
                 animator.SetFloat("pistol", Mathf.Abs(0));
                 animator.SetFloat("shotgun", Mathf.Abs(1));
             }
-            if (Input.GetKeyDown(KeyCode.Alpha3))
+            if (Input.GetKeyDown(KeyCode.Alpha3) && UpgradeController.assaultRifleLevel>0)
             {
                 AssaultRifleSelect();
                 animator.SetFloat("ar", Mathf.Abs(1));
