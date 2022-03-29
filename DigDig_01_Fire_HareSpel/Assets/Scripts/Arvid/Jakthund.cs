@@ -16,7 +16,7 @@ public class Jakthund : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hp = 3;
+        hp = 1;
         ScoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
     }
 
@@ -40,6 +40,7 @@ public class Jakthund : MonoBehaviour
             if (hp < 1 && dead == false)
             {
                 ScoreText.GetComponent<Score>().addscore(100);
+                gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
                 animator.SetFloat("Death", Mathf.Abs(1));
                 dead = true;
                 Invoke("yeet", delay);

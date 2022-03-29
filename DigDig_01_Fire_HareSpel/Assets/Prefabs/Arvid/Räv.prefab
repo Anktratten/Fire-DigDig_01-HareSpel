@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2628867040997036154}
   - component: {fileID: 2628867040997036155}
   - component: {fileID: 2628867040997036152}
+  - component: {fileID: -5135605276925296492}
   m_Layer: 0
   m_Name: "R\xE4v"
   m_TagString: Enemy
@@ -98,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 13
   startup: 2
+  animator: {fileID: -5135605276925296492}
 --- !u!61 &2628867040997036152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124,3 +126,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.53}
   m_EdgeRadius: 0
+--- !u!95 &-5135605276925296492
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2628867040997036148}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e584203b500726f438c98a46354320a4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
