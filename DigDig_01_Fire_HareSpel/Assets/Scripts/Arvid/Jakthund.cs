@@ -5,16 +5,19 @@ using UnityEngine.UI;
 
 public class Jakthund : MonoBehaviour
 {
-    int speed = 3;
-    int plats = 5;
-    int hp = 3;
+    public int speed = 3;
+    int hp;
+    float delay = 0.5f;
+    bool dead;
     Text ScoreText;
     public GameObject Player;
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
-        
-
+        hp = 3;
+        ScoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -22,20 +25,29 @@ public class Jakthund : MonoBehaviour
     {
         if (PauseController.isPaused == false)
         {
-            if (Player.transform.position.y > transform.position.y)
+            if (dead == false)
             {
-                transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y + plats * Time.deltaTime, transform.position.z);
+                if (Player.transform.position.y > transform.position.y)
+                {
+                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y + speed * Time.deltaTime, transform.position.z);
+                }
+
+                if (Player.transform.position.y < transform.position.y)
+                {
+                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y - speed * Time.deltaTime, transform.position.z);
+                }
+            }
+            if (hp < 1 && dead == false)
+            {
+                ScoreText.GetComponent<Score>().addscore(100);
+                animator.SetFloat("Death", Mathf.Abs(1));
+                dead = true;
+                Invoke("yeet", delay);
             }
 
-            if (Player.transform.position.y < transform.position.y)
-            {
-                transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y - plats * Time.deltaTime, transform.position.z);
-            }
-
-            if (hp < 1)
+            if (transform.position.x < -15)
             {
                 Destroy(gameObject);
-                ScoreText.GetComponent<Score>().addscore(100);
             }
         }
     }
@@ -46,5 +58,9 @@ public class Jakthund : MonoBehaviour
             hp--;
         }
 
+    }
+    void yeet()
+    {
+        Destroy(gameObject);
     }
 }
