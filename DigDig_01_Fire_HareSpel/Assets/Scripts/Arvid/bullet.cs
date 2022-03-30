@@ -5,11 +5,20 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
     public int bs; //bs = BulletSpeed
+    bool walled;
     void Update()
     {
         if (PauseController.isPaused == false)
         {
-            transform.position = new Vector3(transform.position.x + bs * Time.deltaTime, transform.position.y, transform.position.z);
+            if (walled == false)
+            {
+                transform.position = new Vector3(transform.position.x + bs * Time.deltaTime, transform.position.y, transform.position.z);
+            }
+            else
+            {
+                transform.position = new Vector3(transform.position.x - bs * Time.deltaTime, transform.position.y, transform.position.z);
+            }
+            
             if (transform.position.x >= 9)
             { 
                 Destroy(gameObject); 
@@ -24,7 +33,7 @@ public class bullet : MonoBehaviour
         }
         if (collision.gameObject.tag == "wall")
         {
-
+            walled = true;
         }
     }
 }
