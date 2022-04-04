@@ -157,6 +157,7 @@ public class NewMovement : MonoBehaviour
         {
             animator.SetFloat("Death", Mathf.Abs(1));
             dead = true;
+            gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
         }
     }
     void PistolSelect()
