@@ -13,19 +13,21 @@ public class Movement : MonoBehaviour
     public float borderY = 4.7f;
 
     public int speed;
-    public Transform pistolBullet;
-    public float coolDown; //Satt i editorn
     float nextTimeToFire = 0;
     string weaponSelect = "Pistol";
 
-    public static float pistolCooldown = 0.5f;
-    public static float shotgunCooldown = 1f;
-    public static float assaultRifleCooldown = 0.1f;
-    
+    float[] pistolCooldown = {0.75f, 0.5f, 0.25f};
+    float[] shotgunCooldown = {2f, 1.5f, 1f};
+    float[] assaultRifleCooldown = {0.25f, 0.20f, 0.15f};
+
+    public GameObject pistolBullet;
+    public GameObject shotgunBullet;
+    public GameObject assaultRifleBullet;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        Debug.Log(pistolCooldown[0]);
     }
 
     // Update is called once per frame
@@ -56,52 +58,63 @@ public class Movement : MonoBehaviour
                 if (UpgradeController.pistolLevel == 1)
                 {
                     Instantiate(pistolBullet, new Vector3(transform.position.x + 0.21f, transform.position.y -0.11f), Quaternion.identity);
+                    nextTimeToFire = Time.time + pistolCooldown[0];
                 }
                 else if (UpgradeController.pistolLevel == 2)
                 {
-                    //Pistol fire level 2
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 0.21f, transform.position.y - 0.11f), Quaternion.identity);
+                    nextTimeToFire = Time.time + pistolCooldown[1];
                 }
                 else if (UpgradeController.pistolLevel == 3)
                 {
-                    //Pistol fire level 3
+                    Instantiate(pistolBullet, new Vector3(transform.position.x + 0.21f, transform.position.y - 0.11f), Quaternion.identity);
+                    nextTimeToFire = Time.time + pistolCooldown [2];
                 }
-                nextTimeToFire = Time.time + pistolCooldown;
             }
             //Shotgun fire
             if (Input.GetKey("space") && nextTimeToFire < Time.time && weaponSelect == "Shotgun")
             {
                 if (UpgradeController.shotgunLevel == 1)
                 {
-                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
-                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, + 1), Quaternion.identity);
-                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, - 1), Quaternion.identity);
+                    Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, + 1), Quaternion.identity);
+                    Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, - 1), Quaternion.identity);
+                    nextTimeToFire = Time.time + shotgunCooldown[0];
                 }
                 else if (UpgradeController.shotgunLevel == 2)
                 {
-                    //Shotgun fire level 2
+                    Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +1), Quaternion.identity);
+                    Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +0), Quaternion.identity);
+                    Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, -1), Quaternion.identity);
+                    nextTimeToFire = Time.time + shotgunCooldown[1];
                 }
                 else if (UpgradeController.shotgunLevel == 3)
                 {
-                    //Shotgun fire level 3
+                    Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +2), Quaternion.identity);
+                    Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +1), Quaternion.identity);
+                    Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +0), Quaternion.identity);
+                    Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, -1), Quaternion.identity);
+                    Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, -2), Quaternion.identity);
+                    nextTimeToFire = Time.time + shotgunCooldown[2];
                 }
-                nextTimeToFire = Time.time + shotgunCooldown;
             }
             //AssaultRifle fire
             if (Input.GetKey("space") && nextTimeToFire < Time.time && weaponSelect == "AssaultRifle")
             {
                 if (UpgradeController.assaultRifleLevel == 1)
                 {
-                    Instantiate(pistolBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
+                    Instantiate(assaultRifleBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
+                    nextTimeToFire = Time.time + assaultRifleCooldown[0];
                 }
                 if (UpgradeController.assaultRifleLevel == 2)
                 {
-                    //Fire assault rifle level 2
+                    Instantiate(assaultRifleBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
+                    nextTimeToFire = Time.time + assaultRifleCooldown[1];
                 }
                 if (UpgradeController.assaultRifleLevel == 3)
                 {
-                    //Fire assault rifle level 3
+                    Instantiate(assaultRifleBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
+                    nextTimeToFire = Time.time + assaultRifleCooldown[2];
                 }
-                nextTimeToFire = Time.time + assaultRifleCooldown;
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha1))
