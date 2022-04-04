@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; 
 
-public class Fox : MonoBehaviour
+public class Jakthund_Weak : MonoBehaviour
 {
-    public int speed;
-    public int startup;
-    Text ScoreText;
+    public int speed = 3;
     int hp;
-    bool dead;
     float delay = 0.5f;
+    bool dead;
+    Text ScoreText;
+    public GameObject Player;
     public Animator animator;
 
     // Start is called before the first frame update
@@ -27,42 +27,41 @@ public class Fox : MonoBehaviour
         {
             if (dead == false)
             {
-                if (transform.position.x < 8)
+                if (Player.transform.position.y > transform.position.y)
                 {
+                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y + speed * Time.deltaTime, transform.position.z);
+                }
 
-                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
-                }
-                else
+                if (Player.transform.position.y < transform.position.y)
                 {
-                    transform.position = new Vector3(transform.position.x - startup * Time.deltaTime, transform.position.y, transform.position.z);
+                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y - speed * Time.deltaTime, transform.position.z);
                 }
-            }
-            if (transform.position.x < -15)
-            {
-                Destroy(gameObject);
             }
             if (hp < 1 && dead == false)
             {
-                
                 ScoreText.GetComponent<Score>().addscore(100);
                 gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
                 animator.SetFloat("Death", Mathf.Abs(1));
                 dead = true;
                 Invoke("yeet", delay);
             }
-            
+
+            if (transform.position.x < -15)
+            {
+                Destroy(gameObject);
+            }
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            hp --;
+            hp--;
         }
 
     }
     void yeet()
-    { 
-        Destroy(gameObject); 
+    {
+        Destroy(gameObject);
     }
 }

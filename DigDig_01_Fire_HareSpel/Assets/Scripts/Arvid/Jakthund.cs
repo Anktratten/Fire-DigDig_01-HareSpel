@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class Jakthund : MonoBehaviour
 {
-    int speed = 1;
-    int plats = 0;
+    public int speed = 3;
     int hp;
+    float delay = 0.5f;
     bool dead;
     Text ScoreText;
     public GameObject Player;
@@ -29,19 +29,21 @@ public class Jakthund : MonoBehaviour
             {
                 if (Player.transform.position.y > transform.position.y)
                 {
-                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y + plats * Time.deltaTime, transform.position.z);
+                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y + speed * Time.deltaTime, transform.position.z);
                 }
 
                 if (Player.transform.position.y < transform.position.y)
                 {
-                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y - plats * Time.deltaTime, transform.position.z);
+                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y - speed * Time.deltaTime, transform.position.z);
                 }
             }
             if (hp < 1 && dead == false)
             {
                 ScoreText.GetComponent<Score>().addscore(100);
+                gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
                 animator.SetFloat("Death", Mathf.Abs(1));
                 dead = true;
+                Invoke("yeet", delay);
             }
 
             if (transform.position.x < -15)
@@ -57,5 +59,9 @@ public class Jakthund : MonoBehaviour
             hp--;
         }
 
+    }
+    void yeet()
+    {
+        Destroy(gameObject);
     }
 }

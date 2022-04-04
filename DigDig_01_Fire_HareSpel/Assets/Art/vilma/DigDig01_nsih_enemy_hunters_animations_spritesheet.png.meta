@@ -1,7 +1,115 @@
 fileFormatVersion: 2
 guid: ab4a81d93462a144a8e2e979b829a5da
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5897432350772312138
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_0
+  - first:
+      213: 7389694485341084866
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_1
+  - first:
+      213: 4218063745112157936
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_2
+  - first:
+      213: 7120491210934357917
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_3
+  - first:
+      213: -2407576650173039343
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_4
+  - first:
+      213: -2273299355247105969
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_5
+  - first:
+      213: -393231922667169259
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_6
+  - first:
+      213: 1816841951335952147
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_7
+  - first:
+      213: -2671071917176226799
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_8
+  - first:
+      213: 4563080056151850471
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_9
+  - first:
+      213: 580330281121971198
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_10
+  - first:
+      213: -217487689084316308
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_11
+  - first:
+      213: -3704248027514835736
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_12
+  - first:
+      213: -4618494686411100842
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_13
+  - first:
+      213: -336827063575998697
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_14
+  - first:
+      213: -1707470813516533468
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_15
+  - first:
+      213: 4165489221650160109
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_16
+  - first:
+      213: 5985965515284380429
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_17
+  - first:
+      213: 3511412278002267142
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_18
+  - first:
+      213: 5309604018811924400
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_19
+  - first:
+      213: -1797852556442932309
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_20
+  - first:
+      213: -6376825635843461668
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_21
+  - first:
+      213: -810836685653547934
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_22
+  - first:
+      213: 9020646830541342492
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_23
+  - first:
+      213: 8591317901000691863
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_24
+  - first:
+      213: 7724992155326841174
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_25
+  - first:
+      213: 1474382643350586247
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_26
+  - first:
+      213: 4447036216379890549
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_27
+  - first:
+      213: 6910894355712946450
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_28
+  - first:
+      213: 228600962745468809
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_29
+  - first:
+      213: -172480644612483038
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_30
+  - first:
+      213: -5807126751725259829
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_31
+  - first:
+      213: -3701356333868013964
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_32
+  - first:
+      213: -4065183069865134574
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_33
+  - first:
+      213: 2177385673865523887
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_34
+  - first:
+      213: -2957003996071073029
+    second: DigDig01_nsih_enemy_hunters_animations_spritesheet_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +149,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -89,7 +197,763 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a483ea22a73e7d150800000000000000
+      internalID: 5897432350772312138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc1b6d6bf77d8660800000000000000
+      internalID: 7389694485341084866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe2d5fb0a2998a30800000000000000
+      internalID: 4218063745112157936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f8806c70111d260800000000000000
+      internalID: 7120491210934357917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d39e4eac1969ed0800000000000000
+      internalID: -2407576650173039343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f482f56e74e9370e0800000000000000
+      internalID: -2273299355247105969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a541756a5fa8af0800000000000000
+      internalID: -393231922667169259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f2862f028b63910800000000000000
+      internalID: 1816841951335952147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c70374e327eead0800000000000000
+      internalID: -2671071917176226799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7edb9948221535f30800000000000000
+      internalID: 4563080056151850471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb7da2e05fbd0800800000000000000
+      internalID: 580330281121971198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65db1d59145bfcf0800000000000000
+      internalID: -217487689084316308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec69008b0ed79cc0800000000000000
+      internalID: -3704248027514835736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65def637d8fc7efb0800000000000000
+      internalID: -4618494686411100842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f80dcf199535bf0800000000000000
+      internalID: -336827063575998697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421fff77758dd48e0800000000000000
+      internalID: -1707470813516533468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de91d2c906acec930800000000000000
+      internalID: 4165489221650160109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b7340dbeb621350800000000000000
+      internalID: 5985965515284380429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6043542dcda0bb030800000000000000
+      internalID: 3511412278002267142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf654f39b08fa940800000000000000
+      internalID: 5309604018811924400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babe0b610aebc07e0800000000000000
+      internalID: -1797852556442932309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd22fcbed6f087a0800000000000000
+      internalID: -6376825635843461668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264e3c494545fb4f0800000000000000
+      internalID: -810836685653547934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c178baabf76cf2d70800000000000000
+      internalID: 9020646830541342492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790d999bc1e7a3770800000000000000
+      internalID: 8591317901000691863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6518feebf6fa43b60800000000000000
+      internalID: 7724992155326841174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783c9e7d33f067410800000000000000
+      internalID: 1474382643350586247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57bde9c90eb07bd30800000000000000
+      internalID: 4447036216379890549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211b5801dcd68ef50800000000000000
+      internalID: 6910894355712946450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98781cb4d572c2300800000000000000
+      internalID: 228600962745468809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2281e3f74c93b9df0800000000000000
+      internalID: -172480644612483038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc37fbd9cf0f86fa0800000000000000
+      internalID: -5807126751725259829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476a7a4660422acc0800000000000000
+      internalID: -3701356333868013964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216b1c549819597c0800000000000000
+      internalID: -4065183069865134574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa277cdebb0a73e10800000000000000
+      internalID: 2177385673865523887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_hunters_animations_spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfae5ce488c96f6d0800000000000000
+      internalID: -2957003996071073029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
