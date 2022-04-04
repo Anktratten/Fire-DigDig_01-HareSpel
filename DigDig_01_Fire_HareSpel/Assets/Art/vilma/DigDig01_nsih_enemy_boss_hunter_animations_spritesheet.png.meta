@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 93508861ca34d904bbf18e77647c0515
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6535138321451216574
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_0
+  - first:
+      213: -5988205123379627479
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_1
+  - first:
+      213: -1740761297244676070
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_2
+  - first:
+      213: 7500661663895761542
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_3
+  - first:
+      213: -51999376020775097
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_4
+  - first:
+      213: -752798940515892724
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_5
+  - first:
+      213: -250889761598944712
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_6
+  - first:
+      213: 3474769461279552717
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_7
+  - first:
+      213: 1855324143592920077
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_8
+  - first:
+      213: 3126940588465462726
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +119,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe6420cda971ba50800000000000000
+      internalID: 6535138321451216574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a78caca2f95eca0800000000000000
+      internalID: -5988205123379627479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10abf6b2d297d7e0800000000000000
+      internalID: -1740761297244676070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682b5e80b04b71860800000000000000
+      internalID: 7500661663895761542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f5dbfc7d2474ff0800000000000000
+      internalID: -51999376020775097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0282432a558d85f0800000000000000
+      internalID: -752798940515892724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83acc125719a48cf0800000000000000
+      internalID: -250889761598944712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc471f73a6cd83030800000000000000
+      internalID: 3474769461279552717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04df0a8a7f6fb910800000000000000
+      internalID: 1855324143592920077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd1c31e5ef156b20800000000000000
+      internalID: 3126940588465462726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

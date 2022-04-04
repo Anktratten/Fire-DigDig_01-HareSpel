@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UI; 
 
-public class Jakthund : MonoBehaviour
+public class Jakthund_Weak : MonoBehaviour
 {
     public int speed = 3;
     int hp;
@@ -16,7 +16,7 @@ public class Jakthund : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hp = 3;
+        hp = 1;
         ScoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
     }
 
