@@ -9,7 +9,7 @@ public class UpgradeController : MonoBehaviour
     public static int shotgunLevel = 0;
     public static int assaultRifleLevel = 0;
 
-    public static int coins = 999;
+    public static int coins = 9999;
 
     public static int pistolCost;
     public static int shotgunCost;
