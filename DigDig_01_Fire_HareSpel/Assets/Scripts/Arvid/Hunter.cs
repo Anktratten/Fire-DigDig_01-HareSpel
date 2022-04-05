@@ -17,6 +17,7 @@ public class Hunter : MonoBehaviour
     float nextTimeToFire = 0;
     public Transform Shot;
 
+    bool transporting = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,13 +34,14 @@ public class Hunter : MonoBehaviour
             {
                 animator.SetFloat("fastnes", Mathf.Abs(0));
 
-                if (transform.position.x < 8)
+                if (transform.position.x <= 7 && transporting == true)
                 {
                     transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y + speed * Time.deltaTime, transform.position.z);
                     animator.SetFloat("fastnes", Mathf.Abs(1));
                 }
-                else if (transform.position.x > 8)
+                else if (transform.position.x >= 7)
                 {
+                    transporting = false;
                     transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y - speed * Time.deltaTime, transform.position.z);
                     animator.SetFloat("fastnes", Mathf.Abs(1));
                 }
