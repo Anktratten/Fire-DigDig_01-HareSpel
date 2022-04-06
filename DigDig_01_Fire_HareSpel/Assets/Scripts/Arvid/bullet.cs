@@ -23,6 +23,11 @@ public class bullet : MonoBehaviour
             { 
                 Destroy(gameObject); 
             }
+
+            if (transform.position.x < -15)
+            {
+                Destroy(gameObject);
+            }
         }
     }   
     void OnCollisionEnter2D(Collision2D collision)
@@ -34,6 +39,10 @@ public class bullet : MonoBehaviour
         if (collision.gameObject.tag == "wall")
         {
             walled = true;
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
+            gameObject.tag = "Enemy";
         }
     }
 }

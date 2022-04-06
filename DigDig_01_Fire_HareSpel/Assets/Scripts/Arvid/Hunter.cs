@@ -76,7 +76,7 @@ public class Hunter : MonoBehaviour
         if (hp < 1 && dead == false)
         {
             dead = true;
-            ScoreText.GetComponent<Score>().addscore(100);
+            ScoreText.GetComponent<Score>().addscore(200);
             gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
             animator.SetFloat("Death", Mathf.Abs(1));
             

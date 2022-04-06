@@ -229,7 +229,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: fastnes
-    m_EventTreshold: 2
+    m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4405469711855623705}
   m_Solo: 0
