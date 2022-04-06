@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea90321ff10d8784d986fde486398611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2
   Player: {fileID: 0}
   animator: {fileID: 3134224540510895817}
   Cooldown: 1
