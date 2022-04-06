@@ -23,6 +23,8 @@ public class NewMovement : MonoBehaviour
 
     public Animator animator;
     bool dead;
+    public int liv = 5;
+    public float delay = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -127,9 +129,7 @@ public class NewMovement : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
                     PistolSelect();
-                    animator.SetFloat("ar", Mathf.Abs(0));
-                    animator.SetFloat("pistol", Mathf.Abs(1));
-                    animator.SetFloat("shotgun", Mathf.Abs(0));
+                 
 
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha2) && UpgradeController.shotgunLevel > 0)
@@ -142,9 +142,7 @@ public class NewMovement : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Alpha3) && UpgradeController.assaultRifleLevel > 0)
                 {
                     AssaultRifleSelect();
-                    animator.SetFloat("ar", Mathf.Abs(1));
-                    animator.SetFloat("pistol", Mathf.Abs(0));
-                    animator.SetFloat("shotgun", Mathf.Abs(0));
+                   
 
                 }
             }
@@ -155,30 +153,45 @@ public class NewMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            animator.SetFloat("Death", Mathf.Abs(1));
+            animator.SetFloat("Death", Mathf.Abs(2));
             dead = true;
             gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
+            liv--;
+            Invoke("paus", delay);
+            Invoke("PistolSelect", 0.1f);
         }
     }
     void PistolSelect()
     {
-        weaponSelect = "Pistol";
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = pistolBunny;
+           weaponSelect = "Pistol";
+           animator.SetFloat("ar", Mathf.Abs(0));
+           animator.SetFloat("pistol", Mathf.Abs(1));
+           animator.SetFloat("shotgun", Mathf.Abs(0));
     }
     void ShotgunSelect()
     {
         if (UpgradeController.shotgunLevel >= 1)
         {
             weaponSelect = "Shotgun";
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = shotgunBunny;
+            animator.SetFloat("ar", Mathf.Abs(0));
+            animator.SetFloat("pistol", Mathf.Abs(0));
+            animator.SetFloat("shotgun", Mathf.Abs(1));
         }
     }
     void AssaultRifleSelect()
     {
         if (UpgradeController.assaultRifleLevel >= 1)
         {
-            weaponSelect = "AssaultRifle";
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = assaultRifleBunny;
+              weaponSelect = "AssaultRifle";
+              animator.SetFloat("ar", Mathf.Abs(1));
+              animator.SetFloat("pistol", Mathf.Abs(0));
+              animator.SetFloat("shotgun", Mathf.Abs(0));
         }
+    }
+    void paus()
+    {
+        animator.SetFloat("Death", Mathf.Abs(0));
+        dead = false;
+        gameObject.GetComponent<CircleCollider2D>().isTrigger = false;
     }
 }
