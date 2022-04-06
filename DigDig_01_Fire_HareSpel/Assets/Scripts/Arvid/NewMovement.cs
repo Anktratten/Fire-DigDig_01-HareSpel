@@ -135,9 +135,7 @@ public class NewMovement : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Alpha2) && UpgradeController.shotgunLevel > 0)
                 {
                     ShotgunSelect();
-                    animator.SetFloat("ar", Mathf.Abs(0));
-                    animator.SetFloat("pistol", Mathf.Abs(0));
-                    animator.SetFloat("shotgun", Mathf.Abs(1));
+
                 }
                 if (Input.GetKeyDown(KeyCode.Alpha3) && UpgradeController.assaultRifleLevel > 0)
                 {
@@ -158,7 +156,6 @@ public class NewMovement : MonoBehaviour
             gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
             liv--;
             Invoke("paus", delay);
-            Invoke("PistolSelect", 0.1f);
         }
     }
     void PistolSelect()
