@@ -24,7 +24,7 @@ public class NewMovement : MonoBehaviour
     public Animator animator;
     bool dead;
     public int liv = 5;
-    public float delay = 5f;
+    public float delay = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -149,13 +149,17 @@ public class NewMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" && liv >= 0)
         {
             animator.SetFloat("Death", Mathf.Abs(2));
             dead = true;
             gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
             liv--;
             Invoke("paus", delay);
+        }
+        else if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(gameObject);
         }
     }
     void PistolSelect()

@@ -1,7 +1,169 @@
 fileFormatVersion: 2
 guid: 25889e674382f6f4f882f2a9a36a5045
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 505435230821619778
+    second: Knappar 128x128_0
+  - first:
+      213: 4517865720636916010
+    second: Knappar 128x128_1
+  - first:
+      213: 1676069899349437623
+    second: Knappar 128x128_2
+  - first:
+      213: 389786854454540323
+    second: Knappar 128x128_3
+  - first:
+      213: -8816853401620652003
+    second: Knappar 128x128_4
+  - first:
+      213: 122771458798538453
+    second: Knappar 128x128_5
+  - first:
+      213: -4201549734514252387
+    second: Knappar 128x128_6
+  - first:
+      213: -3669581422434282741
+    second: Knappar 128x128_7
+  - first:
+      213: 5471109126346523448
+    second: Knappar 128x128_8
+  - first:
+      213: 526584595986366955
+    second: Knappar 128x128_9
+  - first:
+      213: -3691546010433961528
+    second: Knappar 128x128_10
+  - first:
+      213: -6515240776123300575
+    second: Knappar 128x128_11
+  - first:
+      213: 479422072933945679
+    second: Knappar 128x128_12
+  - first:
+      213: 2513897430520826754
+    second: Knappar 128x128_13
+  - first:
+      213: 593598070102847861
+    second: Knappar 128x128_14
+  - first:
+      213: -5053426353174804724
+    second: Knappar 128x128_15
+  - first:
+      213: 2305326317910553543
+    second: Knappar 128x128_16
+  - first:
+      213: 2237283239843506290
+    second: Knappar 128x128_17
+  - first:
+      213: 7952170566482595437
+    second: Knappar 128x128_18
+  - first:
+      213: 3484464569207196776
+    second: Knappar 128x128_19
+  - first:
+      213: -7009734244998310909
+    second: Knappar 128x128_20
+  - first:
+      213: -5552675920150374229
+    second: Knappar 128x128_21
+  - first:
+      213: 551846088612881660
+    second: Knappar 128x128_22
+  - first:
+      213: 6082434413891124042
+    second: Knappar 128x128_23
+  - first:
+      213: 5392653032558539770
+    second: Knappar 128x128_24
+  - first:
+      213: 5641195716633464483
+    second: Knappar 128x128_25
+  - first:
+      213: 5627012071348484110
+    second: Knappar 128x128_26
+  - first:
+      213: 6194436105893688732
+    second: Knappar 128x128_27
+  - first:
+      213: -7909578089566380280
+    second: Knappar 128x128_28
+  - first:
+      213: -4613092593694012312
+    second: Knappar 128x128_29
+  - first:
+      213: 7666826614534575966
+    second: Knappar 128x128_30
+  - first:
+      213: 2502449593245880801
+    second: Knappar 128x128_31
+  - first:
+      213: 5330394536581311920
+    second: Knappar 128x128_32
+  - first:
+      213: -6015518019543687834
+    second: Knappar 128x128_33
+  - first:
+      213: -3063007769111468040
+    second: Knappar 128x128_34
+  - first:
+      213: 3041402658357018094
+    second: Knappar 128x128_35
+  - first:
+      213: -1297366435555527617
+    second: Knappar 128x128_36
+  - first:
+      213: -1346168191637079585
+    second: Knappar 128x128_37
+  - first:
+      213: 3434566933937459508
+    second: Knappar 128x128_38
+  - first:
+      213: 7771862570511757296
+    second: Knappar 128x128_39
+  - first:
+      213: -1874931841560497251
+    second: Knappar 128x128_40
+  - first:
+      213: -2347870190600210481
+    second: Knappar 128x128_41
+  - first:
+      213: -4073175635523176917
+    second: Knappar 128x128_42
+  - first:
+      213: 7814099387718938093
+    second: Knappar 128x128_43
+  - first:
+      213: -3594192090719052088
+    second: Knappar 128x128_44
+  - first:
+      213: 7015851078738303205
+    second: Knappar 128x128_45
+  - first:
+      213: -6167934154227417249
+    second: Knappar 128x128_46
+  - first:
+      213: -6921169217442243353
+    second: Knappar 128x128_47
+  - first:
+      213: 3419883257143765700
+    second: Knappar 128x128_48
+  - first:
+      213: -3925279995174328828
+    second: Knappar 128x128_49
+  - first:
+      213: -5692241439324840116
+    second: Knappar 128x128_50
+  - first:
+      213: 478394945551767326
+    second: Knappar 128x128_51
+  - first:
+      213: -8635330315660517898
+    second: Knappar 128x128_52
+  - first:
+      213: 2149275107879074704
+    second: Knappar 128x128_53
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +194,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +203,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
-  spriteExtrude: 1
+  spriteMode: 2
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +230,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +251,1141 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Knappar 128x128_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 470
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248171e1aaaa30700800000000000000
+      internalID: 505435230821619778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 469
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a214a7dafeea2be30800000000000000
+      internalID: 4517865720636916010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_2
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 472
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bca27971b8924710800000000000000
+      internalID: 1676069899349437623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_3
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 475
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32831e5341dc86500800000000000000
+      internalID: 389786854454540323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_4
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 474
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10e4bf7b8e34a580800000000000000
+      internalID: -8816853401620652003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 477
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de4e36cdfb24b100800000000000000
+      internalID: 122771458798538453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 439
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d952428f6c811b5c0800000000000000
+      internalID: -4201549734514252387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 438
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b039e697327031dc0800000000000000
+      internalID: -3669581422434282741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_8
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 439
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833484363c84deb40800000000000000
+      internalID: 5471109126346523448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 444
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1c5fb66edce4700800000000000000
+      internalID: 526584595986366955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_10
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 444
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1c210567ef4ccc0800000000000000
+      internalID: -3691546010433961528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 444
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125c70988073595a0800000000000000
+      internalID: -6515240776123300575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 411
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4195b2d5df37a600800000000000000
+      internalID: 479422072933945679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_13
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 409
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b06f3d46823e220800000000000000
+      internalID: 2513897430520826754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_14
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 411
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57176dbbc42ec3800800000000000000
+      internalID: 593598070102847861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_15
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 409
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c070b68818f9ed9b0800000000000000
+      internalID: -5053426353174804724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_16
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 408
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3fa6e621a2eff10800000000000000
+      internalID: 2305326317910553543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 379
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278aec4c04d6c0f10800000000000000
+      internalID: 2237283239843506290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_18
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 378
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e03807ff8cb5e60800000000000000
+      internalID: 7952170566482595437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_19
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 379
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c8700701e4b5030800000000000000
+      internalID: 3484464569207196776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_20
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 383
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3041cf4e7db68be90800000000000000
+      internalID: -7009734244998310909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_21
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 383
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba852928baee0f2b0800000000000000
+      internalID: -5552675920150374229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_22
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 350
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4a572081d88a700800000000000000
+      internalID: 551846088612881660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_23
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 351
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b77919fd5296450800000000000000
+      internalID: 6082434413891124042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_24
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 350
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3b5929c5d86da40800000000000000
+      internalID: 5392653032558539770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_25
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 349
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae846ead9d894e40800000000000000
+      internalID: 5641195716633464483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_26
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08bf8b6aa9271e40800000000000000
+      internalID: 5627012071348484110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_27
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95b5ab91de07f550800000000000000
+      internalID: 6194436105893688732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_28
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fde2062a88b3290800000000000000
+      internalID: -7909578089566380280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_29
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c02ec2ab00bffb0800000000000000
+      internalID: -4613092593694012312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_30
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5718d17f2a066a60800000000000000
+      internalID: 7666826614534575966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_31
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1ddb185ac7ab220800000000000000
+      internalID: 2502449593245880801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_32
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdac91e69d59f940800000000000000
+      internalID: 5330394536581311920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d13299b36948ca0800000000000000
+      internalID: -6015518019543687834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_34
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 319
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f769d999a20e75d0800000000000000
+      internalID: -3063007769111468040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_35
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 320
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed7c4e8a9b353a20800000000000000
+      internalID: 3041402658357018094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_36
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 323
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34b231c914defde0800000000000000
+      internalID: -1297366435555527617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_37
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 323
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9ba897923715de0800000000000000
+      internalID: -1346168191637079585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_38
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 323
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43115a6ed680aaf20800000000000000
+      internalID: 3434566933937459508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_39
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 323
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffe18ea4d33bdb60800000000000000
+      internalID: 7771862570511757296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_40
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93b7b58c67eaf5e0800000000000000
+      internalID: -1874931841560497251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_41
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 291
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7bb8e4080ba6fd0800000000000000
+      internalID: -2347870190600210481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_42
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 291
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b267dd0175c2977c0800000000000000
+      internalID: -4073175635523176917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_43
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 292
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deda5940ef1417c60800000000000000
+      internalID: 7814099387718938093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_44
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 267
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce1c2a165dde1ec0800000000000000
+      internalID: -3594192090719052088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_45
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 265
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8dc31726f4d5160800000000000000
+      internalID: 7015851078738303205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_46
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 264
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f764bd098176aa0800000000000000
+      internalID: -6167934154227417249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_47
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 247
+        width: 35
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec9cf3444113ff90800000000000000
+      internalID: -6921169217442243353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_48
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 208
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca2c5bf3bdd57f20800000000000000
+      internalID: 3419883257143765700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_49
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 207
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406efa334aa9689c0800000000000000
+      internalID: -3925279995174328828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_50
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 208
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fd849d1981101b0800000000000000
+      internalID: -5692241439324840116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_51
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 166
+        width: 55
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1794f71ba993a600800000000000000
+      internalID: 478394945551767326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_52
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 166
+        width: 57
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd94e074d4292880800000000000000
+      internalID: -8635330315660517898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knappar 128x128_53
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 166
+        width: 55
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09bb8b1c252c3dd10800000000000000
+      internalID: 2149275107879074704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
