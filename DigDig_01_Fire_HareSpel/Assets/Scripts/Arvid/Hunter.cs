@@ -73,6 +73,11 @@ public class Hunter : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            animator.SetFloat("fastnes", Mathf.Abs(0));
+        }
+
         if (hp < 1 && dead == false)
         {
             dead = true;

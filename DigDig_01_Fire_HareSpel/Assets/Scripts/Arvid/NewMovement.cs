@@ -145,6 +145,10 @@ public class NewMovement : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            animator.SetFloat("fastnes", Mathf.Abs(0));
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
