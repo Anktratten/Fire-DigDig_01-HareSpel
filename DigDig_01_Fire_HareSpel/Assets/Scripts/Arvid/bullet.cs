@@ -18,7 +18,7 @@ public class bullet : MonoBehaviour
             {
                 transform.position = new Vector3(transform.position.x - bs * Time.deltaTime, transform.position.y, transform.position.z);
             }
-            
+         }   
             if (transform.position.x >= 9)
             { 
                 Destroy(gameObject); 
@@ -28,7 +28,7 @@ public class bullet : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-        }
+        
     }   
     void OnCollisionEnter2D(Collision2D collision)
     {

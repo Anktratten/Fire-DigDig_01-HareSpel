@@ -9,6 +9,7 @@ public class Hunter : MonoBehaviour
     public int speed = 3;
     int hp;
     float delay = 0.5f;
+    float prevSpeed = 1;
     bool dead;
     Text ScoreText;
     public GameObject Player;
@@ -30,6 +31,8 @@ public class Hunter : MonoBehaviour
     {
         if (PauseController.isPaused == false)
         {
+            animator.speed = 1;
+
             if (dead == false)
             {
                 animator.SetFloat("fastnes", Mathf.Abs(0));
@@ -75,7 +78,9 @@ public class Hunter : MonoBehaviour
         }
         else
         {
-            animator.SetFloat("fastnes", Mathf.Abs(0));
+            var animator = GetComponent<Animator>();
+            prevSpeed = animator.speed;
+            animator.speed = 0;
         }
 
         if (hp < 1 && dead == false)
