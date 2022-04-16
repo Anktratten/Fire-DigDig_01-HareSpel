@@ -24,6 +24,7 @@ public class Hunter : MonoBehaviour
     {
         hp = 1;
         ScoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
+        Player = GameObject.Find("Player_Arvid");
     }
 
     // Update is called once per frame
@@ -37,42 +38,40 @@ public class Hunter : MonoBehaviour
             {
                 animator.SetFloat("fastnes", Mathf.Abs(0));
 
-                if (transform.position.x <= 7 && transporting == true)
+                if (transform.position.x >= 7 && transporting == true)
                 {
-                    transform.position = new Vector3(transform.position.x + speed * Time.deltaTime, transform.position.y + speed * Time.deltaTime, transform.position.z);
+                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y/* + speed * Time.deltaTime*/, transform.position.z);
                     animator.SetFloat("fastnes", Mathf.Abs(1));
                 }
-                else if (transform.position.x >= 7)
+                else if (transform.position.x <= 7)
                 {
                     transporting = false;
-                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y - speed * Time.deltaTime, transform.position.z);
+                    /*transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y /*- speed * Time.deltaTime, transform.position.z);*/
                     animator.SetFloat("fastnes", Mathf.Abs(1));
                 }
                 else
                 {
 
                 }
-
-                if (nextTimeToFire < Time.time)
+                if (transporting == false)
                 {
-                    Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
-                    nextTimeToFire = Time.time + Cooldown;
-                }
+                    if (nextTimeToFire < Time.time)
+                    {
+                        Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
+                        nextTimeToFire = Time.time + Cooldown;
+                    }
 
-                if (Player.transform.position.y > transform.position.y)
-                {
-                    transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
-                    animator.SetFloat("fastnes", Mathf.Abs(1));
-                }
+                    if (Player.transform.position.y > transform.position.y)
+                    {
+                        transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
+                        animator.SetFloat("fastnes", Mathf.Abs(1));
+                    }
 
-                else if (Player.transform.position.y < transform.position.y)
-                { 
-                    transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, transform.position.z);
-                    animator.SetFloat("fastnes", Mathf.Abs(1));
-                }
-                else
-                {
-                   
+                    else if (Player.transform.position.y < transform.position.y)
+                    {
+                        transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, transform.position.z);
+                        animator.SetFloat("fastnes", Mathf.Abs(1));
+                    }
                 }
             }
         }
@@ -96,6 +95,7 @@ public class Hunter : MonoBehaviour
     }
     void yeet()
     {
+        EnemySpawner.huntersActive--;
         Destroy(gameObject);
     }
     void OnCollisionEnter2D(Collision2D collision)
