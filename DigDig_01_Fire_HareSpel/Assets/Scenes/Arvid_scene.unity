@@ -2064,9 +2064,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263fedb694a473649b0f29df109ee2d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foxes: []
-  hunters: []
+  foxes:
+  - {fileID: 2628867040997036148, guid: f31b29067a35aa74cbe16c6f9eea9c2b, type: 3}
+  hunters:
+  - {fileID: 3134224540510895818, guid: e92040e7acc4cc54aa684c3db64374c8, type: 3}
   hunterBoss: {fileID: 0}
+  spawnPosition: 0
+  hunterSelect: 0
+  huntersSpawned: 0
+  nextTimeToSpawn: 0
 --- !u!4 &982001289
 Transform:
   m_ObjectHideFlags: 0
@@ -2075,7 +2081,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982001287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13, y: -0, z: -24.557463}
+  m_LocalPosition: {x: 13, y: 0, z: -24.557463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5818,6 +5824,10 @@ PrefabInstance:
     - target: {fileID: 3134224540510895818, guid: e92040e7acc4cc54aa684c3db64374c8, type: 3}
       propertyPath: m_Name
       value: Hunter_W
+      objectReference: {fileID: 0}
+    - target: {fileID: 3134224540510895818, guid: e92040e7acc4cc54aa684c3db64374c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3134224540510895819, guid: e92040e7acc4cc54aa684c3db64374c8, type: 3}
       propertyPath: m_RootOrder
