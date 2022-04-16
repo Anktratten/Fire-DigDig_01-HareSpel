@@ -61,5 +61,17 @@ public class EnemySpawner: MonoBehaviour
         waveNumber++;
         huntersSpawned = 0;
 
+        if (waveNumber % 5 == 0)
+        {
+            SpawnHunterBoss();
+        }
+    }
+    void SpawnHunterBoss()
+    {
+        Instantiate(hunterBoss, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+    }
+    void UpgradeHunters()
+    {
+
     }
 }
