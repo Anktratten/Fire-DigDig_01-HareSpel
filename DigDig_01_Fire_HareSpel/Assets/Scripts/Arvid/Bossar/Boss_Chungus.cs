@@ -32,7 +32,6 @@ public class Boss_Chungus : MonoBehaviour
 
             if (dead == false)
             {
-
             }
         }
         else
