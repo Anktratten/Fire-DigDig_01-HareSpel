@@ -41,4 +41,12 @@ public class Boss_Chungus : MonoBehaviour
             animator.speed = 0;
         }
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            hp -= collision.gameObject.GetComponent<BulletDamage>().damage;
+        }
+
+    }
 }
