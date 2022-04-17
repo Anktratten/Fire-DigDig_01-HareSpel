@@ -5,6 +5,7 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
     public int bs; //bs = BulletSpeed
+    public float shotgun;
     bool walled;
     void Update()
     {
@@ -12,7 +13,7 @@ public class bullet : MonoBehaviour
         {
             if (walled == false)
             {
-                transform.position = new Vector3(transform.position.x + bs * Time.deltaTime, transform.position.y, transform.position.z);
+                transform.position = new Vector3(transform.position.x + bs * Time.deltaTime, transform.position.y + shotgun, transform.position.z);
             }
             else
             {
