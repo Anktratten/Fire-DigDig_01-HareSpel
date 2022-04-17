@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Hunter_shotgun : MonoBehaviour
+public class hunter_shotgun : MonoBehaviour
 {
     public int speed = 3;
     int hp;
@@ -16,6 +16,8 @@ public class Hunter_shotgun : MonoBehaviour
     public float Cooldown;
     float nextTimeToFire = 0;
     public Transform Shot;
+    public Transform Shotgun_down;
+    public Transform Shotgun_up;
 
     bool transporting = true;
     // Start is called before the first frame update
@@ -56,7 +58,9 @@ public class Hunter_shotgun : MonoBehaviour
                 {
                     if (nextTimeToFire < Time.time)
                     {
-                        Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
+                        Instantiate(Shot, new Vector3(transform.position.x + -0.5f, transform.position.y, 0), Quaternion.identity);
+                        Instantiate(Shotgun_down, new Vector3(transform.position.x + -0.5f, transform.position.y, -0.1f), Quaternion.identity);
+                        Instantiate(Shotgun_up, new Vector3(transform.position.x + -0.5f, transform.position.y, 0.1f), Quaternion.identity);
                         nextTimeToFire = Time.time + Cooldown;
                     }
 

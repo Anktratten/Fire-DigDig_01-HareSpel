@@ -135,7 +135,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DigDig01_nsih_enemy_hunters_animations_spritesheet_2
+  m_Name: "J\xE4gare_w"
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Death
