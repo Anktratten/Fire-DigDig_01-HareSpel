@@ -18,7 +18,7 @@ public class EnemySpawner : MonoBehaviour
     public float nextTimeToSpawn = 0;
     float spawnDelay = 3f;
 
-    int foxChance = 0;
+    int foxChance = 10;
 
     public static int huntersActive = 0;
 
@@ -74,6 +74,7 @@ public class EnemySpawner : MonoBehaviour
         {
             SpawnHunterBoss();
             isBossWave = true;
+            Debug.Log("this works");
         }
         else if (waveNumber != 20)
         {
@@ -119,6 +120,7 @@ public class EnemySpawner : MonoBehaviour
     void SpawnHunterBoss()
     {
         Instantiate(hunterBoss, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+        Debug.Log("this works too");
         huntersActive++;
     }
     void FoxSpawner()
