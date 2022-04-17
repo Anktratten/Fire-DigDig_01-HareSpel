@@ -3,27 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class hunter_shotgun : MonoBehaviour
+public class Hunter_burst : MonoBehaviour
 {
-    public int speed = 3;
-    int hp;
+    public int speed;
+    int hp = 1;
     float delay = 0.5f;
     float prevSpeed = 1;
-    bool dead;
+    
     Text ScoreText;
     public GameObject Player;
     public Animator animator;
     public float Cooldown;
     float nextTimeToFire = 0;
     public Transform Shot;
-    public Transform Shotgun_down;
-    public Transform Shotgun_up;
-
     bool transporting = true;
+    bool dead;
+
     // Start is called before the first frame update
     void Start()
     {
-        hp = 1;
         ScoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
         Player = GameObject.Find("Player_Arvid");
     }
@@ -59,8 +57,8 @@ public class hunter_shotgun : MonoBehaviour
                     if (nextTimeToFire < Time.time)
                     {
                         Instantiate(Shot, new Vector3(transform.position.x + -0.5f, transform.position.y, 0), Quaternion.identity);
-                        Instantiate(Shotgun_down, new Vector3(transform.position.x + -0.5f, transform.position.y, -0.1f), Quaternion.identity);
-                        Instantiate(Shotgun_up, new Vector3(transform.position.x + -0.5f, transform.position.y, 0.1f), Quaternion.identity);
+                        Instantiate(Shot, new Vector3(transform.position.x + -0.0f, transform.position.y, 0), Quaternion.identity);
+                        Instantiate(Shot, new Vector3(transform.position.x + 0.5f, transform.position.y, 0), Quaternion.identity);
                         nextTimeToFire = Time.time + Cooldown;
                     }
 
@@ -110,3 +108,4 @@ public class hunter_shotgun : MonoBehaviour
 
     }
 }
+
