@@ -24,7 +24,7 @@ public class NewMovement : MonoBehaviour
     public Animator animator;
     float prevSpeed = 1;
     bool dead;
-    public int liv = 5;
+    public static int liv = 5;
     public float delay = 1f;
 
     // Start is called before the first frame update
