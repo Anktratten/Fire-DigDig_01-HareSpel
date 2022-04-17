@@ -10,16 +10,19 @@ public class EnemySpawner: MonoBehaviour
 
     public static int waveNumber = 1;
 
-    public int spawnPosition;
+    public int hunterSpawnPosition;
     public int hunterSelect;
     public int huntersSpawned = 0;
     int hunterTargetAmount = 3;
     public float nextTimeToSpawn = 0;
     float spawnDelay = 3f;
 
+    float foxChance = 0;
+
     public static int huntersActive = 0;
 
     bool waveOver = false;
+    bool isBossWave = false;
 
 
     // Start is called before the first frame update
@@ -31,44 +34,72 @@ public class EnemySpawner: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(huntersActive);
         if (PauseController.isPaused == false)
         {
-            if (huntersSpawned < hunterTargetAmount && nextTimeToSpawn < Time.time)
+            if (huntersSpawned < hunterTargetAmount && nextTimeToSpawn < Time.time && isBossWave == false)
             {
                 SpawnHunter();
                 nextTimeToSpawn = Time.time + spawnDelay;
             }
 
-            if (huntersActive == 0 && waveOver == false)
+            else if (huntersSpawned == hunterTargetAmount && huntersActive == 0 && waveOver == false)
             {
                 waveOver = true;
+                Invoke("NextWave", 4);
             }
-
         }
     }
 
     void SpawnHunter()
     {
-        spawnPosition = Random.Range(-5, 5);
+        hunterSpawnPosition = Random.Range(-5, 5);
         hunterSelect = Random.Range(0, 0);
-        Instantiate(hunters[hunterSelect], new Vector3(transform.position.x, transform.position.y + spawnPosition, 0), Quaternion.identity);
+        Instantiate(hunters[hunterSelect], new Vector3(transform.position.x, transform.position.y + hunterSpawnPosition, 0), Quaternion.identity);
         huntersSpawned++;
         huntersActive++;
     }
     void NextWave()
     {
+        waveOver = false;
         waveNumber++;
         huntersSpawned = 0;
 
-        if (waveNumber % 5 == 0)
+        if (waveNumber % 5 == 0 && waveNumber != 20)
         {
             SpawnHunterBoss();
+            UpgradeHunters();
+            isBossWave = true;
         }
+        else
+        {
+            isBossWave = false;
+        }
+
+        if (waveNumber < 5)
+        {
+            hunterTargetAmount += 1;
+        }
+        else if (waveNumber < 10 && waveNumber > 6)
+        {
+            hunterTargetAmount += 2;
+            spawnDelay = 2f;
+        }
+        else
+        {
+            hunterTargetAmount += 1;
+            spawnDelay = 1f;
+        }
+        Debug.Log(waveNumber);
+
     }
     void SpawnHunterBoss()
     {
         Instantiate(hunterBoss, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+        huntersActive++;
+    }
+    void FoxSpawner()
+    {
+
     }
     void UpgradeHunters()
     {

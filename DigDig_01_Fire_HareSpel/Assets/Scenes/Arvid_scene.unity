@@ -2069,7 +2069,7 @@ MonoBehaviour:
   hunters:
   - {fileID: 3134224540510895818, guid: e92040e7acc4cc54aa684c3db64374c8, type: 3}
   hunterBoss: {fileID: 0}
-  spawnPosition: 0
+  hunterSpawnPosition: 0
   hunterSelect: 0
   huntersSpawned: 0
   nextTimeToSpawn: 0
@@ -2297,7 +2297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1345405183
 MonoBehaviour:
   m_ObjectHideFlags: 0
