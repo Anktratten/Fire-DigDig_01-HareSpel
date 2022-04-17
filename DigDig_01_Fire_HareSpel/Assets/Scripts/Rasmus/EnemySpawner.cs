@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject hunterBoss;
     public GameObject dumpBoss;
 
-    public static int waveNumber = 1;
+    public int waveNumber = 1;
 
     public int hunterSelect;
     public int huntersSpawned = 0;
@@ -52,6 +52,8 @@ public class EnemySpawner : MonoBehaviour
                 Invoke("NextWave", 4);
             }
         }
+
+        Debug.Log(huntersActive);
     }
 
     void SpawnHunter()

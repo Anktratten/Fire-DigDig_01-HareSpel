@@ -43,8 +43,7 @@ public class UpgradeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(assaultRifleLevel);
-        Debug.Log("duck" + shotgunButtonLocked);
+
     }
 
     public void PistolUpgrade()
