@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rasmus_Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Start screen.unity
+    guid: 369302886713a5a458ca68a7b9230ed1
+  - enabled: 1
+    path: Assets/Scenes/Arvid_scene.unity
+    guid: 890de0f0b6d97dd4cb7b406f7fb721f6
   m_configObjects: {}
