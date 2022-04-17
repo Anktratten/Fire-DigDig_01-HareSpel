@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: 3126940588465462726
     second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_9
+  - first:
+      213: 8740999027867850472
+    second: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -145,8 +148,8 @@ TextureImporter:
       name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -166,7 +169,7 @@ TextureImporter:
       name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 64
         width: 32
         height: 32
@@ -187,7 +190,7 @@ TextureImporter:
       name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 64
         width: 32
         height: 32
@@ -208,7 +211,7 @@ TextureImporter:
       name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 96
         y: 64
         width: 32
         height: 32
@@ -229,8 +232,8 @@ TextureImporter:
       name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_5
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
+        x: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -250,7 +253,7 @@ TextureImporter:
       name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 32
         width: 32
         height: 32
@@ -271,8 +274,8 @@ TextureImporter:
       name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 0
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -292,7 +295,7 @@ TextureImporter:
       name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
         width: 32
         height: 32
@@ -313,7 +316,7 @@ TextureImporter:
       name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
         width: 32
         height: 32
@@ -326,6 +329,27 @@ TextureImporter:
       bones: []
       spriteID: 6cd1c31e5ef156b20800000000000000
       internalID: 3126940588465462726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e61916dd444e4970800000000000000
+      internalID: 8740999027867850472
       vertices: []
       indices: 
       edges: []

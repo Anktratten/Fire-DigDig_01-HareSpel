@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
-public class Testing2 : MonoBehaviour
+public class Lives : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        //Hur man når den globala variabeln
-        {
-            //Rör på skiten
-        }
+        
     }
 
     // Update is called once per frame

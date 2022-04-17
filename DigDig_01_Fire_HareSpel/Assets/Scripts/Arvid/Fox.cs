@@ -11,6 +11,7 @@ public class Fox : MonoBehaviour
     int hp;
     bool dead;
     float delay = 0.5f;
+    float prevSpeed = 1;
     public Animator animator;
 
     // Start is called before the first frame update
@@ -25,6 +26,8 @@ public class Fox : MonoBehaviour
     {
         if (PauseController.isPaused == false)
         {
+            animator.speed = 1;
+
             if (dead == false)
             {
                 if (transform.position.x < 8)
@@ -37,6 +40,8 @@ public class Fox : MonoBehaviour
                     transform.position = new Vector3(transform.position.x - startup * Time.deltaTime, transform.position.y, transform.position.z);
                 }
             }
+
+
             if (transform.position.x < -15)
             {
                 Destroy(gameObject);
@@ -51,6 +56,12 @@ public class Fox : MonoBehaviour
                 Invoke("yeet", delay);
             }
             
+        }   
+        else
+        {
+             var animator = GetComponent<Animator>();
+             prevSpeed = animator.speed;
+             animator.speed = 0;
         }
     }
     void OnCollisionEnter2D(Collision2D collision)

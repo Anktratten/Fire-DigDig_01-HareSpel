@@ -41,6 +41,7 @@ public class UpgradeController : MonoBehaviour
     void Update()
     {
         
+
     }
 
     public void PistolUpgrade()

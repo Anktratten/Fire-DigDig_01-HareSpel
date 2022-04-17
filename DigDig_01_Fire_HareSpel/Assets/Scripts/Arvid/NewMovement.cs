@@ -22,6 +22,7 @@ public class NewMovement : MonoBehaviour
     public static float assaultRifleCooldown = 0.1f;
 
     public Animator animator;
+    float prevSpeed = 1;
     bool dead;
     public int liv = 5;
     public float delay = 1f;
@@ -39,6 +40,7 @@ public class NewMovement : MonoBehaviour
         if (PauseController.isPaused == false)
         {
             animator.SetFloat("fastnes", Mathf.Abs(0));
+            animator.speed = 1;
 
             if (dead == false)
             {
@@ -144,6 +146,12 @@ public class NewMovement : MonoBehaviour
 
                 }
             }
+        }
+        else
+        {
+            var animator = GetComponent<Animator>();
+            prevSpeed = animator.speed;
+            animator.speed = 0;
         }
     }
 

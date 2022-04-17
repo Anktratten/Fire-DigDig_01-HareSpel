@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Testing : MonoBehaviour
 {
-    public static bool bean = false; //Global variabel som styr om spelet är pausat
-
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +13,19 @@ public class Testing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            InvokeRepeating("testing", 0, 1);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CancelInvoke("testing");
+        }
+    }
+
+    void testing()
+    {
+        Debug.Log("ducks");
     }
 }
