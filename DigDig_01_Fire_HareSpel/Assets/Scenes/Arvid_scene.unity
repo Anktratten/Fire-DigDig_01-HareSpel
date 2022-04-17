@@ -305,6 +305,7 @@ MonoBehaviour:
   pistolUpgradeButton: {fileID: 726599769}
   shotgunUpgradeButton: {fileID: 220198963}
   assaultRifleUpgradeButton: {fileID: 412465732}
+  shop: {fileID: 1580561859}
   maxUpgradeSprite: {fileID: -6167934154227417249, guid: 25889e674382f6f4f882f2a9a36a5045, type: 3}
   lockedUpgrade:
     m_HighlightedSprite: {fileID: 0}
@@ -2576,9 +2577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 1580561859}
-  pistolUpgradeButton: {fileID: 726599769}
-  shotgunUpgradeButton: {fileID: 0}
-  assaultRifleUpgradeButton: {fileID: 0}
+  shop: {fileID: 0}
 --- !u!114 &1634071080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2625,7 +2624,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1634071079}
         m_TargetAssemblyTypeName: PauseController, Assembly-CSharp
-        m_MethodName: OpenMenu
+        m_MethodName: OpenShopMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
