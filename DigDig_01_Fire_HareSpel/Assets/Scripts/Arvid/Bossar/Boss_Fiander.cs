@@ -16,10 +16,13 @@ public class Boss_Fiander : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (nextTimeToFire < Time.time)
+        if (PauseController.isPaused == false)
         {
-            Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
-            nextTimeToFire = Time.time + Cooldown;
+            if (nextTimeToFire < Time.time)
+            {
+                Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
+                nextTimeToFire = Time.time + Cooldown;
+            }
         }
     }
 }

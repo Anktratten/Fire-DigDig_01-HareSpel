@@ -20,7 +20,7 @@ public class Boss_Chungus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        ScoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
     }
 
     // Update is called once per frame
