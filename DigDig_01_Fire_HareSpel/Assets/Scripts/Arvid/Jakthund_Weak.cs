@@ -12,6 +12,7 @@ public class Jakthund_Weak : MonoBehaviour
     Text ScoreText;
     public GameObject Player;
     public Animator animator;
+    float prevSpeed = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,10 @@ public class Jakthund_Weak : MonoBehaviour
     void Update()
     {
         if (PauseController.isPaused == false)
+
         {
+            animator.speed = 1;
+
             if (dead == false)
             {
                 if (Player.transform.position.y > transform.position.y)
@@ -50,6 +54,12 @@ public class Jakthund_Weak : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+        else
+        {
+            var animator = GetComponent<Animator>();
+            prevSpeed = animator.speed;
+            animator.speed = 0;
         }
     }
     void OnCollisionEnter2D(Collision2D collision)

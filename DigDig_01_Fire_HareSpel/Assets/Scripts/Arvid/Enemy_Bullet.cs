@@ -14,8 +14,10 @@ public class Enemy_Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x - bs * Time.deltaTime, transform.position.y, transform.position.z);
-
+        if (PauseController.isPaused == false)
+        {
+            transform.position = new Vector3(transform.position.x - bs * Time.deltaTime, transform.position.y, transform.position.z);
+        }
         if (transform.position.x < -15)
         {
             Destroy(gameObject);

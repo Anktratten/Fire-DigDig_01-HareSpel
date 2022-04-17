@@ -1,7 +1,160 @@
 fileFormatVersion: 2
 guid: 27a0f19ffa2435a49be107a60aa75093
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1197228844053896571
+    second: knappar-32x32 pixlar_0
+  - first:
+      213: 2997420466602238859
+    second: knappar-32x32 pixlar_1
+  - first:
+      213: 1778008344198951519
+    second: knappar-32x32 pixlar_2
+  - first:
+      213: 1077267246159911662
+    second: knappar-32x32 pixlar_3
+  - first:
+      213: 6344649307428046482
+    second: knappar-32x32 pixlar_4
+  - first:
+      213: 7558266948946998063
+    second: knappar-32x32 pixlar_5
+  - first:
+      213: -3515436337103400086
+    second: knappar-32x32 pixlar_6
+  - first:
+      213: -5341663997032232722
+    second: knappar-32x32 pixlar_7
+  - first:
+      213: -4980823535476486890
+    second: knappar-32x32 pixlar_8
+  - first:
+      213: 6658347470711411931
+    second: knappar-32x32 pixlar_9
+  - first:
+      213: -6705357724835708946
+    second: knappar-32x32 pixlar_10
+  - first:
+      213: -5016705263620218633
+    second: knappar-32x32 pixlar_11
+  - first:
+      213: 804813720482834179
+    second: knappar-32x32 pixlar_12
+  - first:
+      213: 3020715078186243381
+    second: knappar-32x32 pixlar_13
+  - first:
+      213: 2698891708802898611
+    second: knappar-32x32 pixlar_14
+  - first:
+      213: -4551383188571438557
+    second: knappar-32x32 pixlar_15
+  - first:
+      213: -1644113153075142515
+    second: knappar-32x32 pixlar_16
+  - first:
+      213: -9219722378278537230
+    second: knappar-32x32 pixlar_17
+  - first:
+      213: 4219057245753514202
+    second: knappar-32x32 pixlar_18
+  - first:
+      213: -3278659122223519126
+    second: knappar-32x32 pixlar_19
+  - first:
+      213: 5985552907223158741
+    second: knappar-32x32 pixlar_20
+  - first:
+      213: -9203492393890644901
+    second: knappar-32x32 pixlar_21
+  - first:
+      213: 3880258575271166311
+    second: knappar-32x32 pixlar_22
+  - first:
+      213: -4982795319777424815
+    second: knappar-32x32 pixlar_23
+  - first:
+      213: 7258892445081824170
+    second: knappar-32x32 pixlar_24
+  - first:
+      213: -4432353756461914854
+    second: knappar-32x32 pixlar_25
+  - first:
+      213: -1496501366178598460
+    second: knappar-32x32 pixlar_26
+  - first:
+      213: -2120453356010837659
+    second: knappar-32x32 pixlar_27
+  - first:
+      213: 5246678115599646274
+    second: knappar-32x32 pixlar_28
+  - first:
+      213: 945200890306823885
+    second: knappar-32x32 pixlar_29
+  - first:
+      213: -4423292187558586429
+    second: knappar-32x32 pixlar_30
+  - first:
+      213: -4696613910111084789
+    second: knappar-32x32 pixlar_31
+  - first:
+      213: 2213437296106591030
+    second: knappar-32x32 pixlar_32
+  - first:
+      213: -1906379443220831353
+    second: knappar-32x32 pixlar_33
+  - first:
+      213: -8593916285849825828
+    second: knappar-32x32 pixlar_34
+  - first:
+      213: -2938406913934900376
+    second: knappar-32x32 pixlar_35
+  - first:
+      213: 885912005003933945
+    second: knappar-32x32 pixlar_36
+  - first:
+      213: -516380871585357275
+    second: knappar-32x32 pixlar_37
+  - first:
+      213: -6402738035165721104
+    second: knappar-32x32 pixlar_38
+  - first:
+      213: -476265715276475785
+    second: knappar-32x32 pixlar_39
+  - first:
+      213: -5877768081357883421
+    second: knappar-32x32 pixlar_40
+  - first:
+      213: -8616504920255071121
+    second: knappar-32x32 pixlar_41
+  - first:
+      213: -714517673264733433
+    second: knappar-32x32 pixlar_42
+  - first:
+      213: 1378069802572255917
+    second: knappar-32x32 pixlar_43
+  - first:
+      213: 8908287622629083522
+    second: knappar-32x32 pixlar_44
+  - first:
+      213: -3653914692390655228
+    second: knappar-32x32 pixlar_45
+  - first:
+      213: -4883044952653310296
+    second: knappar-32x32 pixlar_46
+  - first:
+      213: -3387853820249571421
+    second: knappar-32x32 pixlar_47
+  - first:
+      213: 3984825032522849774
+    second: knappar-32x32 pixlar_48
+  - first:
+      213: -8131647287010228343
+    second: knappar-32x32 pixlar_49
+  - first:
+      213: -4739654815944613283
+    second: knappar-32x32 pixlar_50
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +185,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,12 +194,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,7 +221,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,7 +242,1078 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 470
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d1fac5a496d9010800000000000000
+      internalID: 1197228844053896571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 469
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83ef4a880af89920800000000000000
+      internalID: 2997420466602238859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_2
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 472
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52b8a33b21cca810800000000000000
+      internalID: 1778008344198951519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_3
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 475
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea568f4ad833fe00800000000000000
+      internalID: 1077267246159911662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_4
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 474
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2964da10ee8bc0850800000000000000
+      internalID: 6344649307428046482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 477
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23bf81aebb54e860800000000000000
+      internalID: 7558266948946998063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 439
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a639378e649a63fc0800000000000000
+      internalID: -3515436337103400086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 438
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8866365e89ed5b0800000000000000
+      internalID: -5341663997032232722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_8
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 439
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61dc40f426f80eab0800000000000000
+      internalID: -4980823535476486890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 444
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4dfd64fb3376c50800000000000000
+      internalID: 6658347470711411931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_10
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 444
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeffe3ffca8c1f2a0800000000000000
+      internalID: -6705357724835708946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 444
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0a5137425116ab0800000000000000
+      internalID: -5016705263620218633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 411
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3076dbf80d54b2b00800000000000000
+      internalID: 804813720482834179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_13
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 409
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53515f2fb5cbbe920800000000000000
+      internalID: 3020715078186243381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_14
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 411
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba9176b5b3647520800000000000000
+      internalID: 2698891708802898611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_15
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 409
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322c380ba1d36d0c0800000000000000
+      internalID: -4551383188571438557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_16
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 408
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80a8645ccfee29e0800000000000000
+      internalID: -1644113153075142515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 379
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7fcfa5857fc0080800000000000000
+      internalID: -9219722378278537230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_18
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 378
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad81d24263a1d8a30800000000000000
+      internalID: 4219057245753514202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_19
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 379
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ae54046ecdf72d0800000000000000
+      internalID: -3278659122223519126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_20
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 383
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfc75308a4f01350800000000000000
+      internalID: 5985552907223158741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_21
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 383
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c73211e60a64080800000000000000
+      internalID: -9203492393890644901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_22
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 350
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76183bf9d9279d530800000000000000
+      internalID: 3880258575271166311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_23
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 351
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a00308e0e89dab0800000000000000
+      internalID: -4982795319777424815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_24
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 350
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab6ed33834ccb460800000000000000
+      internalID: 7258892445081824170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_25
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 349
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15283bfdbd1d72c0800000000000000
+      internalID: -4432353756461914854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_26
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1b90fafeb5b3be0800000000000000
+      internalID: -1496501366178598460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_27
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569603848e2a292e0800000000000000
+      internalID: -2120453356010837659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_28
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ef123b2f1ffc840800000000000000
+      internalID: 5246678115599646274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_29
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc60f1ca3370e1d00800000000000000
+      internalID: 945200890306823885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_30
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c75fc6e03f4d92c0800000000000000
+      internalID: -4423292187558586429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_31
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f9ba0588642deb0800000000000000
+      internalID: -4696613910111084789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_32
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 349
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633d8075e75b7be10800000000000000
+      internalID: 2213437296106591030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78327bf2ffd2b85e0800000000000000
+      internalID: -1906379443220831353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_34
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 319
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd0a78aba64cb880800000000000000
+      internalID: -8593916285849825828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_35
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 320
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863cb59ea7ea837d0800000000000000
+      internalID: -2938406913934900376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_36
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 323
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8738856446b4c00800000000000000
+      internalID: 885912005003933945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_37
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 323
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522295c455275d8f0800000000000000
+      internalID: -516380871585357275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_38
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 323
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd80102ea7e427a0800000000000000
+      internalID: -6402738035165721104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_39
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 323
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7729f36fad6f369f0800000000000000
+      internalID: -476265715276475785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_40
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 323
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7b88e5219fd6ea0800000000000000
+      internalID: -5877768081357883421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_41
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 291
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c7ace5d660c6880800000000000000
+      internalID: -8616504920255071121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_42
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 291
+        width: 37
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703215b36f58516f0800000000000000
+      internalID: -714517673264733433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_43
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 292
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da213022f23ef1310800000000000000
+      internalID: 1378069802572255917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_44
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 267
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289c0d7056890ab70800000000000000
+      internalID: 8908287622629083522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_45
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 265
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b697052ffaa4dc0800000000000000
+      internalID: -3653914692390655228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_46
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 264
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6d5deac70fb3cb0800000000000000
+      internalID: -4883044952653310296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_47
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 247
+        width: 35
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aff21d66ecebf0d0800000000000000
+      internalID: -3387853820249571421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_48
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 208
+        width: 64
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeddb9b2141fc4730800000000000000
+      internalID: 3984825032522849774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_49
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 207
+        width: 66
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9878cf230e5962f80800000000000000
+      internalID: -8131647287010228343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: knappar-32x32 pixlar_50
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 208
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52e6a18e0d593eb0800000000000000
+      internalID: -4739654815944613283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
