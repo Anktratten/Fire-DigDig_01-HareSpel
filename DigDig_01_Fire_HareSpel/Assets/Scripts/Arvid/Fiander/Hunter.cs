@@ -104,6 +104,5 @@ public class Hunter : MonoBehaviour
         {
             hp -= collision.gameObject.GetComponent<BulletDamage>().damage;
         }
-
     }
 }

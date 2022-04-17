@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Boss_Chungus : MonoBehaviour
 {
-    public int speed = 3;
-    int hp;
+    public float speed;
+    public int hp;
     float delay = 0.5f;
     float prevSpeed = 1;
     bool dead;
@@ -29,9 +29,16 @@ public class Boss_Chungus : MonoBehaviour
         if (PauseController.isPaused == false)
         {
             animator.speed = 1;
-
+            
             if (dead == false)
             {
+                animator.SetFloat("fastnes", Mathf.Abs(0));
+                if (transform.position.x >= 6)
+                {
+                transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y/* + speed * Time.deltaTime*/, transform.position.z);
+                animator.SetFloat("fastnes", Mathf.Abs(1));
+                }
+
             }
         }
         else
@@ -39,6 +46,16 @@ public class Boss_Chungus : MonoBehaviour
             var animator = GetComponent<Animator>();
             prevSpeed = animator.speed;
             animator.speed = 0;
+        }
+
+        if (hp < 1 && dead == false)
+        {
+            dead = true;
+            ScoreText.GetComponent<Score>().addscore(2000);
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+            animator.SetFloat("Death", Mathf.Abs(1));
+
+            Invoke("yeet", delay);
         }
     }
     void OnCollisionEnter2D(Collision2D collision)
@@ -49,4 +66,8 @@ public class Boss_Chungus : MonoBehaviour
         }
 
     }
-}
+    void yeet()
+    {
+        Destroy(gameObject);
+    }
+ }
