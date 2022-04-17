@@ -38,4 +38,5 @@ public class Boss_Chungus : MonoBehaviour
             prevSpeed = animator.speed;
             animator.speed = 0;
         }
+    }
 }

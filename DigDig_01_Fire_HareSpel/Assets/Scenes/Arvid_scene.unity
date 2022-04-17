@@ -249,7 +249,6 @@ MonoBehaviour:
   pistolBullet: {fileID: 3332073131544249707, guid: 79046111127da45479bacee697d4dc88, type: 3}
   coolDown: -1
   animator: {fileID: 3076762}
-  liv: 5
   delay: 1
 --- !u!50 &3076766
 Rigidbody2D:
