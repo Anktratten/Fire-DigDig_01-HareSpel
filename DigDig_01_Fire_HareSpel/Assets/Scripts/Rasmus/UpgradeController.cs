@@ -32,16 +32,12 @@ public class UpgradeController : MonoBehaviour
         pistolCost = pistolPrices[pistolLevel];
         shotgunCost = shotgunPrices[shotgunLevel];
         assaultRifleCost = assaultRiflePrices[assaultRifleLevel];
-
-        SpriteState lockedUpgradesSpriteStates = new SpriteState();
-        lockedUpgradesSpriteStates.disabledSprite = maxUpgradeSprite;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-
+        Debug.Log(assaultRifleLevel);
     }
 
     public void PistolUpgrade()
@@ -54,7 +50,7 @@ public class UpgradeController : MonoBehaviour
         }
         if (pistolLevel == 3)
         {
-            GetComponent<Button>().spriteState = lockedUpgrade;
+            pistolUpgradeButton.GetComponent<Button>().spriteState = lockedUpgrade;
             pistolUpgradeButton.GetComponent<Button>().interactable = false;
         }
     }
@@ -68,7 +64,7 @@ public class UpgradeController : MonoBehaviour
         }
         if (shotgunLevel == 3)
         {
-            GetComponent<Button>().spriteState = lockedUpgrade;
+            shotgunUpgradeButton.GetComponent<Button>().spriteState = lockedUpgrade;
             shotgunUpgradeButton.GetComponent<Button>().interactable = false;
         }
     }
@@ -82,8 +78,9 @@ public class UpgradeController : MonoBehaviour
         }
         if (assaultRifleLevel == 3)
         {
-            GetComponent<Button>().spriteState = lockedUpgrade;
-            shotgunUpgradeButton.GetComponent<Button>().interactable = false;
+            assaultRifleUpgradeButton.GetComponent<Button>().spriteState = lockedUpgrade;
+            assaultRifleUpgradeButton.GetComponent<Button>().interactable = false;
+            Debug.Log("big chungus");
         }
     }
 }
