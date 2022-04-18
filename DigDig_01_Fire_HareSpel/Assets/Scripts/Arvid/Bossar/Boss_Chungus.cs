@@ -16,7 +16,7 @@ public class Boss_Chungus : MonoBehaviour
 
     Vector3 targetLocation;
 
-    float [] positions;
+    float [] positions = new float[4];
     float current_location;
 
     public float Cooldown;
@@ -31,6 +31,10 @@ public class Boss_Chungus : MonoBehaviour
     public Transform spread_down;
     public Transform spread_up;
 
+    public Transform fiande_nere;
+    public Transform fiande_uppe;
+
+    bool smtn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -51,15 +55,22 @@ public class Boss_Chungus : MonoBehaviour
             if (dead == false)
             {
                 animator.SetFloat("fastnes", Mathf.Abs(0));
+                animator.SetFloat("shoot", Mathf.Abs(0));
+
                 if (transform.position.x >= 6)
                 {
-                transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y/* + speed * Time.deltaTime*/, transform.position.z);
-                animator.SetFloat("fastnes", Mathf.Abs(1));
+                  transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y/* + speed * Time.deltaTime*/, transform.position.z);
+                  animator.SetFloat("fastnes", Mathf.Abs(1));
+                  Instantiate(fiande_nere, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
+                  Instantiate(fiande_nere, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
+                  Instantiate(fiande_uppe, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
+                  Instantiate(fiande_uppe, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
                 }
                 else
                 {
+                    deez();
                     animator.SetFloat("shoot", Mathf.Abs(1));
-                    if (nextTimeToFire < Time.time)
+                    if (nextTimeToFire < Time.time && smtn == true)
                     {
                         Instantiate(Shot, new Vector3(transform.position.x + -1.0f, transform.position.y, -0.1f), Quaternion.identity);
                         Instantiate(Shotgun_down, new Vector3(transform.position.x + -0.9f, transform.position.y, -0.1f), Quaternion.identity);
@@ -71,8 +82,11 @@ public class Boss_Chungus : MonoBehaviour
 
                         nextTimeToFire = Time.time + Cooldown;
                     }
-
-                    InvokeRepeating("randomizer", 0, Walk_cooldown);
+                    if (smtn == false)
+                    {
+                        InvokeRepeating("randomizer", 0, Walk_cooldown);
+                        smtn = true;
+                    }
                 }
 
             }
@@ -115,18 +129,21 @@ public class Boss_Chungus : MonoBehaviour
         current_location = targetLocation.y;
         do
         {
-            int result = Random.Range(1, 3);
+            int result = Random.Range(1, 4);
             if (result == 1)
             {
                 targetLocation = new Vector3(transform.position.x, positions[1], transform.position.z);
+                animator.SetFloat("fastnes", Mathf.Abs(1));
             }
             else if (result == 2)
             {
                 targetLocation = new Vector3(transform.position.x, positions[2], transform.position.z);
+                animator.SetFloat("fastnes", Mathf.Abs(1));
             }
             else if (result == 3)
             {
                 targetLocation = new Vector3(transform.position.x, positions[3], transform.position.z);
+                animator.SetFloat("fastnes", Mathf.Abs(1));
             }
         } while (current_location == targetLocation.y);
     }
