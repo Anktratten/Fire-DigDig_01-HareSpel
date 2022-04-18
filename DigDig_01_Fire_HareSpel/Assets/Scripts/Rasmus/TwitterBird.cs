@@ -29,7 +29,7 @@ public class TwitterBird : MonoBehaviour
         }
         else
         {
-            Invoke("LaunchBird", 5);
+            Invoke("LaunchBird", 2);
             if (still == false)
             {
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;

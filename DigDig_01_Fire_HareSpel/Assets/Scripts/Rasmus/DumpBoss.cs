@@ -155,7 +155,7 @@ public class DumpBoss : MonoBehaviour
     }
     void SpawnBird()
     {
-
+        Instantiate(bird, transform);
     }
     void ThrowBomb()
     {

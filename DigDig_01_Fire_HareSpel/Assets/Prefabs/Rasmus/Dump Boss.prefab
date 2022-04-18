@@ -102,7 +102,7 @@ MonoBehaviour:
   shotgun_up: {fileID: 8428202261553530489, guid: 566143d44741fa24c862cc1996b00b4b, type: 3}
   spread_down: {fileID: 1630905603938471914, guid: 7155698a2910067499fcd2ad18d8fbc3, type: 3}
   spread_up: {fileID: 3887395729859697850, guid: f73705c39d5918049ab0929f5c204059, type: 3}
-  bird: {fileID: 0}
+  bird: {fileID: 8003921912641958876, guid: 2fb84bc38b0386f4a95442e39240bdec, type: 3}
   laser: {fileID: 0}
   wall: {fileID: 8340212453337792371, guid: 0afdb2c2aa2860f41b7d71e496c13954, type: 3}
   bomb: {fileID: 0}
