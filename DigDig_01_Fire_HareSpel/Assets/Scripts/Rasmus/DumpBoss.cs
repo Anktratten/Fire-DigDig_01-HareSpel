@@ -12,6 +12,7 @@ public class DumpBoss : MonoBehaviour
     float transportSpeed = 3f;
     float walkingSpeed = 2;
     int dumpPhase = 1;
+    int birdCounter;
 
     public static bool wallUp = false;
 
@@ -46,6 +47,7 @@ public class DumpBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("birdcount is" + birdCounter);
         Debug.Log(hp);
         if (hp <= 0 && increasedPhase == false)
         {
@@ -92,8 +94,8 @@ public class DumpBoss : MonoBehaviour
             {
                 hp = 1;
                 SpawnWall();
-                InvokeRepeating("SpawnBird", 0, 2);
-                InvokeRepeating("ThrowBomb", 0, 20);
+                InvokeRepeating("SpawnBird", 1, 1);
+                InvokeRepeating("ThrowBomb", 0, 30);
                 InvokeRepeating("ShootLaser", 0, 10);
                 startedPhase2 = true;
             }
@@ -155,7 +157,14 @@ public class DumpBoss : MonoBehaviour
     }
     void SpawnBird()
     {
-        Instantiate(bird, transform);
+        birdCounter++;
+        Instantiate(bird, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+        if (birdCounter == 9)
+        {
+            CancelInvoke("SpawnBird");
+            InvokeRepeating("SpawnBird", 2, 1);
+            birdCounter = 0;
+        }
     }
     void ThrowBomb()
     {

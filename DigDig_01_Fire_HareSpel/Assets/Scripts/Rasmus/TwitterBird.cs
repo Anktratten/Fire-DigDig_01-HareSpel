@@ -6,8 +6,7 @@ public class TwitterBird : MonoBehaviour
 {
     public GameObject player;
     bool transporting = true;
-    float speed = 8;
-    float rotationSpeed = 1;
+    float speed = 17;
     bool still = false;
     Vector3 attackTarget;
 
@@ -29,7 +28,7 @@ public class TwitterBird : MonoBehaviour
         }
         else
         {
-            Invoke("LaunchBird", 2);
+            Invoke("LaunchBird", 0.4f);
             if (still == false)
             {
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
