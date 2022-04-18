@@ -96,4 +96,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Shot: {fileID: 9217742730928863750, guid: fa42ab7415326d3479c66ab2653c9313, type: 3}
+  shotgun_u: {fileID: 0}
+  shotgun_n: {fileID: 0}
+  Cooldown_burst: 4
+  Cooldown_shotgun: 3
   Cooldown: 2
+  shotgun: 0
+  burst: 0

@@ -5,8 +5,17 @@ using UnityEngine;
 public class Boss_Fiander : MonoBehaviour
 {
     float nextTimeToFire = 0;
+
     public Transform Shot;
+    public Transform shotgun_u;
+    public Transform shotgun_n;
+
+    public float Cooldown_burst;
+    public float Cooldown_shotgun;
     public float Cooldown;
+
+    public bool shotgun = false;
+    public bool burst = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +27,33 @@ public class Boss_Fiander : MonoBehaviour
     {
         if (PauseController.isPaused == false)
         {
-            if (nextTimeToFire < Time.time)
+            if (shotgun == false && burst == false)
             {
-                Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
-                nextTimeToFire = Time.time + Cooldown;
+                if (nextTimeToFire < Time.time)
+                {
+                    Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
+                    nextTimeToFire = Time.time + Cooldown;
+                }
+            }
+            else if (shotgun == true)
+            {
+                if (nextTimeToFire < Time.time)
+                {
+                    Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
+                    Instantiate(shotgun_u, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
+                    Instantiate(shotgun_n, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
+                    nextTimeToFire = Time.time + Cooldown_shotgun;
+                }
+            }
+            else
+            {
+                if (nextTimeToFire < Time.time)
+                {
+                    Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
+                    Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
+                    Instantiate(Shot, new Vector3(transform.position.x + 0.1f, transform.position.y, 0), Quaternion.identity);
+                    nextTimeToFire = Time.time + Cooldown_burst;
+                }
             }
         }
     }
