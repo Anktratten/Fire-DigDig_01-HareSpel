@@ -2030,17 +2030,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dump Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 4557866789350120130, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5169325244079978093, guid: 0d29bf6807b061f4eba6c15b3c0066ab, type: 3}
     - target: {fileID: 5110761566671313522, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5110761566671313522, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.2243085
+      value: 2.82
       objectReference: {fileID: 0}
     - target: {fileID: 5110761566671313522, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.0836165
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 5110761566671313522, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2074,7 +2078,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2203275264145204559, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
 --- !u!1 &1116073860
 GameObject:

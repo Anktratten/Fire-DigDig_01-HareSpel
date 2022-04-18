@@ -86,6 +86,24 @@ TextureImporter:
   - first:
       213: 1174958912732690640
     second: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_27
+  - first:
+      213: 2252149423202270459
+    second: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_28
+  - first:
+      213: -658863467476287603
+    second: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_29
+  - first:
+      213: 7705762794768396746
+    second: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_30
+  - first:
+      213: -5589130598539107726
+    second: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_31
+  - first:
+      213: 1586005312143211580
+    second: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_32
+  - first:
+      213: -896886833483118822
+    second: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_33
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -758,6 +776,132 @@ TextureImporter:
       bones: []
       spriteID: 0d87c1be7ea4e4010800000000000000
       internalID: 1174958912732690640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc721fc7fd314f10800000000000000
+      internalID: 2252149423202270459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ff799ca2f3bd6f0800000000000000
+      internalID: -658863467476287603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac177995f6e50fa60800000000000000
+      internalID: 7705762794768396746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2726fc6455b6f62b0800000000000000
+      internalID: -5589130598539107726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cbd2aad6f920610800000000000000
+      internalID: 1586005312143211580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DigDig01_nsih_enemy_boss_dump_animations_spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1783864d2e9d83f0800000000000000
+      internalID: -896886833483118822
       vertices: []
       indices: 
       edges: []
