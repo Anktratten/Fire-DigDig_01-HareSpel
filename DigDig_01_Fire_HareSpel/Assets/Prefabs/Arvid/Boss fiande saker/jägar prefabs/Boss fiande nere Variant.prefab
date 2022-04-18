@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5317678210987148863
+--- !u!1001 &8484910624498447536
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9217742730928863748, guid: fa42ab7415326d3479c66ab2653c9313, type: 3}
       propertyPath: shotgun
-      value: 0.02
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 9217742730928863749, guid: fa42ab7415326d3479c66ab2653c9313, type: 3}
       propertyPath: m_Name

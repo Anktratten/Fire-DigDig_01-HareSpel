@@ -17,7 +17,7 @@ public class Enemy_Bullet : MonoBehaviour
     {
         if (PauseController.isPaused == false)
         {
-            transform.position = new Vector3(transform.position.x - bs * Time.deltaTime, transform.position.y + shotgun, transform.position.z);
+            transform.position = new Vector3(transform.position.x - bs * Time.deltaTime, transform.position.y + shotgun * Time.deltaTime, transform.position.z);
         }
         if (transform.position.x < -15)
         {

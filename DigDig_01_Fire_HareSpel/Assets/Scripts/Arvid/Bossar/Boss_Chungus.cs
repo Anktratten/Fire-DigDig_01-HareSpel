@@ -36,9 +36,9 @@ public class Boss_Chungus : MonoBehaviour
     void Start()
     {
         ScoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
-        positions[1] = -3;
-        positions[2] = 0;
-        positions[3] = 3;
+        positions[1] = -3f;
+        positions[2] = 0f;
+        positions[3] = 3f;
     }
 
     // Update is called once per frame

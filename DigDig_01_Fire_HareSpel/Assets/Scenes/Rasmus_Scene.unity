@@ -5563,7 +5563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &2027569772
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5692,8 +5692,8 @@ MonoBehaviour:
   animator: {fileID: 2027569773}
   Cooldown: 0.55
   Walk_cooldown: 10
-  Shot: {fileID: 831370306382537005, guid: 516ff02095a44754d9ab3a6a6d3b7676, type: 3}
-  Shotgun_down: {fileID: 7435011670664297473, guid: 82043d6fe1eb9e34cb90a3d495200a45, type: 3}
-  Shotgun_up: {fileID: 7089060130513886680, guid: 001e2fc935cad3e4daaaa3d034d22c71, type: 3}
-  spread_down: {fileID: 3900170077622598713, guid: 0b68fb9168ee5de44a0750ca36f97cae, type: 3}
-  spread_up: {fileID: 5397093252805707233, guid: d8383d64a8c00f7468f8dcd250c6d81a, type: 3}
+  Shot: {fileID: 5936065371253879408, guid: 4fdfefe2997cbb24ea996996fe481891, type: 3}
+  Shotgun_down: {fileID: 1630905603938471913, guid: 7155698a2910067499fcd2ad18d8fbc3, type: 3}
+  Shotgun_up: {fileID: 3887395729859697849, guid: f73705c39d5918049ab0929f5c204059, type: 3}
+  spread_down: {fileID: 733089959491063478, guid: 3af5de26c4275bb43a0cdda6bb716ceb, type: 3}
+  spread_up: {fileID: 8091655055669512355, guid: 47d50c467db67224d9b82ec73915e34b, type: 3}
