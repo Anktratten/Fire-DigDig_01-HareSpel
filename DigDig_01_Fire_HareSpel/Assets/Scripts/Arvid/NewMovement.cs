@@ -157,8 +157,6 @@ public class NewMovement : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.Alpha3) && UpgradeController.assaultRifleLevel > 0)
                 {
                     AssaultRifleSelect();
-                   
-
                 }
             }
         }
