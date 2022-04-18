@@ -1591,6 +1591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 743026053}
+  - component: {fileID: 743026054}
   m_Layer: 0
   m_Name: Trump spawner
   m_TagString: Untagged
@@ -1612,6 +1613,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &743026054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743026052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b83361f08855bfb418effdef0d3ddab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hunterBossDummy: {fileID: 1966569892789529875, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
+  dumpBoss: {fileID: 3613463908824197794, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
 --- !u!1 &809539484
 GameObject:
   m_ObjectHideFlags: 0
@@ -5521,60 +5536,3 @@ RectTransform:
   m_AnchoredPosition: {x: 43.974762, y: 44}
   m_SizeDelta: {x: 135.7677, y: 36.0036}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &7571011792732853566
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1966569892789529875, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_Name
-      value: DigDig01_nsih_enemy_boss_hunter_animations_spritesheet_0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.1968007
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.31136525
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271133544302308359, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
