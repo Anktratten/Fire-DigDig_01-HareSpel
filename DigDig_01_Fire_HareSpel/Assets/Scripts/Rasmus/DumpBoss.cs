@@ -79,12 +79,12 @@ public class DumpBoss : MonoBehaviour
         }
         if (dumpPhase == 2)
         {
-            if (transform.position.x <= 7 && transform.position.y != 0 && transporting == true)
+            if (transform.position.x <= 7 || transform.position.y != 0 && transporting == true)
             {
                 Debug.Log("duckfuck");
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(7, 0, 0), walkingSpeed * Time.deltaTime);
             }
-            if (transform.position.x >= 7 && transform.position.y == 0)
+            if (transform.position.x >= 7 || transform.position.y == 0)
             {
                 transporting = false;
             }
