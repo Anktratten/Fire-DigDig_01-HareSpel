@@ -28,6 +28,17 @@ public class ShopPriceToggle : MonoBehaviour
     }
     public void EnableText()
     {
-        transform.GetChild(0).gameObject.SetActive(true);
+        if (UpgradeController.pistolButtonLocked == false && gameObject.name == "Pistol upgrade Button")
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+        }
+        if (UpgradeController.pistolButtonLocked == false && gameObject.name == "Shotgun upgrade Button")
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+        }
+        if (UpgradeController.pistolButtonLocked == false && gameObject.name == "Assault Rifle Upgrade Button")
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+        }
     }
 }

@@ -19,9 +19,15 @@ public class UpgradeController : MonoBehaviour
     public GameObject shotgunUpgradeButton;
     public GameObject assaultRifleUpgradeButton;
 
+    public GameObject shop;
+
     int[] pistolPrices = {0, 100, 150, 250};
-    int[] shotgunPrices = { 150, 200, 280, 400 };
-    int[] assaultRiflePrices = { 180, 220, 320, 450 };
+    int[] shotgunPrices = { 150, 200, 280, 400};
+    int[] assaultRiflePrices = { 180, 220, 320, 420};
+
+    public static bool pistolButtonLocked = false;
+    public static bool shotgunButtonLocked = false;
+    public static bool assaultRifleButtonLocked = false;
 
     public Sprite maxUpgradeSprite;
     public SpriteState lockedUpgrade;
@@ -32,15 +38,11 @@ public class UpgradeController : MonoBehaviour
         pistolCost = pistolPrices[pistolLevel];
         shotgunCost = shotgunPrices[shotgunLevel];
         assaultRifleCost = assaultRiflePrices[assaultRifleLevel];
-
-        SpriteState lockedUpgradesSpriteStates = new SpriteState();
-        lockedUpgradesSpriteStates.disabledSprite = maxUpgradeSprite;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
 
     }
 
@@ -51,11 +53,13 @@ public class UpgradeController : MonoBehaviour
             coins = coins - pistolCost;
             pistolLevel++;
             pistolCost = pistolPrices[pistolLevel];
+            shop.GetComponent<ShopPriceController>().ShopButtonsToggle();
         }
         if (pistolLevel == 3)
         {
-            GetComponent<Button>().spriteState = lockedUpgrade;
+            pistolUpgradeButton.GetComponent<Button>().spriteState = lockedUpgrade;
             pistolUpgradeButton.GetComponent<Button>().interactable = false;
+            pistolButtonLocked = true;
         }
     }
     public void ShotgunUpgrade()
@@ -65,11 +69,13 @@ public class UpgradeController : MonoBehaviour
             coins = coins - shotgunCost;
             shotgunLevel++;
             shotgunCost = shotgunPrices[shotgunLevel];
+            shop.GetComponent<ShopPriceController>().ShopButtonsToggle();
         }
         if (shotgunLevel == 3)
         {
-            GetComponent<Button>().spriteState = lockedUpgrade;
+            shotgunUpgradeButton.GetComponent<Button>().spriteState = lockedUpgrade;
             shotgunUpgradeButton.GetComponent<Button>().interactable = false;
+            shotgunButtonLocked = true;
         }
     }
     public void AssaultRifleUpgrade()
@@ -79,11 +85,13 @@ public class UpgradeController : MonoBehaviour
             coins = coins - assaultRifleCost;
             assaultRifleLevel++;
             assaultRifleCost = assaultRiflePrices[assaultRifleLevel];
+            shop.GetComponent<ShopPriceController>().ShopButtonsToggle();
         }
         if (assaultRifleLevel == 3)
         {
-            GetComponent<Button>().spriteState = lockedUpgrade;
-            shotgunUpgradeButton.GetComponent<Button>().interactable = false;
+            assaultRifleUpgradeButton.GetComponent<Button>().spriteState = lockedUpgrade;
+            assaultRifleUpgradeButton.GetComponent<Button>().interactable = false;
+            assaultRifleButtonLocked = true;
         }
     }
 }
