@@ -116,7 +116,7 @@ public class DumpBoss : MonoBehaviour
         current_location = targetLocation.y;
         do
         {
-            int result = Random.Range(1, 3);
+            int result = Random.Range(1, 6);
             if (result == 1)
             {
                 targetLocation = positions[1];
