@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NewMovement : MonoBehaviour
 {
@@ -30,10 +31,13 @@ public class NewMovement : MonoBehaviour
     public static int liv = 5;
     public float delay = 1f;
 
+    Text lives;
+
     // Start is called before the first frame update
     void Start()
     {
         PistolSelect();
+        lives  = GameObject.FindGameObjectWithTag("Finish").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -168,8 +172,9 @@ public class NewMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" && liv >= 0)
+        if (collision.gameObject.tag == "Enemy" && liv > 0)
         {
+            lives.GetComponent<Liv>().loselives(-1);
             animator.SetFloat("Death", Mathf.Abs(2));
             dead = true;
             gameObject.GetComponent<CircleCollider2D>().isTrigger = true;
