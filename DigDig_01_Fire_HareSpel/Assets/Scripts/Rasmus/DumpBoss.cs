@@ -9,6 +9,7 @@ public class DumpBoss : MonoBehaviour
     bool startedPhase2 = false;
     bool startedPhase3 = false;
     bool increasedPhase = false;
+    bool dead = false;
     float transportSpeed = 3f;
     float walkingSpeed = 2;
     int dumpPhase = 1;
@@ -59,12 +60,16 @@ public class DumpBoss : MonoBehaviour
     {
         Debug.Log("birdcount is" + birdCounter);
         Debug.Log(hp);
-        if (hp <= 0 && increasedPhase == false)
+        if (hp <= 0 && increasedPhase == false && dumpPhase != 3)
         {
             CancelInvoke();
             dumpPhase++;
             transporting = true;
             increasedPhase = true;
+        }
+        else if (hp <= 0)
+        {
+            dead = true;
         }
 
         if (transform.position.x >= 5 && dumpPhase == 1 && transporting == true)
@@ -109,7 +114,7 @@ public class DumpBoss : MonoBehaviour
                 startedPhase2 = true;
             }
         }
-        if (dumpPhase == 3)
+        if (dumpPhase == 3 && dead == false)
         {
             if (transform.position.x != 6 || transform.position.y != 0 && transporting == true)
             {
