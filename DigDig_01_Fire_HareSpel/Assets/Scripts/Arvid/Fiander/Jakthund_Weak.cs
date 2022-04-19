@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Jakthund_Weak : MonoBehaviour
 {
     public int speed = 3;
-    int hp;
+    int hp = 1;
     float delay = 0.5f;
     bool dead;
     Text ScoreText;
@@ -17,7 +17,7 @@ public class Jakthund_Weak : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hp = 1;
+
         ScoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
         Player = GameObject.Find("Player_Arvid");
     }
