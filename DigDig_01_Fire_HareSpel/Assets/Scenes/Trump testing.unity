@@ -512,6 +512,10 @@ MonoBehaviour:
   coolDown: -1
   pistolBullet: {fileID: 291516597015983562, guid: 039693b3c16635f4592bc32cd667b976, type: 3}
   shotgunBullet: {fileID: 9175331198550860906, guid: 379be22c61907ed428ba79bcdf73f192, type: 3}
+  shotgun_u1: {fileID: 0}
+  shotgun_n1: {fileID: 0}
+  shotgun_u2: {fileID: 0}
+  shotgun_n2: {fileID: 0}
   assaultRifleBullet: {fileID: 1791520680569244286, guid: abdfd8feb58f8fb4ca58110cd6c4d6cc, type: 3}
   animator: {fileID: 38820619}
   delay: 1
@@ -1467,6 +1471,61 @@ RectTransform:
   m_AnchoredPosition: {x: 1.25, y: 0}
   m_SizeDelta: {x: 110, y: 36.0036}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &621140599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621140601}
+  - component: {fileID: 621140600}
+  m_Layer: 0
+  m_Name: Enemy Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &621140600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621140599}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 263fedb694a473649b0f29df109ee2d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fox: {fileID: 2628867040997036148, guid: f31b29067a35aa74cbe16c6f9eea9c2b, type: 3}
+  hunters:
+  - {fileID: 3134224540510895818, guid: e92040e7acc4cc54aa684c3db64374c8, type: 3}
+  dogs:
+  - {fileID: 7074275587332224359, guid: 15f97b18ff617694498da77d821e4bef, type: 3}
+  - {fileID: 8454980747413320309, guid: 8460ce11b682250449c635943c7574dd, type: 3}
+  hunterBoss: {fileID: 1824372514505508768, guid: 9b671ffc9aad345468e665cac3706443, type: 3}
+  dumpBoss: {fileID: 0}
+  waveNumber: 1
+  hunterSelect: 0
+  huntersSpawned: 0
+  nextTimeToSpawn: 0
+--- !u!4 &621140601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621140599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13, y: 0, z: -24.557463}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &701179541
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class DumpBoss : MonoBehaviour
     bool transporting = true;
     bool startedPhase1 = false;
     bool startedPhase2 = false;
-    bool transporting2 = false;
+    bool startedPhase3 = false;
     bool increasedPhase = false;
     float transportSpeed = 3f;
     float walkingSpeed = 2;
@@ -17,6 +17,8 @@ public class DumpBoss : MonoBehaviour
     int airStrikeCounter = 0;
 
     public static bool wallUp = false;
+
+    public int result;
 
     public GameObject shot;
     public GameObject shotgun_down;
@@ -29,10 +31,15 @@ public class DumpBoss : MonoBehaviour
     public GameObject wall;
     public GameObject airStrike;
 
+    public GameObject[] hunters;
+    public int hunterSelect;
+    public static int huntersActive = 0;
+    GameObject spawner;
+
     Vector3 targetLocation;
 
     Vector3[] positions = new Vector3[6];
-    float current_location;
+    Vector3 current_location;
 
     int hp = 20;
 
@@ -42,8 +49,9 @@ public class DumpBoss : MonoBehaviour
         positions[1] = new Vector3(6, -3, 0);
         positions[2] = new Vector3(6, 0, 0);
         positions[3] = new Vector3(6, 3, 0);
-        positions[4] = new Vector3(6, 1.5f, 0);
-        positions[5] = new Vector3(6, -1.5f, 0);
+        positions[4] = new Vector3(5, 1.5f, 0);
+        positions[5] = new Vector3(5, -1.5f, 0);
+        spawner = GameObject.Find("Enemy Spawner");
     }
 
     // Update is called once per frame
@@ -83,12 +91,11 @@ public class DumpBoss : MonoBehaviour
         }
         if (dumpPhase == 2)
         {
-            if (transform.position.x <= 7 || transform.position.y != 0 && transporting == true)
+            if (transform.position.x != 7 || transform.position.y != 0 && transporting == true)
             {
-                Debug.Log("duckfuck");
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(7, 0, 0), walkingSpeed * Time.deltaTime);
             }
-            if (transform.position.x >= 7 || transform.position.y == 0)
+            if (transform.position.x == 7 || transform.position.y == 0)
             {
                 transporting = false;
             }
@@ -98,17 +105,34 @@ public class DumpBoss : MonoBehaviour
                 SpawnWall();
                 InvokeRepeating("SpawnBird", 1, 1);
                 InvokeRepeating("AirStrike", 10, 10);
+                increasedPhase = false;
                 startedPhase2 = true;
             }
         }
         if (dumpPhase == 3)
         {
-
+            if (transform.position.x != 6 || transform.position.y != 0 && transporting == true)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(6, 0, 0), walkingSpeed * Time.deltaTime);
+            }
+            if (transform.position.x == 6 || transform.position.y == 0)
+            {
+                transporting = false;
+            }
+            if (startedPhase3 == false && transporting == false)
+            {
+                hp = 100;
+                InvokeRepeating("Randomizer", 0, 1);
+                InvokeRepeating("SpawnHunter", 0, 4);
+                walkingSpeed = 5;
+                startedPhase3 = true;
+            }
+            Movement();
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Bullet" && wallUp == false && transporting == false && transporting2 == false)
+        if (collision.gameObject.tag == "Bullet" && wallUp == false && transporting == false)
         {
             hp -= collision.gameObject.GetComponent<BulletDamage>().damage;
             Destroy(collision.gameObject);
@@ -120,10 +144,10 @@ public class DumpBoss : MonoBehaviour
     }
     private void Randomizer()
     {
-        current_location = targetLocation.y;
+        current_location = targetLocation;
         do
         {
-            int result = Random.Range(1, 6);
+            result = Random.Range(1, 6);
             if (result == 1)
             {
                 targetLocation = positions[1];
@@ -144,7 +168,7 @@ public class DumpBoss : MonoBehaviour
             {
                 targetLocation = positions[5];
             }
-        } while (current_location == targetLocation.y);
+        } while (current_location == targetLocation);
     }
 
     void TrumpHunterShoot()
@@ -179,6 +203,16 @@ public class DumpBoss : MonoBehaviour
         {
             airStrikeTemp.gameObject.GetComponent<DumpAirstrike>().isDud = true;
             airStrikeCounter = 0;
+        }
+    }
+    void SpawnHunter()
+    {
+        if (huntersActive <= 5)
+        {
+            int spawnPosition = Random.Range(-5, 5);
+            hunterSelect = Random.Range(0, 3);
+            Instantiate(hunters[hunterSelect], new Vector3(spawner.transform.position.x, spawner.transform.position.y + spawnPosition, 0), Quaternion.identity);
+            huntersActive++;
         }
     }
 }

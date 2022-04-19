@@ -52,8 +52,6 @@ public class EnemySpawner : MonoBehaviour
                 Invoke("NextWave", 4);
             }
         }
-
-        Debug.Log(huntersActive);
     }
 
     void SpawnHunter()
@@ -82,7 +80,7 @@ public class EnemySpawner : MonoBehaviour
         }
         else if (waveNumber == 20)
         {
-            //spawn dumb :flushed:
+
         }
 
         if (waveNumber < 5)
@@ -120,7 +118,6 @@ public class EnemySpawner : MonoBehaviour
     void SpawnHunterBoss()
     {
         Instantiate(hunterBoss, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
-        Debug.Log("this works too");
         huntersActive++;
     }
     void FoxSpawner()
