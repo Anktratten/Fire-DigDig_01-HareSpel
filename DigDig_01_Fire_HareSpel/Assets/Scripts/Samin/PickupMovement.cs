@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin2 : MonoBehaviour
+public class PickupMovement:MonoBehaviour
 {
     int speed = 4;
     // Start is called before the first frame update

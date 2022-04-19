@@ -93,9 +93,10 @@ GameObject:
   - component: {fileID: 3442256028671277592}
   - component: {fileID: 2289698959569046224}
   - component: {fileID: 161419379045660020}
+  - component: {fileID: 3002469629162952424}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 8238603156199988009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 2400137587078826979}
   m_Father: {fileID: 0}
@@ -130,7 +131,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 0.1
 --- !u!114 &161419379045660020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,5 +144,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8f9e77ee0fe31459b1baf6eac951d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
   value: 1
+--- !u!114 &3002469629162952424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8238603156199988009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321aa3d5acd1ec147b9639cb917fc334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

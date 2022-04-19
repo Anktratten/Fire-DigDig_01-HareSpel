@@ -8,6 +8,8 @@ TagManager:
   - wall
   - Bullet
   - Score
+  - Coin
+  - Health
   layers:
   - Default
   - TransparentFX
