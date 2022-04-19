@@ -20,25 +20,25 @@ public class Pickup : MonoBehaviour
         UpgradeController.coins += amount;
         // To-do: update the UI
     }
-
+    
     public PickupType type;
-    public int value = 1;
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        // if the pickup object has collided with the player,
-        if (collision.CompareTag("Player"))
+        public int value = 1;
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            // if the pickup type is 'Coin'
-            if (type == PickupType.Coin)
+            // if the pickup object has collided with the player,
+            if (collision.CompareTag("Player"))
             {
-            }
-            // if the pickup type is 'Health'
-            else if (type == PickupType.Health)
-            {
+                // if the pickup type is 'Coin'
+                if (type == PickupType.Coin)
+                {
+                }
+                // if the pickup type is 'Health'
+                else if (type == PickupType.Health)
+                {
+                }
             }
         }
-    }
-
+    
 
 
 
