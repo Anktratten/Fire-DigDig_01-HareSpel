@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea90321ff10d8784d986fde486398611, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: {fileID: 8238603156199988009, guid: e7d8f79712e8fc548ae9e34085e6af46, type: 3}
+  coin: {fileID: 567511198023808041, guid: 23f6887aaad71a04b8b1ceeceaaa4efe, type: 3}
   speed: 2
   Player: {fileID: 0}
   animator: {fileID: 3134224540510895817}

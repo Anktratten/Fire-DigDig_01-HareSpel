@@ -19,7 +19,11 @@ public class PauseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (NewMovement.liv <= 0)
+        {
+            isPaused = true;
 
+        }
     }
 
     public void OpenShopMenu()

@@ -208,11 +208,11 @@ public class DumpBoss : MonoBehaviour
     void TrumpHunterShoot()
     {
         animator.Play("Dump Fire");
-        Instantiate(shot, new Vector3(transform.position.x + -1.0f, transform.position.y, -0.1f), Quaternion.identity);
-        Instantiate(shotgun_down, new Vector3(transform.position.x + -0.9f, transform.position.y, -0.1f), Quaternion.identity);
-        Instantiate(shotgun_up, new Vector3(transform.position.x + -0.9f, transform.position.y, 0.1f), Quaternion.identity);
-        Instantiate(spread_down, new Vector3(transform.position.x + -0.8f, transform.position.y, -0.1f), Quaternion.identity);
-        Instantiate(spread_up, new Vector3(transform.position.x + -0.8f, transform.position.y, 0.1f), Quaternion.identity);
+        Instantiate(shot, new Vector3(transform.position.x + -2.3f, transform.position.y, -0.1f), Quaternion.identity);
+        Instantiate(shotgun_down, new Vector3(transform.position.x + -2.2f, transform.position.y, -0.1f), Quaternion.identity);
+        Instantiate(shotgun_up, new Vector3(transform.position.x + -2.1f, transform.position.y, 0.1f), Quaternion.identity);
+        Instantiate(spread_down, new Vector3(transform.position.x + -2.0f, transform.position.y, -0.1f), Quaternion.identity);
+        Instantiate(spread_up, new Vector3(transform.position.x + -1.9f, transform.position.y, 0.1f), Quaternion.identity);
     }
     void SpawnWall()
     {

@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
     public GameObject[] dogs;
     public GameObject hunterBoss;
     public GameObject dumpBoss;
+    public GameObject hunterBossDummy;
 
     public int waveNumber = 1;
 
@@ -72,7 +73,6 @@ public class EnemySpawner : MonoBehaviour
         {
             SpawnHunterBoss();
             isBossWave = true;
-            Debug.Log("this works");
         }
         else if (waveNumber != 20)
         {
@@ -80,7 +80,8 @@ public class EnemySpawner : MonoBehaviour
         }
         else if (waveNumber == 20)
         {
-
+            Instantiate(hunterBossDummy, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+            Invoke("SpawnDump", 3);
         }
 
         if (waveNumber < 5)
@@ -101,11 +102,11 @@ public class EnemySpawner : MonoBehaviour
         }
         Debug.Log(waveNumber);
 
-        if (waveNumber > 4)
+        if (waveNumber > 5)
         {
             InvokeRepeating("FoxSpawner", 0, 1);
         }
-        if (waveNumber > 9)
+        if (waveNumber > 10)
         {
             InvokeRepeating("DogSpawner", 0, 1);
         }
@@ -120,9 +121,13 @@ public class EnemySpawner : MonoBehaviour
         Instantiate(hunterBoss, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
         huntersActive++;
     }
+    void SpawnDump()
+    {
+        Instantiate(dumpBoss, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+    }
     void FoxSpawner()
     {
-        int spawnRandomizer = Random.Range(1, foxChance);
+        int spawnRandomizer = Random.Range(1, 10);
         int spawnPosition = Random.Range(-5, 5);
         if (spawnRandomizer == 1)
         {
@@ -131,9 +136,13 @@ public class EnemySpawner : MonoBehaviour
     }
     void DogSpawner()
     {
-        int spawnRandomizer = Random.Range(1, foxChance);
-        int spawnPosition = Random.Range(-5, 5);
-        int typeRandomizer = Random.Range(0, dogsUnlocked);
-        Instantiate(dogs[typeRandomizer], new Vector3(transform.position.x, transform.position.y + spawnPosition, 0), Quaternion.identity);
+        int spawnRandomizer = Random.Range(1, 10);
+        if (spawnRandomizer == 1)
+        {
+            int spawnPosition = Random.Range(-5, 5);
+            int typeRandomizer = Random.Range(0, dogsUnlocked);
+            Instantiate(dogs[typeRandomizer], new Vector3(transform.position.x, transform.position.y + spawnPosition, 0), Quaternion.identity);
+        }
+
     }
 }

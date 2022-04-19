@@ -21,7 +21,7 @@ public class DummySpawner : MonoBehaviour
         if(spawn == true)
         {
             Instantiate(hunterBossDummy, new Vector3 (transform.position.x, transform.position.y, 0), Quaternion.identity);
-            Invoke("SpawnDump", 1);
+            Invoke("SpawnDump", 3);
             spawn = false;
         }
     }
