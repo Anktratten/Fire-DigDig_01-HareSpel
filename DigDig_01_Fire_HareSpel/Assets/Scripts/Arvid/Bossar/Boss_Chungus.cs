@@ -9,7 +9,7 @@ public class Boss_Chungus : MonoBehaviour
     public int hp;
     float delay = 0.5f;
     float prevSpeed = 1;
-    bool dead;
+    public static bool dead;
     Text ScoreText;
     public GameObject Player;
     public Animator animator;
