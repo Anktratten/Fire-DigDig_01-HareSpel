@@ -12,7 +12,9 @@ public class DumpBoss : MonoBehaviour
     float transportSpeed = 3f;
     float walkingSpeed = 2;
     int dumpPhase = 1;
-    int birdCounter;
+
+    int birdCounter = 0;
+    int airStrikeCounter = 0;
 
     public static bool wallUp = false;
 
@@ -95,8 +97,8 @@ public class DumpBoss : MonoBehaviour
                 hp = 1;
                 SpawnWall();
                 InvokeRepeating("SpawnBird", 1, 1);
-                InvokeRepeating("ThrowBomb", 0, 30);
-                InvokeRepeating("ShootLaser", 0, 10);
+                InvokeRepeating("AirStrike", 10, 10);
+                Invoke("AirStrikeDud", 30);
                 startedPhase2 = true;
             }
         }
@@ -166,12 +168,13 @@ public class DumpBoss : MonoBehaviour
             birdCounter = 0;
         }
     }
-    void ThrowBomb()
+    void AirStrike()
     {
+        airStrikeCounter++;
 
     }
-    void ShootLaser()
+    void AirStrikeDud()
     {
-
+        CancelInvoke("AirStrike");
     }
 }
