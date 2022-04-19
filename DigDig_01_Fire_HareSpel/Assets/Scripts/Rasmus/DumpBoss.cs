@@ -10,7 +10,7 @@ public class DumpBoss : MonoBehaviour
     bool startedPhase3 = false;
     bool increasedPhase = false;
     bool dead = false;
-    float transportSpeed = 3f;
+    float transportSpeed = 1f;
     float walkingSpeed = 2;
     int dumpPhase = 1;
 
@@ -40,6 +40,7 @@ public class DumpBoss : MonoBehaviour
     public RuntimeAnimatorController dumpWithBoss;
     public RuntimeAnimatorController dumpWall;
     public RuntimeAnimatorController dumpPhase3;
+    public RuntimeAnimatorController dumpDead;
 
     Animator animator;
 
@@ -67,16 +68,19 @@ public class DumpBoss : MonoBehaviour
     {
         Debug.Log("birdcount is" + birdCounter);
         Debug.Log(hp);
-        if (hp <= 0 && increasedPhase == false && dumpPhase != 3)
+        if (hp <= 0 && increasedPhase == false && startedPhase3 == false)
         {
             CancelInvoke();
             dumpPhase++;
             transporting = true;
             increasedPhase = true;
         }
-        else if (hp <= 0)
+        else if (hp <= 0 && startedPhase3 == true)
         {
             dead = true;
+            animator.runtimeAnimatorController = dumpDead;
+            animator.Play("Dump death");
+            Invoke("DeathDelay", 1.4f);
         }
 
         if (transform.position.x >= 5 && dumpPhase == 1 && transporting == true)
@@ -116,9 +120,13 @@ public class DumpBoss : MonoBehaviour
             if (startedPhase2 == false && transporting == false)
             {
                 hp = 1;
+                
                 SpawnWall();
                 InvokeRepeating("SpawnBird", 1, 1);
                 InvokeRepeating("AirStrike", 10, 10);
+                Invoke("WallDelay", 2);
+                animator.runtimeAnimatorController = dumpWall;
+                animator.Play("Dump Cast wall");
                 increasedPhase = false;
                 startedPhase2 = true;
             }
@@ -136,7 +144,7 @@ public class DumpBoss : MonoBehaviour
             if (startedPhase3 == false && transporting == false)
             {
                 hp = 100;
-                InvokeRepeating("Randomizer", 0, 1);
+                InvokeRepeating("Randomizer", 0, 0.5f);
                 InvokeRepeating("SpawnHunter", 0, 4);
                 walkingSpeed = 5;
                 startedPhase3 = true;
@@ -191,8 +199,11 @@ public class DumpBoss : MonoBehaviour
     }
     void WallDelay()
     {
-        animator.runtimeAnimatorController = dumpWall;
         transporting = false;
+    }
+    void DeathDelay()
+    {
+        Destroy(gameObject);
     }
     void TrumpHunterShoot()
     {
@@ -212,6 +223,7 @@ public class DumpBoss : MonoBehaviour
     {
         birdCounter++;
         Instantiate(bird, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+        animator.Play("Dump bird");
         if (birdCounter == 9)
         {
             CancelInvoke("SpawnBird");
