@@ -7,7 +7,9 @@ public class EnemySpawner : MonoBehaviour
     public GameObject fox;
     public GameObject[] hunters;
     public GameObject[] dogs;
-    public GameObject hunterBoss;
+    public GameObject hunterBoss1;
+    public GameObject hunterBoss2;
+    public GameObject hunterBoss3;
     public GameObject dumpBoss;
     public GameObject hunterBossDummy;
 
@@ -23,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
 
     public static int huntersActive = 0;
 
-    int huntersUnlocked = 0;
+    public int huntersUnlocked = 0;
     int dogsUnlocked = 0;
 
     bool waveOver = false;
@@ -47,9 +49,11 @@ public class EnemySpawner : MonoBehaviour
                 nextTimeToSpawn = Time.time + spawnDelay;
             }
 
-            else if (huntersSpawned == hunterTargetAmount && huntersActive == 0 && waveOver == false)
+            if(huntersSpawned == hunterTargetAmount && huntersActive == 0 && waveOver == false)
             {
                 waveOver = true;
+                CancelInvoke("FoxSpawner");
+                CancelInvoke("DogSpawner");
                 Invoke("NextWave", 4);
             }
         }
@@ -58,7 +62,7 @@ public class EnemySpawner : MonoBehaviour
     void SpawnHunter()
     {
         int spawnPosition = Random.Range(-5, 5);
-        hunterSelect = Random.Range(0, huntersUnlocked);
+        hunterSelect = Random.Range(0, huntersUnlocked + 1);
         Instantiate(hunters[hunterSelect], new Vector3(transform.position.x, transform.position.y + spawnPosition, 0), Quaternion.identity);
         huntersSpawned++;
         huntersActive++;
@@ -84,50 +88,72 @@ public class EnemySpawner : MonoBehaviour
             Invoke("SpawnDump", 3);
         }
 
-        if (waveNumber < 5)
+        if (isBossWave == false)
         {
-            hunterTargetAmount += 1;
-        }
-        else if (waveNumber < 10 && waveNumber > 6)
-        {
-            hunterTargetAmount += 2;
-            spawnDelay = 2f;
-            huntersUnlocked = 1;
-        }
-        else
-        {
-            hunterTargetAmount += 1;
-            spawnDelay = 1f;
-            huntersUnlocked = 2;
-        }
-        Debug.Log(waveNumber);
+            if (waveNumber < 5)
+            {
+                hunterTargetAmount += 1;
+            }
+            else if (waveNumber < 10)
+            {
+                hunterTargetAmount += 2;
+                spawnDelay = 2f;
+                huntersUnlocked = 1;
+                Debug.Log("ThisShouldHappen");
+            }
+            else if (waveNumber > 10)
+            {
+                hunterTargetAmount += 2;
+                spawnDelay = 1f;
+                huntersUnlocked = 2;
+            }
 
-        if (waveNumber > 5)
-        {
-            InvokeRepeating("FoxSpawner", 0, 1);
+            if (waveNumber > 5)
+            {
+                InvokeRepeating("FoxSpawner", 0, 1);
+            }
+            if (waveNumber > 10)
+            {
+                InvokeRepeating("DogSpawner", 0, 1);
+            }
+            if (waveNumber > 15)
+            {
+                dogsUnlocked = 1;
+            }
         }
-        if (waveNumber > 10)
-        {
-            InvokeRepeating("DogSpawner", 0, 1);
-        }
-        if (waveNumber > 15)
-        {
-            dogsUnlocked = 1;
-        }
+
 
     }
     void SpawnHunterBoss()
     {
-        Instantiate(hunterBoss, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
-        huntersActive++;
+        hunterTargetAmount = 1;
+        if(waveNumber == 5)
+        {
+            Instantiate(hunterBoss1, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+            huntersActive++;
+            huntersSpawned++;
+        }
+        else if (waveNumber == 10)
+        {
+            Instantiate(hunterBoss2, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+            huntersActive++;
+            huntersSpawned++;
+        }
+        else if (waveNumber == 15)
+        {
+            Instantiate(hunterBoss3, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+            huntersActive++;
+            huntersSpawned++;
+        }
     }
     void SpawnDump()
     {
+        hunterTargetAmount = 1;
         Instantiate(dumpBoss, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
     }
     void FoxSpawner()
     {
-        int spawnRandomizer = Random.Range(1, 10);
+        int spawnRandomizer = Random.Range(1, 9);
         int spawnPosition = Random.Range(-5, 5);
         if (spawnRandomizer == 1)
         {
@@ -136,11 +162,11 @@ public class EnemySpawner : MonoBehaviour
     }
     void DogSpawner()
     {
-        int spawnRandomizer = Random.Range(1, 10);
+        int spawnRandomizer = Random.Range(1, 9);
         if (spawnRandomizer == 1)
         {
             int spawnPosition = Random.Range(-5, 5);
-            int typeRandomizer = Random.Range(0, dogsUnlocked);
+            int typeRandomizer = Random.Range(0, dogsUnlocked + 1);
             Instantiate(dogs[typeRandomizer], new Vector3(transform.position.x, transform.position.y + spawnPosition, 0), Quaternion.identity);
         }
 

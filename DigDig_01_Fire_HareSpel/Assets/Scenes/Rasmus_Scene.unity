@@ -4372,6 +4372,7 @@ MonoBehaviour:
   dogs: []
   hunterBoss: {fileID: 0}
   dumpBoss: {fileID: 0}
+  hunterBossDummy: {fileID: 0}
   waveNumber: 1
   hunterSelect: 0
   huntersSpawned: 0

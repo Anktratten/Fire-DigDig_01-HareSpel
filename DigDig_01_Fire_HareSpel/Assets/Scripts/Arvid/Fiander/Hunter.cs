@@ -26,6 +26,7 @@ public class Hunter : MonoBehaviour
         hp = 1;
         ScoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
         Player = GameObject.Find("Player_Arvid");
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame

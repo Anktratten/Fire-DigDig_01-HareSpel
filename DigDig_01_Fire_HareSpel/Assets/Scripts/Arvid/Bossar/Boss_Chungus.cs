@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Boss_Chungus : MonoBehaviour
 {
     public float speed;
-    public int hp;
+    public int hp = 1;
     float delay = 0.5f;
     float prevSpeed = 1;
     public static bool dead;
