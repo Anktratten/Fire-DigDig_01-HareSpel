@@ -5631,6 +5631,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6085363861904216220, guid: de5ef62d408ce7b499cc95c95c29a017, type: 3}
+      propertyPath: shotgun_n1
+      value: 
+      objectReference: {fileID: 1458929712008051245, guid: 10b9200f0621e0442affdd8d11391d65, type: 3}
+    - target: {fileID: 6085363861904216220, guid: de5ef62d408ce7b499cc95c95c29a017, type: 3}
+      propertyPath: shotgun_u1
+      value: 
+      objectReference: {fileID: 4772125845029819010, guid: 99ad37e9325ccf44d9b0f51b53032f4f, type: 3}
     - target: {fileID: 6085363861904216221, guid: de5ef62d408ce7b499cc95c95c29a017, type: 3}
       propertyPath: shop
       value: 

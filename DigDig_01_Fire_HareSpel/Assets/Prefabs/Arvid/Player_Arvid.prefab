@@ -164,6 +164,10 @@ MonoBehaviour:
   coolDown: -1
   pistolBullet: {fileID: 291516597015983562, guid: 039693b3c16635f4592bc32cd667b976, type: 3}
   shotgunBullet: {fileID: 9175331198550860906, guid: 379be22c61907ed428ba79bcdf73f192, type: 3}
+  shotgun_u1: {fileID: 4772125845029819010, guid: 99ad37e9325ccf44d9b0f51b53032f4f, type: 3}
+  shotgun_n1: {fileID: 1458929712008051245, guid: 10b9200f0621e0442affdd8d11391d65, type: 3}
+  shotgun_u2: {fileID: 3122399105639092448, guid: 729260ef0a8572c40976af5f7950e492, type: 3}
+  shotgun_n2: {fileID: 4357605026516922898, guid: 5a12b37330f8ae64f97ea07895bde2c6, type: 3}
   assaultRifleBullet: {fileID: 1791520680569244286, guid: abdfd8feb58f8fb4ca58110cd6c4d6cc, type: 3}
   animator: {fileID: 6085363861904216289}
   delay: 1

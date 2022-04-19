@@ -23,6 +23,10 @@ public class NewMovement : MonoBehaviour
 
     public GameObject pistolBullet;
     public GameObject shotgunBullet;
+    public GameObject shotgun_u1; //up1
+    public GameObject shotgun_n1; //ner1
+    public GameObject shotgun_u2;
+    public GameObject shotgun_n2;
     public GameObject assaultRifleBullet;
 
     public Animator animator;
@@ -106,24 +110,24 @@ public class NewMovement : MonoBehaviour
                     {
                         if (UpgradeController.shotgunLevel == 1)
                         {
-                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +1), Quaternion.identity);
-                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, -1), Quaternion.identity);
+                            Instantiate(shotgun_u1, new Vector3(transform.position.x + 1, transform.position.y +0.1f, 0), Quaternion.identity);
+                            Instantiate(shotgun_n1, new Vector3(transform.position.x + 1, transform.position.y -0.1f, 0), Quaternion.identity);
                             nextTimeToFire = Time.time + shotgunCooldown[0];
                         }
                         else if (UpgradeController.shotgunLevel == 2)
                         {
-                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +1), Quaternion.identity);
-                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +0), Quaternion.identity);
-                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, -1), Quaternion.identity);
+                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
+                            Instantiate(shotgun_u1, new Vector3(transform.position.x + 1, transform.position.y + 0.1f, 0), Quaternion.identity);
+                            Instantiate(shotgun_n1, new Vector3(transform.position.x + 1, transform.position.y - 0.1f, 0), Quaternion.identity);
                             nextTimeToFire = Time.time + shotgunCooldown[1];
                         }
                         else if (UpgradeController.shotgunLevel == 3)
                         {
-                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +2), Quaternion.identity);
-                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +1), Quaternion.identity);
-                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, +0), Quaternion.identity);
-                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, -1), Quaternion.identity);
-                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, -2), Quaternion.identity);
+                            Instantiate(shotgunBullet, new Vector3(transform.position.x + 1, transform.position.y, 0), Quaternion.identity);
+                            Instantiate(shotgun_u1, new Vector3(transform.position.x + 1, transform.position.y + 0.1f, 0), Quaternion.identity);
+                            Instantiate(shotgun_n1, new Vector3(transform.position.x + 1, transform.position.y - 0.1f, 0), Quaternion.identity);
+                            Instantiate(shotgun_u2, new Vector3(transform.position.x + 1, transform.position.y + 0.2f, 0), Quaternion.identity);
+                            Instantiate(shotgun_n2, new Vector3(transform.position.x + 1, transform.position.y - 0.2f, 0), Quaternion.identity);
                             nextTimeToFire = Time.time + shotgunCooldown[2];
                         }
                     }
