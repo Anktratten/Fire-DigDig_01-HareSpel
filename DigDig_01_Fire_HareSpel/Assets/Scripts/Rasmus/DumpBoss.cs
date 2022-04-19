@@ -27,7 +27,7 @@ public class DumpBoss : MonoBehaviour
     public GameObject bird;
     public GameObject laser;
     public GameObject wall;
-    public GameObject bomb;
+    public GameObject airStrike;
 
     Vector3 targetLocation;
 
@@ -98,7 +98,6 @@ public class DumpBoss : MonoBehaviour
                 SpawnWall();
                 InvokeRepeating("SpawnBird", 1, 1);
                 InvokeRepeating("AirStrike", 10, 10);
-                Invoke("AirStrikeDud", 30);
                 startedPhase2 = true;
             }
         }
@@ -171,10 +170,11 @@ public class DumpBoss : MonoBehaviour
     void AirStrike()
     {
         airStrikeCounter++;
-
-    }
-    void AirStrikeDud()
-    {
-        CancelInvoke("AirStrike");
+        GameObject airStrikeTemp = Instantiate(airStrike, new Vector3(10, 4.7f, 0), Quaternion.identity);
+        if (airStrikeCounter == 2)
+        {
+            airStrikeTemp.gameObject.GetComponent<DumpAirstrike>().isDud = true;
+            airStrikeCounter = 0;
+        }
     }
 }

@@ -7,7 +7,7 @@ public class DumpAirstrike : MonoBehaviour
     public GameObject bomb;
     int movementSpeed = 10;
     public GameObject bombDud;
-    public bool isDud;
+    public bool isDud = false;
     bool bombDropped;
 
     // Start is called before the first frame update
