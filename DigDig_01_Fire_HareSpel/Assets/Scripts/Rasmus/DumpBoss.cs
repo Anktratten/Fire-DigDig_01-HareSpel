@@ -79,6 +79,8 @@ public class DumpBoss : MonoBehaviour
         {
             dead = true;
             animator.runtimeAnimatorController = dumpDead;
+            animator.Play("Dump death");
+            Invoke("DeathDelay", 1.4f);
         }
 
         if (transform.position.x >= 5 && dumpPhase == 1 && transporting == true)
@@ -198,6 +200,10 @@ public class DumpBoss : MonoBehaviour
     void WallDelay()
     {
         transporting = false;
+    }
+    void DeathDelay()
+    {
+        Destroy(gameObject);
     }
     void TrumpHunterShoot()
     {
