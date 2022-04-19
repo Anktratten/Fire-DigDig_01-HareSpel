@@ -40,19 +40,19 @@ public class Hunter : MonoBehaviour
 
                 if (transform.position.x >= 7 && transporting == true)
                 {
-                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y/* + speed * Time.deltaTime*/, transform.position.z);
+                    transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
                     animator.SetFloat("fastnes", Mathf.Abs(1));
                 }
                 else if (transform.position.x <= 7)
                 {
                     transporting = false;
-                    /*transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y /*- speed * Time.deltaTime, transform.position.z);*/
                     animator.SetFloat("fastnes", Mathf.Abs(1));
                 }
                 else
                 {
 
                 }
+
                 if (transporting == false)
                 {
                     if (nextTimeToFire < Time.time)
