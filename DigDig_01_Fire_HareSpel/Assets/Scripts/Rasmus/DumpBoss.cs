@@ -37,6 +37,8 @@ public class DumpBoss : MonoBehaviour
     public static int huntersActive = 0;
     GameObject spawner;
 
+    Animator animator;
+
     Vector3 targetLocation;
 
     Vector3[] positions = new Vector3[6];
@@ -53,6 +55,7 @@ public class DumpBoss : MonoBehaviour
         positions[4] = new Vector3(5, 1.5f, 0);
         positions[5] = new Vector3(5, -1.5f, 0);
         spawner = GameObject.Find("Enemy Spawner");
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -78,7 +81,8 @@ public class DumpBoss : MonoBehaviour
         }
         else if (transform.position.x <= 5)
         {
-            transporting = false;
+            animator.SetBool("Dump pickup", true);
+            Invoke("PickupDelay", 1);
         }
 
         if (transporting == false)
@@ -175,14 +179,20 @@ public class DumpBoss : MonoBehaviour
             }
         } while (current_location == targetLocation);
     }
-
+    void PickupDelay()
+    {
+        animator.runtimeAnimatorController = Resources.Load("Animation/Enemies/Dump animations/DumpWBoss") as RuntimeAnimatorController;
+        transporting = false;
+    }
     void TrumpHunterShoot()
     {
+        animator.SetBool("Fire", true);
         Instantiate(shot, new Vector3(transform.position.x + -1.0f, transform.position.y, -0.1f), Quaternion.identity);
         Instantiate(shotgun_down, new Vector3(transform.position.x + -0.9f, transform.position.y, -0.1f), Quaternion.identity);
         Instantiate(shotgun_up, new Vector3(transform.position.x + -0.9f, transform.position.y, 0.1f), Quaternion.identity);
         Instantiate(spread_down, new Vector3(transform.position.x + -0.8f, transform.position.y, -0.1f), Quaternion.identity);
         Instantiate(spread_up, new Vector3(transform.position.x + -0.8f, transform.position.y, 0.1f), Quaternion.identity);
+        //animator.Play();
     }
     void SpawnWall()
     {
