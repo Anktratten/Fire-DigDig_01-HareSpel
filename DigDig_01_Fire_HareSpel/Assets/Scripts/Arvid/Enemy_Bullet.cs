@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy_Bullet : MonoBehaviour
 {
     public int bs = 7;
+    public float shotgun;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class Enemy_Bullet : MonoBehaviour
     {
         if (PauseController.isPaused == false)
         {
-            transform.position = new Vector3(transform.position.x - bs * Time.deltaTime, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x - bs * Time.deltaTime, transform.position.y + shotgun * Time.deltaTime, transform.position.z);
         }
         if (transform.position.x < -15)
         {

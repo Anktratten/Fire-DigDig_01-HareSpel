@@ -5,14 +5,19 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
     public int bs; //bs = BulletSpeed
+    public float shotgun;
     bool walled;
+    private void Start()
+    {
+        bs = 10;
+    }
     void Update()
     {
         if (PauseController.isPaused == false)
         {
             if (walled == false)
             {
-                transform.position = new Vector3(transform.position.x + bs * Time.deltaTime, transform.position.y, transform.position.z);
+                transform.position = new Vector3(transform.position.x + bs * Time.deltaTime, transform.position.y + shotgun * Time.deltaTime, transform.position.z);
             }
             else
             {

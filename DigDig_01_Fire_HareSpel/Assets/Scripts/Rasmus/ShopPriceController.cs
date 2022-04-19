@@ -15,14 +15,21 @@ public class ShopPriceController : MonoBehaviour
     public GameObject assaultRifleUpgradeButton;
 
     public TextMeshProUGUI coinsText;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
+    {
+
+    }
+    public void ShopButtonsToggle()
     {
         pistolCostText.SetText("" + UpgradeController.pistolCost);
         shotgunCostText.SetText("" + UpgradeController.shotgunCost);
@@ -30,7 +37,7 @@ public class ShopPriceController : MonoBehaviour
 
         coinsText.SetText("" + UpgradeController.coins);
 
-        if (UpgradeController.pistolCost <= UpgradeController.coins)
+        if (UpgradeController.pistolCost <= UpgradeController.coins && UpgradeController.pistolButtonLocked == false)
         {
             pistolUpgradeButton.GetComponent<Button>().interactable = true;
         }
@@ -40,7 +47,7 @@ public class ShopPriceController : MonoBehaviour
             pistolUpgradeButton.GetComponent<ShopPriceToggle>().EnableText();
         }
 
-        if (UpgradeController.shotgunCost <= UpgradeController.coins)
+        if (UpgradeController.shotgunCost <= UpgradeController.coins && UpgradeController.shotgunButtonLocked == false)
         {
             shotgunUpgradeButton.GetComponent<Button>().interactable = true;
         }
@@ -50,7 +57,7 @@ public class ShopPriceController : MonoBehaviour
             shotgunUpgradeButton.GetComponent<ShopPriceToggle>().EnableText();
         }
 
-        if (UpgradeController.shotgunCost <= UpgradeController.coins)
+        if (UpgradeController.shotgunCost <= UpgradeController.coins && UpgradeController.assaultRifleButtonLocked == false)
         {
             assaultRifleUpgradeButton.GetComponent<Button>().interactable = true;
         }
@@ -61,3 +68,5 @@ public class ShopPriceController : MonoBehaviour
         }
     }
 }
+
+

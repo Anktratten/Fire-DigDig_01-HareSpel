@@ -7,10 +7,7 @@ public class PauseController : MonoBehaviour
 {
     public static bool isPaused = false;
     public GameObject menu;
-
-    public GameObject pistolUpgradeButton;
-    public GameObject shotgunUpgradeButton;
-    public GameObject assaultRifleUpgradeButton;
+    public GameObject shop;
 
 
     // Start is called before the first frame update
@@ -25,13 +22,14 @@ public class PauseController : MonoBehaviour
 
     }
 
-    public void OpenMenu()
+    public void OpenShopMenu()
     {
         menu.SetActive(true);
         isPaused = true;
+        shop.GetComponent<ShopPriceController>().ShopButtonsToggle();
     }
 
-    public void CloseMenu()
+    public void CloseShopMenu()
     {
         menu.SetActive(false);
         isPaused = false;

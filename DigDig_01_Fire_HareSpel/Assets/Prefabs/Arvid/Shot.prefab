@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bs: 7
+  shotgun: 0
 --- !u!61 &7706117820270727012
 BoxCollider2D:
   m_ObjectHideFlags: 0
