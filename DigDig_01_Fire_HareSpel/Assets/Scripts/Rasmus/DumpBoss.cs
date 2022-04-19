@@ -13,6 +13,9 @@ public class DumpBoss : MonoBehaviour
     float walkingSpeed = 2;
     int dumpPhase = 1;
 
+    int birdCounter = 0;
+    int airStrikeCounter = 0;
+
     public static bool wallUp = false;
 
     public GameObject shot;
@@ -46,6 +49,7 @@ public class DumpBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("birdcount is" + birdCounter);
         Debug.Log(hp);
         if (hp <= 0 && increasedPhase == false)
         {
@@ -79,12 +83,12 @@ public class DumpBoss : MonoBehaviour
         }
         if (dumpPhase == 2)
         {
-            if (transform.position.x <= 7 && transform.position.y != 0 && transporting == true)
+            if (transform.position.x <= 7 || transform.position.y != 0 && transporting == true)
             {
                 Debug.Log("duckfuck");
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(7, 0, 0), walkingSpeed * Time.deltaTime);
             }
-            if (transform.position.x >= 7 && transform.position.y == 0)
+            if (transform.position.x >= 7 || transform.position.y == 0)
             {
                 transporting = false;
             }
@@ -92,9 +96,9 @@ public class DumpBoss : MonoBehaviour
             {
                 hp = 1;
                 SpawnWall();
-                InvokeRepeating("SpawnBird", 0, 2);
-                InvokeRepeating("ThrowBomb", 0, 20);
-                InvokeRepeating("ShootLaser", 0, 10);
+                InvokeRepeating("SpawnBird", 1, 1);
+                InvokeRepeating("AirStrike", 10, 10);
+                Invoke("AirStrikeDud", 30);
                 startedPhase2 = true;
             }
         }
@@ -116,7 +120,7 @@ public class DumpBoss : MonoBehaviour
         current_location = targetLocation.y;
         do
         {
-            int result = Random.Range(1, 3);
+            int result = Random.Range(1, 6);
             if (result == 1)
             {
                 targetLocation = positions[1];
@@ -155,14 +159,22 @@ public class DumpBoss : MonoBehaviour
     }
     void SpawnBird()
     {
+        birdCounter++;
+        Instantiate(bird, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+        if (birdCounter == 9)
+        {
+            CancelInvoke("SpawnBird");
+            InvokeRepeating("SpawnBird", 2, 1);
+            birdCounter = 0;
+        }
+    }
+    void AirStrike()
+    {
+        airStrikeCounter++;
 
     }
-    void ThrowBomb()
+    void AirStrikeDud()
     {
-
-    }
-    void ShootLaser()
-    {
-
+        CancelInvoke("AirStrike");
     }
 }

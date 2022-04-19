@@ -6,10 +6,12 @@ public class TwitterBird : MonoBehaviour
 {
     public GameObject player;
     bool transporting = true;
-    float speed = 6;
-    float rotationSpeed = 1;
+    float speed = 17;
     bool still = false;
     Vector3 attackTarget;
+
+    public float borderX = 8.57f;
+    public float borderY = 4.7f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,7 @@ public class TwitterBird : MonoBehaviour
         }
         else
         {
+            Invoke("LaunchBird", 0.4f);
             if (still == false)
             {
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
@@ -45,12 +48,30 @@ public class TwitterBird : MonoBehaviour
         if (transform.position.x == 5 && transform.position.y == 3 && transporting == true)
         {
             transporting = false;
-
         }
+
+        if (transform.position.x > borderX)
+        {
+            Destroy(gameObject);
+        }
+        if (transform.position.x < -borderX)
+        {
+            Destroy(gameObject);
+        }
+        if (transform.position.y > borderY)
+        {
+            Destroy(gameObject);
+        }
+        if (transform.position.y < -borderY)
+        {
+            Destroy(gameObject);
+        }
+
+
     }
     void LaunchBird()
     {
         still = true;
-        transform.position += transform.forward * Time.deltaTime * 6;
+        transform.position += transform.right * Time.deltaTime * speed;
     }
 }

@@ -10,7 +10,7 @@ public class Jakthund_Weak : MonoBehaviour
     float delay = 0.5f;
     bool dead;
     Text ScoreText;
-    public GameObject Player;
+    GameObject Player;
     public Animator animator;
     float prevSpeed = 1;
 
@@ -19,6 +19,7 @@ public class Jakthund_Weak : MonoBehaviour
     {
         hp = 1;
         ScoreText = GameObject.FindGameObjectWithTag("Score").GetComponent<Text>();
+        Player = GameObject.Find("Player_Arvid");
     }
 
     // Update is called once per frame
@@ -66,7 +67,7 @@ public class Jakthund_Weak : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            hp--;
+            hp -= collision.gameObject.GetComponent<BulletDamage>().damage;
         }
 
     }

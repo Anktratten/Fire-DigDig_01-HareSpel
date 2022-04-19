@@ -7,6 +7,10 @@ public class bullet : MonoBehaviour
     public int bs; //bs = BulletSpeed
     public float shotgun;
     bool walled;
+    private void Start()
+    {
+        bs = 10;
+    }
     void Update()
     {
         if (PauseController.isPaused == false)
