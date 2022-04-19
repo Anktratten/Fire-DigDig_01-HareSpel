@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c8b3be8640db6d4b9fff83b711b5f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  result: 0
   shot: {fileID: 4920926347624431735, guid: 47669a6f321773942b0159927b978897, type: 3}
   shotgun_down: {fileID: 3045580312082180062, guid: 605cbfdb64c6c694bae34485c3fba1b8, type: 3}
   shotgun_up: {fileID: 8428202261553530489, guid: 566143d44741fa24c862cc1996b00b4b, type: 3}
@@ -111,6 +112,9 @@ MonoBehaviour:
   - {fileID: 4196565904436161473, guid: 3d38e431a3098d749abd42ca5e5bed17, type: 3}
   - {fileID: 7977837382251056403, guid: 6bc43e2f2710dfb4d85415837576cc2d, type: 3}
   hunterSelect: 0
+  dumpWithBoss: {fileID: 9100000, guid: d12e9e6ca34e55c41ad1781ed7bd7298, type: 2}
+  dumpWall: {fileID: 9100000, guid: e0d449da11f1ed14587772c1fed03f04, type: 2}
+  dumpPhase3: {fileID: 9100000, guid: e039b2b693b1ee4428e22ec1ec79da99, type: 2}
 --- !u!95 &-2203275264145204559
 Animator:
   serializedVersion: 3

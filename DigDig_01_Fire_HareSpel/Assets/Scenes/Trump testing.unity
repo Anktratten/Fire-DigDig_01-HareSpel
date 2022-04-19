@@ -1131,7 +1131,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6425102726021342805, guid: 2fb84bc38b0386f4a95442e39240bdec, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6425102726021342805, guid: 2fb84bc38b0386f4a95442e39240bdec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2359,9 +2359,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dump Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 3613463908824197794, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5110761566671313522, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5110761566671313522, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5485,7 +5489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8428202261553530490, guid: 566143d44741fa24c862cc1996b00b4b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8428202261553530490, guid: 566143d44741fa24c862cc1996b00b4b, type: 3}
       propertyPath: m_LocalPosition.x

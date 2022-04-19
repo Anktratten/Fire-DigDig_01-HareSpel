@@ -32,6 +32,10 @@ public class Boss_Fiander : MonoBehaviour
     {
         if (PauseController.isPaused == false)
         {
+            if (Boss_Chungus.dead == true)
+            {
+                Destroy(gameObject);
+            }
             if (shotgun == false && burst == false)
             {
                 if (nextTimeToFire < Time.time)
