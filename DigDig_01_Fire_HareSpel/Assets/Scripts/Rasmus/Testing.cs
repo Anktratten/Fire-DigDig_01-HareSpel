@@ -2,30 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Testing : MonoBehaviour
+public class Pickup : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public enum PickupType
     {
-        
+        Coin,
+        Health
+    }
+    /* public int score;
+    public void AddScore(int amount)
+    {
+        score += amount;
+    }
+    */
+    public void AddCoins(int amount)
+    {
+        UpgradeController.coins += amount;
+        // To-do: update the UI
     }
 
-    // Update is called once per frame
-    void Update()
+    public PickupType type;
+    public int value = 1;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        // if the pickup object has collided with the player,
+        if (collision.CompareTag("Player"))
         {
-            InvokeRepeating("testing", 0, 1);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            CancelInvoke("testing");
+            // if the pickup type is 'Coin'
+            if (type == PickupType.Coin)
+            {
+            }
+            // if the pickup type is 'Health'
+            else if (type == PickupType.Health)
+            {
+            }
         }
     }
 
-    void testing()
-    {
-        Debug.Log("ducks");
-    }
+
+
+
 }
