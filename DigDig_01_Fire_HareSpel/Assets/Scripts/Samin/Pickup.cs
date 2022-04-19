@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
+    public GameObject lives;
     public enum PickupType
     {
         Coin,
@@ -29,10 +30,12 @@ public class Pickup : MonoBehaviour
                 Destroy(collision.gameObject);
                 }
                 // if the pickup type is 'Health'
-                else if (collision.gameObject.tag == "Health")
+                if (collision.gameObject.tag == "Health")
                 {
+            Debug.Log("anka");
                 NewMovement.liv++;
-                Destroy(collision.gameObject);
+            lives.GetComponent<Liv>().loselives(-1);
+            Destroy(collision.gameObject);
             }
             }
         }
