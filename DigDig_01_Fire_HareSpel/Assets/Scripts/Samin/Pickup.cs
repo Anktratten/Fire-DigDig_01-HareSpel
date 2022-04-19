@@ -21,7 +21,7 @@ public class Pickup : MonoBehaviour
         // To-do: update the UI
     }
     
-    public PickupType type;
+    
         public int value = 1;
         private void OnTriggerEnter2D(Collider2D collision)
         {
