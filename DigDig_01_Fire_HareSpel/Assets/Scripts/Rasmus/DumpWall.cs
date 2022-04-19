@@ -17,8 +17,11 @@ public class DumpWall : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<SpriteRenderer>().flipY = true;
-        collision.gameObject.tag = "Enemy";
-        collision.gameObject.GetComponent<bullet>().bs *= -1;
+        if(collision.gameObject.tag == "Bullet")
+        {
+            collision.gameObject.GetComponent<SpriteRenderer>().flipY = true;
+            collision.gameObject.tag = "Enemy";
+            collision.gameObject.GetComponent<bullet>().bs *= -1;
+        }
     }
 }
