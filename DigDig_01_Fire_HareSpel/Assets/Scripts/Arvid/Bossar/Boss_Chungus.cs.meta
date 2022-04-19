@@ -3,7 +3,17 @@ guid: c94b7913b867d66488b33880040acf02
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Player: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - Shot: {fileID: 5936065371253879408, guid: 4fdfefe2997cbb24ea996996fe481891, type: 3}
+  - Shotgun_down: {fileID: 1630905603938471913, guid: 7155698a2910067499fcd2ad18d8fbc3, type: 3}
+  - Shotgun_up: {fileID: 3887395729859697849, guid: f73705c39d5918049ab0929f5c204059, type: 3}
+  - spread_down: {fileID: 733089959491063478, guid: 3af5de26c4275bb43a0cdda6bb716ceb, type: 3}
+  - spread_up: {fileID: 8091655055669512355, guid: 47d50c467db67224d9b82ec73915e34b, type: 3}
+  - fiande_nere: {instanceID: 0}
+  - fiande_uppe: {instanceID: 0}
+  - Djur: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -22,6 +22,9 @@ public class Boss_Chungus : MonoBehaviour
     public float Cooldown;
     float nextTimeToFire = 0;
 
+    float Animal_spawn = 10;
+    float animal_cooldown = 0;
+
     public float Walk_cooldown;
     float walk = 0;
 
@@ -33,6 +36,8 @@ public class Boss_Chungus : MonoBehaviour
 
     public Transform fiande_nere;
     public Transform fiande_uppe;
+
+    public Transform Djur;
 
     bool smtn = false;
 
@@ -70,7 +75,16 @@ public class Boss_Chungus : MonoBehaviour
                 {
                     deez();
                     animator.SetFloat("shoot", Mathf.Abs(1));
-                    if (nextTimeToFire < Time.time && smtn == true)
+
+                    if (animal_cooldown <Time.time && smtn == true)
+                    {
+                        Instantiate(Djur, new Vector3(transform.position.x + 6.0f, transform.position.y - 5.0f), Quaternion.identity);
+                        Instantiate(Djur, new Vector3(transform.position.x + 6.0f, transform.position.y + 5.0f), Quaternion.identity);
+
+                        animal_cooldown = Time.time + Animal_spawn;
+
+                    }
+                    else if (nextTimeToFire < Time.time && smtn == true)
                     {
                         Instantiate(Shot, new Vector3(transform.position.x + -1.0f, transform.position.y, -0.1f), Quaternion.identity);
                         Instantiate(Shotgun_down, new Vector3(transform.position.x + -0.9f, transform.position.y, -0.1f), Quaternion.identity);
