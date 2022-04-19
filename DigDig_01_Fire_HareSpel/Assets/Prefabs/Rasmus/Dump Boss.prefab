@@ -105,7 +105,7 @@ MonoBehaviour:
   bird: {fileID: 8003921912641958876, guid: 2fb84bc38b0386f4a95442e39240bdec, type: 3}
   laser: {fileID: 0}
   wall: {fileID: 8340212453337792371, guid: 0afdb2c2aa2860f41b7d71e496c13954, type: 3}
-  bomb: {fileID: 0}
+  airStrike: {fileID: 878774275524434588, guid: c7fb6b827e42a7d49965bd01d3b243a9, type: 3}
 --- !u!95 &-2203275264145204559
 Animator:
   serializedVersion: 3

@@ -24,4 +24,9 @@ public class DumpWall : MonoBehaviour
             collision.gameObject.GetComponent<bullet>().bs *= -1;
         }
     }
+    public void DestroyWall()
+    {
+        Destroy(gameObject);
+        DumpBoss.wallUp = false;
+    }
 }

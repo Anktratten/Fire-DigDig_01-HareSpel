@@ -101,6 +101,10 @@ public class DumpBoss : MonoBehaviour
                 startedPhase2 = true;
             }
         }
+        if (dumpPhase == 3)
+        {
+
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

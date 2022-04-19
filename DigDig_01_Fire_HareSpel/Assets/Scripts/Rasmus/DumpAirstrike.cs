@@ -25,7 +25,7 @@ public class DumpAirstrike : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (transform.position.x > 0 && bombDropped == false)
+        if (transform.position.x < 0 && bombDropped == false)
         {
             DropBomb();
         }
@@ -35,10 +35,12 @@ public class DumpAirstrike : MonoBehaviour
         if(isDud == false)
         {
             Instantiate(bomb, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
+
         }
         else
         {
             Instantiate(bombDud, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
         }
+        bombDropped = true;
     }
 }
