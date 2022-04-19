@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss fiande nere Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 9217742730928863749, guid: fa42ab7415326d3479c66ab2653c9313, type: 3}
+      propertyPath: m_TagString
+      value: Enemy_bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 9217742730928863750, guid: fa42ab7415326d3479c66ab2653c9313, type: 3}
       propertyPath: m_RootOrder
       value: 0

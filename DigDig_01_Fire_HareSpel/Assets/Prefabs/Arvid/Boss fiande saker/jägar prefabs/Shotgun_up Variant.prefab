@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shotgun_up Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8428202261553530489, guid: 566143d44741fa24c862cc1996b00b4b, type: 3}
+      propertyPath: m_TagString
+      value: Enemy_bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 8428202261553530490, guid: 566143d44741fa24c862cc1996b00b4b, type: 3}
       propertyPath: m_RootOrder
       value: 0

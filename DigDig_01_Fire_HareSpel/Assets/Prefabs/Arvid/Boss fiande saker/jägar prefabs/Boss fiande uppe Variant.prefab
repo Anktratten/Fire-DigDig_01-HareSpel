@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss fiande uppe Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 925415179927752425, guid: aae6554508e46c046934da17a5a88a4f, type: 3}
+      propertyPath: m_TagString
+      value: Enemy_bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 925415179927752426, guid: aae6554508e46c046934da17a5a88a4f, type: 3}
       propertyPath: m_RootOrder
       value: 0
