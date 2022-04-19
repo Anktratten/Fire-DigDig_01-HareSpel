@@ -66,10 +66,10 @@ public class Boss_Chungus : MonoBehaviour
                 {
                   transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y/* + speed * Time.deltaTime*/, transform.position.z);
                   animator.SetFloat("fastnes", Mathf.Abs(1));
-                  Instantiate(fiande_nere, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
-                  Instantiate(fiande_nere, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
-                  Instantiate(fiande_uppe, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
-                  Instantiate(fiande_uppe, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity, gameObject.transform);
+                  Instantiate(fiande_nere, new Vector3(5,-4, 0), Quaternion.identity);
+                  Instantiate(fiande_nere, new Vector3(3,-4, 0), Quaternion.identity);
+                  Instantiate(fiande_uppe, new Vector3(5, 4, 0), Quaternion.identity);
+                  Instantiate(fiande_uppe, new Vector3(3, 4, 0), Quaternion.identity);
                 }
                 else
                 {
