@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Hunter : MonoBehaviour
 
 {
+    public GameObject coin;
     public int speed = 3;
     int hp;
     float delay = 0.5f;
@@ -83,7 +84,7 @@ public class Hunter : MonoBehaviour
         }
 
         if (hp < 1 && dead == false)
-        {
+        { Instantiate(coin, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
             dead = true;
             ScoreText.GetComponent<Score>().addscore(200);
             gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
