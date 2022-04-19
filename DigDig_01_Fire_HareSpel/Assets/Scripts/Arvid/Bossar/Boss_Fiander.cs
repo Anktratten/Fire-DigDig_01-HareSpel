@@ -16,6 +16,7 @@ public class Boss_Fiander : MonoBehaviour
 
     public bool shotgun = false;
     public bool burst = false;
+
     // Start is called before the first frame update
     void Start()
     {
