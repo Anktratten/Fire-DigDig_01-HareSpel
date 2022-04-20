@@ -8,6 +8,7 @@ public class PauseController : MonoBehaviour
     public static bool isPaused = false;
     public GameObject menu;
     public GameObject shop;
+    public GameObject gameOverMenu;
 
     bool oneTime;
 
@@ -24,7 +25,14 @@ public class PauseController : MonoBehaviour
         if (NewMovement.liv <= 0 && oneTime == false)
         {
             oneTime = true;
+            OpenGameOver();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            OpenShopMenu();
+        }
+
     }
 
     public void OpenShopMenu()
@@ -41,6 +49,8 @@ public class PauseController : MonoBehaviour
     }
     public void OpenGameOver()
     {
-
+        gameOverMenu.SetActive(true);
+        NewMovement.liv = 10;
+        isPaused = true;
     }
 }

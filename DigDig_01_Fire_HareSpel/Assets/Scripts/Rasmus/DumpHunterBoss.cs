@@ -16,14 +16,18 @@ public class DumpHunterBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x >= 4 && transporting == true)
+        if (PauseController.isPaused == false)
         {
-            transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
+            if (transform.position.x >= 4 && transporting == true)
+            {
+                transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
+            }
+            else if (transform.position.x <= 4)
+            {
+                transporting = false;
+            }
         }
-        else if (transform.position.x <= 4)
-        {
-            transporting = false;
-        }
+
     }
     public void DestroySelf()
     {

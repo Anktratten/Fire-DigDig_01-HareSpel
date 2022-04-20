@@ -13,26 +13,30 @@ public class DumpAirstrike : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x - movementSpeed * Time.deltaTime, transform.position.y, 0);
+        if (PauseController.isPaused == false)
+        {
+            transform.position = new Vector3(transform.position.x - movementSpeed * Time.deltaTime, transform.position.y, 0);
 
-        if (transform.position.x < -10)
-        {
-            Destroy(gameObject);
+            if (transform.position.x < -10)
+            {
+                Destroy(gameObject);
+            }
+            if (transform.position.x < 0 && bombDropped == false)
+            {
+                DropBomb();
+            }
         }
-        if (transform.position.x < 0 && bombDropped == false)
-        {
-            DropBomb();
-        }
+
     }
     void DropBomb()
     {
-        if(isDud == false)
+        if (isDud == false)
         {
             Instantiate(bomb, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Boss_Chungus : MonoBehaviour
 {
     public float speed;
-    public int hp = 1;
+    public int hp = 50;
     float delay = 0.5f;
     float prevSpeed = 1;
     public static bool dead;
@@ -49,6 +49,7 @@ public class Boss_Chungus : MonoBehaviour
         positions[1] = -3f;
         positions[2] = 0f;
         positions[3] = 3f;
+        hp = 50;
     }
 
     // Update is called once per frame
@@ -137,6 +138,7 @@ public class Boss_Chungus : MonoBehaviour
     }
     void yeet()
     {
+        EnemySpawner.huntersActive--;
         Destroy(gameObject);
     }
     void deez()

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupMovement:MonoBehaviour
+public class PickupMovement : MonoBehaviour
 {
     int speed = 4;
     // Start is called before the first frame update
@@ -14,11 +14,14 @@ public class PickupMovement:MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < -10)
+        if (PauseController.isPaused == false)
         {
-            Destroy(gameObject);
+            if (transform.position.x < -10)
+            {
+                Destroy(gameObject);
+            }
+            transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
         }
-        transform.position = new Vector3(transform.position.x - speed * Time.deltaTime, transform.position.y, transform.position.z);
 
     }
 }

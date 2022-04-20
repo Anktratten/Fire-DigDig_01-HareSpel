@@ -21,6 +21,6 @@ public class Liv : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lives.text = Liv_amount.ToString(); 
+        lives.text = "" + NewMovement.liv;
     }
 }

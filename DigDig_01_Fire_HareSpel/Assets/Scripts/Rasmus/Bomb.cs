@@ -20,18 +20,22 @@ public class Bomb : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y > 0)
+        if (PauseController.isPaused == false)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - moveSpeed * Time.deltaTime);
+            if (transform.position.y > 0)
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y - moveSpeed * Time.deltaTime);
+            }
+            else if (exploding == false)
+            {
+                gameObject.tag = "Enemy";
+                animator.runtimeAnimatorController = bomb;
+                exploding = true;
+                myCollider.size = new Vector2(0.75f, 0.75f);
+                Invoke("Destroy", 0.35f);
+            }
         }
-        else if (exploding == false)
-        {
-            gameObject.tag = "Enemy";
-            animator.runtimeAnimatorController = bomb;
-            exploding = true;
-            myCollider.size = new Vector2(0.75f, 0.75f);
-            Invoke("Destroy", 0.35f);
-        }
+
     }
     void Destroy()
     {

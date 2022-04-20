@@ -32,7 +32,7 @@ public class NewMovement : MonoBehaviour
     public Animator animator;
     float prevSpeed = 1;
     bool dead;
-    public static int liv = 5;
+    public static int liv = 10;
     public float delay = 1f;
 
     float respawn_time = 1.8f;
@@ -44,7 +44,7 @@ public class NewMovement : MonoBehaviour
     void Start()
     {
         PistolSelect();
-        lives  = GameObject.FindGameObjectWithTag("Finish").GetComponent<Text>();
+        lives  = GameObject.Find("Lives Text").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -180,7 +180,6 @@ public class NewMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy" && liv > 0 || collision.gameObject.tag == "Enemy_bullet" && liv > 0)
         {
-            lives.GetComponent<Liv>().loselives(-1);
             animator.SetFloat("Death", Mathf.Abs(2));
             dead = true;
             gameObject.GetComponent<CircleCollider2D>().isTrigger = true;

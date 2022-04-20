@@ -9,7 +9,7 @@ public class UpgradeController : MonoBehaviour
     public static int shotgunLevel = 0;
     public static int assaultRifleLevel = 0;
 
-    public static int coins = 500;
+    public static int coins = 0;
 
     public static int pistolCost;
     public static int shotgunCost;
@@ -18,6 +18,10 @@ public class UpgradeController : MonoBehaviour
     public GameObject pistolUpgradeButton;
     public GameObject shotgunUpgradeButton;
     public GameObject assaultRifleUpgradeButton;
+
+    public Vector3[] pistolStarPositions = new Vector3[3];
+    public Vector3[] shotgunStarPositions = new Vector3[3];
+    public Vector3[] assaultRifleStarPositions = new Vector3[3];
 
     public GameObject shop;
 
@@ -38,6 +42,11 @@ public class UpgradeController : MonoBehaviour
         pistolCost = pistolPrices[pistolLevel];
         shotgunCost = shotgunPrices[shotgunLevel];
         assaultRifleCost = assaultRiflePrices[assaultRifleLevel];
+
+        pistolStarPositions[0] = new Vector3 (-19.5f, 27.5f, 0);
+        pistolStarPositions[1] = new Vector3(-7.5f, 27.5f, 0);
+        pistolStarPositions[2] = new Vector3(-4.5f, 27.5f, 0);
+
     }
 
     // Update is called once per frame
@@ -92,6 +101,7 @@ public class UpgradeController : MonoBehaviour
             assaultRifleUpgradeButton.GetComponent<Button>().spriteState = lockedUpgrade;
             assaultRifleUpgradeButton.GetComponent<Button>().interactable = false;
             assaultRifleButtonLocked = true;
+
         }
     }
 }

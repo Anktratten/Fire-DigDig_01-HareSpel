@@ -41,6 +41,7 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(huntersActive);
         if (PauseController.isPaused == false)
         {
             if (huntersSpawned < hunterTargetAmount && nextTimeToSpawn < Time.time && isBossWave == false)

@@ -42,7 +42,7 @@ public class DumpBoss : MonoBehaviour
     public RuntimeAnimatorController dumpPhase3;
     public RuntimeAnimatorController dumpDead;
     public GameObject DummyBoss;
-
+    public GameObject mainCamera;
     Animator animator;
 
     Vector3 targetLocation;
@@ -63,107 +63,114 @@ public class DumpBoss : MonoBehaviour
         spawner = GameObject.Find("Enemy Spawner");
         animator = GetComponent<Animator>();
         DummyBoss = GameObject.Find("Dump Boss Baby(Clone)");
+        mainCamera = GameObject.Find("Main Camera");
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("birdcount is" + birdCounter);
-        Debug.Log(hp);
-        if (hp <= 0 && increasedPhase == false && startedPhase3 == false)
+        if (PauseController.isPaused == false)
         {
-            CancelInvoke();
-            dumpPhase++;
-            transporting = true;
-            increasedPhase = true;
-        }
-        else if (hp <= 0 && startedPhase3 == true)
-        {
-            dead = true;
-            animator.runtimeAnimatorController = dumpDead;
-            animator.Play("Dump death");
-            Invoke("DeathDelay", 1.4f);
-        }
-
-        if (transform.position.x >= 5 && dumpPhase == 1 && transporting == true)
-        {
-            transform.position = new Vector3(transform.position.x - transportSpeed * Time.deltaTime, transform.position.y, transform.position.z);
-        }
-        else if (transform.position.x <= 5 && transporting == true && dumpPhase == 1)
-        {
-            animator.SetBool("Dump pickup", true);
-            DummyBoss.GetComponent<DumpHunterBoss>().DestroySelf();
-            Invoke("PickupDelay", 1);
-        }
-
-        if (transporting == false)
-        {
-            if (dumpPhase == 1)
+            if (hp <= 0 && increasedPhase == false && startedPhase3 == false)
             {
-                if (startedPhase1 == false)
+                CancelInvoke();
+                dumpPhase++;
+                transporting = true;
+                increasedPhase = true;
+            }
+            else if (hp <= 0 && startedPhase3 == true)
+            {
+                dead = true;
+                animator.runtimeAnimatorController = dumpDead;
+                animator.Play("Dump death");
+                Invoke("DeathDelay", 1.4f);
+            }
+
+            if (transform.position.x >= 5 && dumpPhase == 1 && transporting == true)
+            {
+                transform.position = new Vector3(transform.position.x - transportSpeed * Time.deltaTime, transform.position.y, transform.position.z);
+            }
+            else if (transform.position.x <= 5 && transporting == true && dumpPhase == 1)
+            {
+                animator.SetBool("Dump pickup", true);
+                DummyBoss.GetComponent<DumpHunterBoss>().DestroySelf();
+                Invoke("PickupDelay", 1);
+            }
+
+            if (transporting == false)
+            {
+                if (dumpPhase == 1)
                 {
-                    InvokeRepeating("TrumpHunterShoot", 0, 1);
-                    InvokeRepeating("Randomizer", 0, 5);
-                    startedPhase1 = true;
+                    if (startedPhase1 == false)
+                    {
+                        InvokeRepeating("TrumpHunterShoot", 0, 1);
+                        InvokeRepeating("Randomizer", 0, 5);
+                        startedPhase1 = true;
+                    }
+                    Movement();
+                }
+            }
+            if (dumpPhase == 2)
+            {
+                if (transform.position.x != 7 || transform.position.y != 0 && transporting == true)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(7, 0, 0), walkingSpeed * Time.deltaTime);
+                }
+                if (transform.position.x == 7 || transform.position.y == 0)
+                {
+
+                    transporting = false;
+                }
+                if (startedPhase2 == false && transporting == false)
+                {
+                    hp = 1;
+
+                    SpawnWall();
+                    InvokeRepeating("SpawnBird", 1, 1);
+                    InvokeRepeating("AirStrike", 10, 10);
+                    Invoke("WallDelay", 2);
+                    animator.runtimeAnimatorController = dumpWall;
+                    animator.Play("Dump Cast wall");
+                    increasedPhase = false;
+                    startedPhase2 = true;
+                }
+            }
+            if (dumpPhase == 3 && dead == false)
+            {
+                if (transform.position.x != 6 || transform.position.y != 0 && transporting == true)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(6, 0, 0), walkingSpeed * Time.deltaTime);
+                }
+                if (transform.position.x == 6 || transform.position.y == 0)
+                {
+                    transporting = false;
+                }
+                if (startedPhase3 == false && transporting == false)
+                {
+                    animator.runtimeAnimatorController = dumpPhase3;
+                    animator.Play("Dump Run");
+                    hp = 100;
+                    InvokeRepeating("Randomizer", 0, 0.5f);
+                    InvokeRepeating("SpawnHunter", 0, 4);
+                    walkingSpeed = 5;
+                    startedPhase3 = true;
                 }
                 Movement();
             }
         }
-        if (dumpPhase == 2)
-        {
-            if (transform.position.x != 7 || transform.position.y != 0 && transporting == true)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, new Vector3(7, 0, 0), walkingSpeed * Time.deltaTime);
-            }
-            if (transform.position.x == 7 || transform.position.y == 0)
-            {
 
-                transporting = false;
-            }
-            if (startedPhase2 == false && transporting == false)
-            {
-                hp = 1;
-
-                SpawnWall();
-                InvokeRepeating("SpawnBird", 1, 1);
-                InvokeRepeating("AirStrike", 10, 10);
-                Invoke("WallDelay", 2);
-                animator.runtimeAnimatorController = dumpWall;
-                animator.Play("Dump Cast wall");
-                increasedPhase = false;
-                startedPhase2 = true;
-            }
-        }
-        if (dumpPhase == 3 && dead == false)
-        {
-            if (transform.position.x != 6 || transform.position.y != 0 && transporting == true)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, new Vector3(6, 0, 0), walkingSpeed * Time.deltaTime);
-            }
-            if (transform.position.x == 6 || transform.position.y == 0)
-            {
-                transporting = false;
-            }
-            if (startedPhase3 == false && transporting == false)
-            {
-                animator.runtimeAnimatorController = dumpPhase3;
-                animator.Play("Dump Run");
-                hp = 100;
-                InvokeRepeating("Randomizer", 0, 0.5f);
-                InvokeRepeating("SpawnHunter", 0, 4);
-                walkingSpeed = 5;
-                startedPhase3 = true;
-            }
-            Movement();
-        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Bullet" && wallUp == false && transporting == false)
+        if (PauseController.isPaused == false)
         {
-            hp -= collision.gameObject.GetComponent<BulletDamage>().damage;
-            Destroy(collision.gameObject);
+            if (collision.gameObject.tag == "Bullet" && wallUp == false && transporting == false)
+            {
+                hp -= collision.gameObject.GetComponent<BulletDamage>().damage;
+                Destroy(collision.gameObject);
+            }
         }
+
     }
     void Movement()
     {
@@ -209,7 +216,7 @@ public class DumpBoss : MonoBehaviour
     void DeathDelay()
     {
         Destroy(gameObject);
-
+        mainCamera.GetComponent<GameOver>().LoadStartMenu();
     }
     void TrumpHunterShoot()
     {
