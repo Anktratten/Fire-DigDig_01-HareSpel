@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5459683153459352904}
   m_Layer: 0
   m_Name: Dump Boss
-  m_TagString: Untagged
+  m_TagString: Enemy_bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,9 +113,10 @@ MonoBehaviour:
   - {fileID: 7977837382251056403, guid: 6bc43e2f2710dfb4d85415837576cc2d, type: 3}
   hunterSelect: 0
   dumpWithBoss: {fileID: 9100000, guid: d12e9e6ca34e55c41ad1781ed7bd7298, type: 2}
-  dumpWall: {fileID: 9100000, guid: e0d449da11f1ed14587772c1fed03f04, type: 2}
+  dumpWall: {fileID: 9100000, guid: f49703f68ba857d4b83ce5a842440889, type: 2}
   dumpPhase3: {fileID: 9100000, guid: e039b2b693b1ee4428e22ec1ec79da99, type: 2}
   dumpDead: {fileID: 9100000, guid: c318b7a27db2bca48b2aa8f8707a3ab3, type: 2}
+  DummyBoss: {fileID: 0}
 --- !u!95 &-2203275264145204559
 Animator:
   serializedVersion: 3

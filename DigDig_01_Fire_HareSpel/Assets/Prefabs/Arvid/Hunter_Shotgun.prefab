@@ -104,6 +104,7 @@ MonoBehaviour:
   Shot: {fileID: 4920926347624431732, guid: 47669a6f321773942b0159927b978897, type: 3}
   Shotgun_down: {fileID: 3045580312082180061, guid: 605cbfdb64c6c694bae34485c3fba1b8, type: 3}
   Shotgun_up: {fileID: 8428202261553530490, guid: 566143d44741fa24c862cc1996b00b4b, type: 3}
+  coin: {fileID: 567511198023808041, guid: 23f6887aaad71a04b8b1ceeceaaa4efe, type: 3}
 --- !u!95 &7977837382251056402
 Animator:
   serializedVersion: 3

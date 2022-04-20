@@ -6,11 +6,15 @@ public class Bomb : MonoBehaviour
 {
     float moveSpeed = 8;
     bool exploding = false;
+    BoxCollider2D myCollider;
+    Animator animator;
+    public RuntimeAnimatorController bomb;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        myCollider = gameObject.GetComponent<BoxCollider2D>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,13 +27,14 @@ public class Bomb : MonoBehaviour
         else if (exploding == false)
         {
             gameObject.tag = "Enemy";
-            Explode();
+            animator.runtimeAnimatorController = bomb;
             exploding = true;
+            myCollider.size = new Vector2(0.75f, 0.75f);
+            Invoke("Destroy", 0.35f);
         }
     }
-    void Explode()
+    void Destroy()
     {
-        //animation junk
         Destroy(gameObject);
     }
 }

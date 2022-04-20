@@ -178,7 +178,7 @@ public class NewMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy" && liv > 0)
+        if (collision.gameObject.tag == "Enemy" && liv > 0 || collision.gameObject.tag == "Enemy_bullet" && liv > 0)
         {
             lives.GetComponent<Liv>().loselives(-1);
             animator.SetFloat("Death", Mathf.Abs(2));
@@ -188,7 +188,7 @@ public class NewMovement : MonoBehaviour
             Invoke("paus", delay);
             Invoke("spawn", respawn_time);
         }
-        else if (collision.gameObject.tag == "Enemy")
+        else if (collision.gameObject.tag == "Enemy"|| collision.gameObject.tag == "Enemy_bullet")
         {
             Destroy(gameObject);
         }

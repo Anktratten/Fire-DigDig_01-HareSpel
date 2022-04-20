@@ -9,6 +9,8 @@ public class PauseController : MonoBehaviour
     public GameObject menu;
     public GameObject shop;
 
+    bool oneTime;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,10 @@ public class PauseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (NewMovement.liv <= 0 && oneTime == false)
+        {
+            oneTime = true;
+        }
     }
 
     public void OpenShopMenu()
@@ -33,5 +38,9 @@ public class PauseController : MonoBehaviour
     {
         menu.SetActive(false);
         isPaused = false;
+    }
+    public void OpenGameOver()
+    {
+
     }
 }

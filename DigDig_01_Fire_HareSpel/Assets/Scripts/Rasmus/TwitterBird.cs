@@ -10,8 +10,8 @@ public class TwitterBird : MonoBehaviour
     bool still = false;
     Vector3 attackTarget;
 
-    public float borderX = 8.57f;
-    public float borderY = 4.7f;
+    public float borderX = 10f;
+    public float borderY = 5f;
 
     // Start is called before the first frame update
     void Start()

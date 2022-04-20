@@ -59,5 +59,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss fiande nere
       objectReference: {fileID: 0}
+    - target: {fileID: 4920926347624431735, guid: 47669a6f321773942b0159927b978897, type: 3}
+      propertyPath: m_TagString
+      value: Enemy_bullet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47669a6f321773942b0159927b978897, type: 3}

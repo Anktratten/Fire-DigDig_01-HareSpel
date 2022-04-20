@@ -18,6 +18,7 @@ public class hunter_shotgun : MonoBehaviour
     public Transform Shot;
     public Transform Shotgun_down;
     public Transform Shotgun_up;
+    public GameObject coin;
 
     bool transporting = true;
     // Start is called before the first frame update
@@ -87,6 +88,7 @@ public class hunter_shotgun : MonoBehaviour
 
         if (hp < 1 && dead == false)
         {
+            Instantiate(coin, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
             dead = true;
             ScoreText.GetComponent<Score>().addscore(200);
             gameObject.GetComponent<BoxCollider2D>().isTrigger = true;

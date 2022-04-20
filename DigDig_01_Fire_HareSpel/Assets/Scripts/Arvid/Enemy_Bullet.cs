@@ -9,7 +9,7 @@ public class Enemy_Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -20,6 +20,13 @@ public class Enemy_Bullet : MonoBehaviour
             transform.position = new Vector3(transform.position.x - bs * Time.deltaTime, transform.position.y + shotgun * Time.deltaTime, transform.position.z);
         }
         if (transform.position.x < -15)
+        {
+            Destroy(gameObject);
+        }
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
         {
             Destroy(gameObject);
         }

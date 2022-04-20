@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class BombDud : MonoBehaviour
 {
+    public RuntimeAnimatorController bomb;
+    Animator animator;
     float moveSpeed = 8;
     float transportSpeed = 10;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,17 +28,19 @@ public class BombDud : MonoBehaviour
         {
             InvokeRepeating("moveRight", 0, 0.1f * Time.deltaTime);
         }
-        else
+        else if (collision.gameObject.name == "Dump Wall(Clone)")
         {
             collision.gameObject.GetComponent<DumpWall>().DestroyWall();
-            //animation skit
-            Destroy(gameObject);
-            Debug.Log(collision.gameObject.name);
+            animator.runtimeAnimatorController = bomb;
+            Invoke("Destroy", 0.35f);
         }
-        Debug.Log(collision.gameObject.name);
     }
     void moveRight()
     {
         transform.position = new Vector3(transform.position.x + transportSpeed * Time.deltaTime, transform.position.y);
+    }
+        void Destroy()
+    {
+        Destroy(gameObject);
     }
 }

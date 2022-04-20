@@ -25,4 +25,8 @@ public class DumpHunterBoss : MonoBehaviour
             transporting = false;
         }
     }
+    public void DestroySelf()
+    {
+        Destroy(gameObject);
+    }
 }

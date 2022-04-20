@@ -18,6 +18,7 @@ public class Hunter_burst : MonoBehaviour
     public Transform Shot;
     bool transporting = true;
     bool dead;
+    public GameObject coin;
 
     // Start is called before the first frame update
     void Start()
@@ -85,6 +86,7 @@ public class Hunter_burst : MonoBehaviour
 
         if (hp < 1 && dead == false)
         {
+            Instantiate(coin, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
             dead = true;
             ScoreText.GetComponent<Score>().addscore(200);
             gameObject.GetComponent<BoxCollider2D>().isTrigger = true;

@@ -102,6 +102,7 @@ MonoBehaviour:
   animator: {fileID: 4196565904436161472}
   Cooldown: 2
   Shot: {fileID: 4920926347624431732, guid: 47669a6f321773942b0159927b978897, type: 3}
+  coin: {fileID: 567511198023808041, guid: 23f6887aaad71a04b8b1ceeceaaa4efe, type: 3}
 --- !u!95 &4196565904436161472
 Animator:
   serializedVersion: 3
