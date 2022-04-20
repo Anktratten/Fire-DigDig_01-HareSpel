@@ -86,6 +86,7 @@ public class EnemySpawner : MonoBehaviour
         {
             Instantiate(hunterBossDummy, new Vector3(transform.position.x, transform.position.y, 0), Quaternion.identity);
             Invoke("SpawnDump", 3);
+            isBossWave = true;
         }
 
         if (isBossWave == false)
@@ -99,7 +100,6 @@ public class EnemySpawner : MonoBehaviour
                 hunterTargetAmount += 2;
                 spawnDelay = 2f;
                 huntersUnlocked = 1;
-                Debug.Log("ThisShouldHappen");
             }
             else if (waveNumber > 10)
             {

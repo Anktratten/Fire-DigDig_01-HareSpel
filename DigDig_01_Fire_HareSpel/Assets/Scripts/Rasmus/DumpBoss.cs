@@ -41,6 +41,7 @@ public class DumpBoss : MonoBehaviour
     public RuntimeAnimatorController dumpWall;
     public RuntimeAnimatorController dumpPhase3;
     public RuntimeAnimatorController dumpDead;
+    public GameObject DummyBoss;
 
     Animator animator;
 
@@ -61,6 +62,7 @@ public class DumpBoss : MonoBehaviour
         positions[5] = new Vector3(5, -1.5f, 0);
         spawner = GameObject.Find("Enemy Spawner");
         animator = GetComponent<Animator>();
+        DummyBoss = GameObject.Find("Dump Boss Baby(Clone)");
     }
 
     // Update is called once per frame
@@ -87,9 +89,10 @@ public class DumpBoss : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x - transportSpeed * Time.deltaTime, transform.position.y, transform.position.z);
         }
-        else if (transform.position.x <= 5)
+        else if (transform.position.x <= 5 && transporting == true && dumpPhase == 1)
         {
             animator.SetBool("Dump pickup", true);
+            DummyBoss.GetComponent<DumpHunterBoss>().DestroySelf();
             Invoke("PickupDelay", 1);
         }
 
@@ -114,13 +117,13 @@ public class DumpBoss : MonoBehaviour
             }
             if (transform.position.x == 7 || transform.position.y == 0)
             {
-                
+
                 transporting = false;
             }
             if (startedPhase2 == false && transporting == false)
             {
                 hp = 1;
-                
+
                 SpawnWall();
                 InvokeRepeating("SpawnBird", 1, 1);
                 InvokeRepeating("AirStrike", 10, 10);
@@ -143,6 +146,8 @@ public class DumpBoss : MonoBehaviour
             }
             if (startedPhase3 == false && transporting == false)
             {
+                animator.runtimeAnimatorController = dumpPhase3;
+                animator.Play("Dump Run");
                 hp = 100;
                 InvokeRepeating("Randomizer", 0, 0.5f);
                 InvokeRepeating("SpawnHunter", 0, 4);
@@ -204,6 +209,7 @@ public class DumpBoss : MonoBehaviour
     void DeathDelay()
     {
         Destroy(gameObject);
+
     }
     void TrumpHunterShoot()
     {
@@ -233,6 +239,7 @@ public class DumpBoss : MonoBehaviour
     }
     void AirStrike()
     {
+        animator.Play("Dump Cast wall");
         airStrikeCounter++;
         GameObject airStrikeTemp = Instantiate(airStrike, new Vector3(10, 4.7f, 0), Quaternion.identity);
         if (airStrikeCounter == 2)
