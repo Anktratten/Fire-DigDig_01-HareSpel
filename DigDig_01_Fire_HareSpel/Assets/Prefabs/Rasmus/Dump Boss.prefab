@@ -98,11 +98,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   result: 0
-  shot: {fileID: 4920926347624431735, guid: 47669a6f321773942b0159927b978897, type: 3}
-  shotgun_down: {fileID: 3045580312082180062, guid: 605cbfdb64c6c694bae34485c3fba1b8, type: 3}
-  shotgun_up: {fileID: 8428202261553530489, guid: 566143d44741fa24c862cc1996b00b4b, type: 3}
-  spread_down: {fileID: 1630905603938471914, guid: 7155698a2910067499fcd2ad18d8fbc3, type: 3}
-  spread_up: {fileID: 3887395729859697850, guid: f73705c39d5918049ab0929f5c204059, type: 3}
+  shot: {fileID: 5936065371253879411, guid: 4fdfefe2997cbb24ea996996fe481891, type: 3}
+  shotgun_down: {fileID: 1630905603938471914, guid: 7155698a2910067499fcd2ad18d8fbc3, type: 3}
+  shotgun_up: {fileID: 3887395729859697850, guid: f73705c39d5918049ab0929f5c204059, type: 3}
+  spread_down: {fileID: 733089959491063477, guid: 3af5de26c4275bb43a0cdda6bb716ceb, type: 3}
+  spread_up: {fileID: 8091655055669512352, guid: 47d50c467db67224d9b82ec73915e34b, type: 3}
   bird: {fileID: 8003921912641958876, guid: 2fb84bc38b0386f4a95442e39240bdec, type: 3}
   laser: {fileID: 0}
   wall: {fileID: 8340212453337792371, guid: 0afdb2c2aa2860f41b7d71e496c13954, type: 3}
@@ -113,10 +113,11 @@ MonoBehaviour:
   - {fileID: 7977837382251056403, guid: 6bc43e2f2710dfb4d85415837576cc2d, type: 3}
   hunterSelect: 0
   dumpWithBoss: {fileID: 9100000, guid: d12e9e6ca34e55c41ad1781ed7bd7298, type: 2}
-  dumpWall: {fileID: 9100000, guid: f49703f68ba857d4b83ce5a842440889, type: 2}
+  dumpWall: {fileID: 0}
   dumpPhase3: {fileID: 9100000, guid: e039b2b693b1ee4428e22ec1ec79da99, type: 2}
   dumpDead: {fileID: 9100000, guid: c318b7a27db2bca48b2aa8f8707a3ab3, type: 2}
   DummyBoss: {fileID: 0}
+  mainCamera: {fileID: 0}
 --- !u!95 &-2203275264145204559
 Animator:
   serializedVersion: 3
