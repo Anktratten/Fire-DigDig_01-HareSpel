@@ -2312,7 +2312,7 @@ MonoBehaviour:
   hunterBoss3: {fileID: 3273241098293879630, guid: 5e295ddbe09aa884c93f98eb8d28b262, type: 3}
   dumpBoss: {fileID: 3613463908824197794, guid: b8eeebe64631fcd44a0e77784d518f14, type: 3}
   hunterBossDummy: {fileID: 1966569892789529875, guid: 3cd6130e4156ab84aa375c167628781c, type: 3}
-  waveNumber: 8
+  waveNumber: 1
   hunterSelect: 0
   huntersSpawned: 0
   nextTimeToSpawn: 0
