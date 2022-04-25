@@ -19,7 +19,7 @@ public class Boss_Chungus : MonoBehaviour
     float [] positions = new float[4];
     float current_location;
 
-    public float Cooldown;
+    float Cooldown = 2;
     float nextTimeToFire = 0;
 
     float Animal_spawn = 10;
