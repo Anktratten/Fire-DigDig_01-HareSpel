@@ -20,6 +20,7 @@ public class Hunter : MonoBehaviour
     public Transform Shot;
 
     bool transporting = true;
+    bool walking = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,16 +64,27 @@ public class Hunter : MonoBehaviour
                         nextTimeToFire = Time.time + Cooldown;
                     }
 
-                    if (Player.transform.position.y > transform.position.y)
-                    {
-                        transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
-                        animator.SetFloat("fastnes", Mathf.Abs(1));
-                    }
-
-                    else if (Player.transform.position.y < transform.position.y)
+                    if (walking == true)
                     {
                         transform.position = new Vector3(transform.position.x, transform.position.y - speed * Time.deltaTime, transform.position.z);
                         animator.SetFloat("fastnes", Mathf.Abs(1));
+
+                        if (transform.position.y <= -4.7f)
+                        {
+                            walking = false;
+                        }
+
+                    }
+
+                    else if (walking == false)
+                    {
+                        transform.position = new Vector3(transform.position.x, transform.position.y + speed * Time.deltaTime, transform.position.z);
+                        animator.SetFloat("fastnes", Mathf.Abs(1));
+                        if (transform.position.y >= 4.7f)
+                        {
+                            walking = true;
+                        }
+
                     }
                 }
             }
